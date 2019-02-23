@@ -1,0 +1,16 @@
+﻿<Properties StartupConfiguration="{873CDC47-ED37-532E-1D2C-4033D830FDCA}|">
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/BattleSystem.cs">
+    <Files>
+      <File FileName="Assets/Scripts/BattleSystem.cs" Line="58" Column="17" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/jesusserna/Desktop/Souls Game/Assets/Scripts/BattleSystem.cs" relfile="Assets/Scripts/BattleSystem.cs" line="243" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>
