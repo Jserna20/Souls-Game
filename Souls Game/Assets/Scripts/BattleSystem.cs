@@ -7,15 +7,15 @@ public class BattleSystem : MonoBehaviour
     [Header("Set in Inspector")]
     public GameObject p1Prefab;
     public GameObject p2Prefab;
-    public Player Fighter1;
-    public Player Figher2;
+    public Player Fighter1 = new Player();
+    public Player Fighter2 = new Player();
 
     [Header("Set Dynamically")] //Delete after fighter class complete
-    public bool alive; 
-    public bool turnOfP1;
-    public bool turnOfP2;
-    public bool p1Chose;
-    public bool p2Chose;
+    //public bool alive;
+    //public bool turnOfP1;
+    //public bool turnOfP2;
+    //public bool p1Chose;
+    //public bool p2Chose;
     //public string magicAction;
     public string actionWords1; //fighter will what their moves are later on
     public string actionWords2;
@@ -24,35 +24,45 @@ public class BattleSystem : MonoBehaviour
     public string results;
     public string results2;
 
-    public GameObject fighter1;
-    public GameObject fighter2;
+    public GameObject fighterGO1;
+    public GameObject fighterGO2;
     
 
 	// Use this for initialization
 	void Awake() 
     {
         print("Battle Start!");
-        //fighter1 = Instantiate(p1Prefab) as GameObject;
-        //fighter2 = Instantiate(p2Prefab) as GameObject;
-        alive = true;
-        turnOfP1 = true;
-        turnOfP2 = false;
-        p1Chose = false;
-        p2Chose = false;
+        fighterGO1 = Instantiate(p1Prefab) as GameObject;
+        fighterGO2 = Instantiate(p2Prefab) as GameObject;
+        //alive = true;
+        Fighter1.SetStats();
+        Fighter2.SetStats();
+        /*Fighter1.SetAlive(true);
+        Fighter2.SetAlive(true);
+        Fighter1.SetInBattle(true);
+        Fighter2.SetInBattle(true);
+        //turnOfP1 = true;
+        //turnOfP2 = false;
+        Fighter1.IsAttacking(true);
+        Fighter2.IsAttacking(true);
+        //p1Chose = false;
+        //p2Chose = false;
+        Fighter1.GetChoosing();
+        Fighter2.GetChoosing();
         letter1 = 'x';
-        letter2 = 'x';
+        letter2 = 'x';*/
 	}
 	
 	// Update is called once per frame
 	void Update () 
     {
-        if (alive)
+        if (Fighter1.GetAlive() && Fighter2.GetAlive())
         {
-            if (!(p1Chose && p2Chose))
+            if (!(Fighter1.GetChoosing() && Fighter2.GetChoosing()))
             {
                 ChoosingActions();
             }
-            if(p1Chose && p2Chose)
+            if(Fighter1.GetChoosing() && Fighter2.GetChoosing())
             {
                 CalcingResults();
                 TurnResults();
@@ -60,11 +70,12 @@ public class BattleSystem : MonoBehaviour
             
         }
 
-        if (Input.GetKeyDown(KeyCode.Space)) 
+        /*if (Input.GetKeyDown(KeyCode.Space)) 
         {
             alive = false;
             print("battle end");
         }
+        */
 
 	}
 
@@ -73,15 +84,17 @@ public class BattleSystem : MonoBehaviour
 
         if (results.Equals("P2 was hit P1 wins") && results2.Equals(""))
         {
-            Destroy(fighter2);
+            Destroy(fighterGO2);
             print(results + results2);
-            alive = false;
+            //alive = false;
+            Fighter2.GetAlive();
         }
         else if (results.Equals("P1 was hit P2 wins") && results2.Equals(""))
         {
-            Destroy(fighter1);
+            Destroy(fighterGO1);
             print(results + results2);
-            alive = false;
+            //alive = false;
+            Fighter1.GetAlive();
         }
         else if(results2.Equals("Battle Continues"))
         {
@@ -92,18 +105,18 @@ public class BattleSystem : MonoBehaviour
             results2 = "";
             letter1 = 'x';
             letter2 = 'x';
-            p1Chose = false;
-            p2Chose = false;
+            //p1Chose = false;
+            //p2Chose = false;
 
-            if(turnOfP1)
+            if(Fighter1.GetAttacker())
             {
-                turnOfP1 = false;
-                turnOfP2 = true;
+                Fighter1.IsAttacking(false);
+                Fighter2.IsAttacking(true);
             }
-            else if (turnOfP2)
+            else if (Fighter2.GetAttacker())
             {
-                turnOfP2 = false;
-                turnOfP1 = true;
+                Fighter2.IsAttacking(false);
+                Fighter1.IsAttacking(true);
             }
         }
         else
@@ -115,18 +128,18 @@ public class BattleSystem : MonoBehaviour
             results2 = "";
             letter1 = 'x';
             letter2 = 'x';
-            p1Chose = false;
-            p2Chose = false;
+            Fighter1.SetChoosing(false);
+            Fighter2.SetChoosing(false);
 
-            if (turnOfP1)
+            if (Fighter1.GetAttacker())
             {
-                turnOfP1 = false;
-                turnOfP2 = true;
+                Fighter1.IsAttacking(false);
+                Fighter2.IsAttacking(true);;
             }
-            else if (turnOfP2)
+            else if (Fighter2.GetAttacker())
             {
-                turnOfP2 = false;
-                turnOfP1 = true;
+                Fighter2.IsAttacking(false);
+                Fighter1.IsAttacking(true);
             }
         }
 
@@ -134,106 +147,106 @@ public class BattleSystem : MonoBehaviour
 
     public void ChoosingActions()
     {
-        if (turnOfP1)
+        if (Fighter1.GetAttacker())
         {
             if (Input.GetKeyDown(KeyCode.W))
             {
-                p1Chose = true;
+                Fighter1.SetChoosing(true);
                 actionWords1 = "Magic attk";
                 letter1 = 'w';
             }
             else if (Input.GetKeyDown(KeyCode.A))
             {
-                p1Chose = true;
+                Fighter1.SetChoosing(true);
                 actionWords1 = "Basic attk";
                 letter1 = 'a';
             }
             else if (Input.GetKeyDown(KeyCode.S))
             {
-                p1Chose = true;
+                Fighter1.SetChoosing(true);
                 actionWords1 = "Skill Locked!"; //Actually does nothing for now
                 letter1 = 's';
             }
             else if (Input.GetKeyDown(KeyCode.D))
             {
-                p1Chose = true;
+                Fighter1.SetChoosing(true);
                 actionWords1 = "Combo Attk";
                 letter1 = 'd';
             }
 
             if (Input.GetKeyDown(KeyCode.I))
             {
-                p2Chose = true;
+                Fighter2.SetChoosing(true);
                 actionWords2 = "Magic shield";
                 letter2 = 'i';
             }
             else if (Input.GetKeyDown(KeyCode.J))
             {
-                p2Chose = true;
+                Fighter2.SetChoosing(true);
                 actionWords2 = "Guard";
                 letter2 = 'j';
             }
             else if (Input.GetKeyDown(KeyCode.K))
             {
-                p2Chose = true;
+                Fighter2.SetChoosing(true);
                 actionWords2 = "I give up";
                 letter2 = 'k';
             }
             else if (Input.GetKeyDown(KeyCode.L))
             {
-                p2Chose = true;
+                Fighter2.SetChoosing(true);
                 actionWords2 = "Counter";
                 letter2 = 'l';
             }
         }
-        else if (turnOfP2)
+        else if (Fighter2.GetAttacker())
         {
             if (Input.GetKeyDown(KeyCode.I))
             {
-                p2Chose = true;
+                Fighter2.SetChoosing(true);
                 actionWords2 = "Magic attk";
                 letter2 = 'i';
             }
             else if (Input.GetKeyDown(KeyCode.J))
             {
-                p2Chose = true;
+                Fighter2.SetChoosing(true);
                 actionWords2 = "Basic attk";
                 letter2 = 'j';
             }
             else if (Input.GetKeyDown(KeyCode.K))
             {
-                p2Chose = true;
+                Fighter2.SetChoosing(true);
                 actionWords2 = "Skill Locked!"; //Actually does nothing for now
                 letter2 = 'k';
             }
             else if (Input.GetKeyDown(KeyCode.L))
             {
-                p2Chose = true;
+                Fighter2.SetChoosing(true);
                 actionWords2 = "Combo Attk";
                 letter2 = 'l';
             }
 
             if (Input.GetKeyDown(KeyCode.W))
             {
-                p1Chose = true;
+                Fighter1.SetChoosing(true);
                 actionWords1 = "Magic shield";
                 letter1 = 'w';
             }
             else if (Input.GetKeyDown(KeyCode.A))
             {
-                p1Chose = true;
+                Fighter1.SetChoosing(true);
                 actionWords1 = "Guard";
                 letter1 = 'a';
             }
             else if (Input.GetKeyDown(KeyCode.S))
             {
-                p1Chose = true;
+                Fighter1.SetChoosing(true);
                 actionWords1 = "I give up";
                 letter1 = 's';
             }
             else if (Input.GetKeyDown(KeyCode.D))
             {
-                p1Chose = true;
+                Fighter1.SetChoosing(true);
                 actionWords1 = "Counter";
                 letter1 = 'd';
             }
@@ -242,7 +255,7 @@ public class BattleSystem : MonoBehaviour
 
     public void CalcingResults()
     {
-        if (turnOfP1)
+        if (Fighter1.GetAttacker())
             {
                 if (actionWords1.Equals("magic attk"))
                 {
@@ -339,7 +352,7 @@ public class BattleSystem : MonoBehaviour
                 }
             }
 
-            if (turnOfP2)
+            if (Fighter2.GetAttacker())
             {
                 if (actionWords2.Equals("magic attk"))
                 {

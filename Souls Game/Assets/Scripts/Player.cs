@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public Player S;
     public GameObject playerPrefab;
     public int hp;
     public int maxHP;
@@ -19,18 +18,20 @@ public class Player : MonoBehaviour
     public bool inBattle;
     public bool isAttacker;
     public bool isDefender;
+    public bool choosing;
 
-    public GameObject player;
+    public GameObject person;
     
 
 	// Use this for initialization
-	void Awake ()
+	/*void Awake ()
     {
         SetStats();
-	}
+	}*/
 	
     public void SetStats()
     {
+        SetPerson();
         maxHP = 100;
         hp = maxHP;
         attkBase = 4;
@@ -43,6 +44,7 @@ public class Player : MonoBehaviour
         alive = true;
         defeated = false;
         inBattle = false;
+        choosing = false;
     }
 
     public void RestoreHP()
@@ -120,14 +122,14 @@ public class Player : MonoBehaviour
         return inBattle;
     }
 
-    public void SetPlayer()
+    public void SetPerson()
     {
-        player = Instantiate(playerPrefab) as GameObject;
+        person = Instantiate(playerPrefab) as GameObject;
     }
 
-    public GameObject GetPlayer()
+    public GameObject GetPerson()
     {
-        return player;
+        return person;
     }
 
     public void IsAttacking(bool cond)
@@ -138,5 +140,20 @@ public class Player : MonoBehaviour
     public bool GetAttacker()
     {
         return isAttacker;
+    }
+
+    public void SetChoosing(bool cond)
+    {
+        choosing = cond;
+    }
+
+    public bool GetChoosing()
+    {
+        return choosing;
+    }
+
+    public void DestroyMe()
+    {
+        Destroy(person);
     }
 }
