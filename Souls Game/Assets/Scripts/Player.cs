@@ -17,7 +17,6 @@ public class Player : MonoBehaviour
     public bool defeated;
     public bool inBattle;
     public bool isAttacker;
-    public bool isDefender;
     public bool choosing;
 
     public GameObject person;
@@ -31,12 +30,12 @@ public class Player : MonoBehaviour
 	
     public void SetStats()
     {
-        SetPerson();
-        maxHP = 100;
+        CreatePerson();
+        maxHP = 40;
         hp = maxHP;
-        attkBase = 4;
-        defBase = 4;
-        magicBase = 4;
+        attkBase = 2;
+        defBase = 2;
+        magicBase = 2;
         attk = attkBase;
         def = defBase;
         magic = magicBase;
@@ -122,7 +121,7 @@ public class Player : MonoBehaviour
         return inBattle;
     }
 
-    public void SetPerson()
+    public void CreatePerson()
     {
         person = Instantiate(playerPrefab) as GameObject;
     }

@@ -5,10 +5,10 @@ using UnityEngine;
 public class BattleSystem : MonoBehaviour 
 {
     [Header("Set in Inspector")]
-    public GameObject p1Prefab;
-    public GameObject p2Prefab;
-    public Player Fighter1 = new Player();
-    public Player Fighter2 = new Player();
+    //public GameObject p1Prefab;
+    //public GameObject p2Prefab;
+    public Player Fighter1;
+    public Player Fighter2;
 
     [Header("Set Dynamically")] //Delete after fighter class complete
     //public bool alive;
@@ -24,27 +24,27 @@ public class BattleSystem : MonoBehaviour
     public string results;
     public string results2;
 
-    public GameObject fighterGO1;
-    public GameObject fighterGO2;
+    //public GameObject fighterGO1;
+    //public GameObject fighterGO2;
     
 
 	// Use this for initialization
 	void Awake() 
     {
         print("Battle Start!");
-        fighterGO1 = Instantiate(p1Prefab) as GameObject;
-        fighterGO2 = Instantiate(p2Prefab) as GameObject;
+        //fighterGO1 = Instantiate(p1Prefab) as GameObject;
+        //fighterGO2 = Instantiate(p2Prefab) as GameObject;
         //alive = true;
         Fighter1.SetStats();
         Fighter2.SetStats();
+        Fighter1.IsAttacking(true);
+        Fighter2.IsAttacking(false);
         /*Fighter1.SetAlive(true);
         Fighter2.SetAlive(true);
         Fighter1.SetInBattle(true);
         Fighter2.SetInBattle(true);
         //turnOfP1 = true;
         //turnOfP2 = false;
-        Fighter1.IsAttacking(true);
-        Fighter2.IsAttacking(true);
         //p1Chose = false;
         //p2Chose = false;
         Fighter1.GetChoosing();
@@ -67,7 +67,6 @@ public class BattleSystem : MonoBehaviour
                 CalcingResults();
                 TurnResults();
             }
-            
         }
 
         /*if (Input.GetKeyDown(KeyCode.Space)) 
@@ -84,17 +83,17 @@ public class BattleSystem : MonoBehaviour
 
         if (results.Equals("P2 was hit P1 wins") && results2.Equals(""))
         {
-            Destroy(fighterGO2);
+            Fighter2.DestroyMe();
             print(results + results2);
             //alive = false;
-            Fighter2.GetAlive();
+            Fighter2.SetAlive(false);
         }
         else if (results.Equals("P1 was hit P2 wins") && results2.Equals(""))
         {
-            Destroy(fighterGO1);
+            Fighter1.DestroyMe();
             print(results + results2);
             //alive = false;
-            Fighter1.GetAlive();
+            Fighter1.SetAlive(false);
         }
         else if(results2.Equals("Battle Continues"))
         {
@@ -121,7 +120,8 @@ public class BattleSystem : MonoBehaviour
         }
         else
         {
-            print("Results Not Assigned");
+            //Will reset the turn without changing it
+            print("Error!! Results Not Assigned");
             actionWords1 = "";
             actionWords2 = "";
             results = "";
@@ -130,17 +130,6 @@ public class BattleSystem : MonoBehaviour
             letter2 = 'x';
             Fighter1.SetChoosing(false);
             Fighter2.SetChoosing(false);
-
-            if (Fighter1.GetAttacker())
-            {
-                Fighter1.IsAttacking(false);
-                Fighter2.IsAttacking(true);;
-            }
-            else if (Fighter2.GetAttacker())
-            {
-                Fighter2.IsAttacking(false);
-                Fighter1.IsAttacking(true);
-            }
         }
 
     }
@@ -152,13 +141,13 @@ public class BattleSystem : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.W))
             {
                 Fighter1.SetChoosing(true);
-                actionWords1 = "Magic attk";
+                actionWords1 = "Magic Attk";
                 letter1 = 'w';
             }
             else if (Input.GetKeyDown(KeyCode.A))
             {
                 Fighter1.SetChoosing(true);
-                actionWords1 = "Basic attk";
+                actionWords1 = "Basic Attk";
                 letter1 = 'a';
             }
             else if (Input.GetKeyDown(KeyCode.S))
@@ -204,13 +193,13 @@ public class BattleSystem : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.I))
             {
                 Fighter2.SetChoosing(true);
-                actionWords2 = "Magic attk";
+                actionWords2 = "Magic Attk";
                 letter2 = 'i';
             }
             else if (Input.GetKeyDown(KeyCode.J))
             {
                 Fighter2.SetChoosing(true);
-                actionWords2 = "Basic attk";
+                actionWords2 = "Basic Attk";
                 letter2 = 'j';
             }
             else if (Input.GetKeyDown(KeyCode.K))
@@ -257,12 +246,12 @@ public class BattleSystem : MonoBehaviour
     {
         if (Fighter1.GetAttacker())
             {
-                if (actionWords1.Equals("magic attk"))
+                if (actionWords1.Equals("Magic Attk"))
                 {
                     switch (letter2)
                     {
                         case 'i':
-                            results = "P2 blocked P1's magic attk. ";
+                            results = "P2 blocked P1's Magic Attk. ";
                             results2 = "Battle Continues";
                             break;
 
@@ -281,7 +270,7 @@ public class BattleSystem : MonoBehaviour
                     }
                 }
 
-                if (actionWords1.Equals("basic attk"))
+                if (actionWords1.Equals("Basic Attk"))
                 {
                     switch (letter2)
                     {
@@ -290,7 +279,7 @@ public class BattleSystem : MonoBehaviour
                             break;
 
                         case 'j':
-                            results = "P2 blocked P1's basic attk. ";
+                            results = "P2 blocked P1's Basic Attk. ";
                             results2 = "Battle Continues";
                             break;
 
@@ -354,12 +343,12 @@ public class BattleSystem : MonoBehaviour
 
             if (Fighter2.GetAttacker())
             {
-                if (actionWords2.Equals("magic attk"))
+                if (actionWords2.Equals("Magic Attk"))
                 {
                     switch (letter1)
                     {
                         case 'w':
-                            results = "P1 blocked P2's magic attk. ";
+                            results = "P1 blocked P2's Magic Attk. ";
                             results2 = "Battle Continues";
                             break;
 
@@ -378,7 +367,7 @@ public class BattleSystem : MonoBehaviour
                     }
                 }
 
-                if (actionWords2.Equals("basic attk"))
+                if (actionWords2.Equals("Basic Attk"))
                 {
                     switch (letter1)
                     {
@@ -387,7 +376,7 @@ public class BattleSystem : MonoBehaviour
                             break;
 
                         case 'a':
-                            results = "P1 blocked P2's basic attk. ";
+                            results = "P1 blocked P2's Basic Attk. ";
                             results2 = "Battle Continues";
                             break;
 
