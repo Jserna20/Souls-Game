@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.574817, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.5748171, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -438,6 +438,7 @@ GameObject:
   - component: {fileID: 282840813}
   - component: {fileID: 282840811}
   - component: {fileID: 282840812}
+  - component: {fileID: 282840815}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -465,20 +466,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   p1Prefab: {fileID: 1601906409503114, guid: de3436ddc495c4fbca3ead0f74e4e66b, type: 2}
   p2Prefab: {fileID: 1444883036211542, guid: 0f261f054ea7b46c0b55ab1b5ebf0900, type: 2}
-  alive: 0
-  turnOfP1: 0
-  turnOfP2: 0
-  p1Chose: 0
-  p2Chose: 0
+  Fighter1: {fileID: 0}
+  Fighter2: {fileID: 0}
   actionWords1: 
   actionWords2: 
   letter1: 0
   letter2: 0
   results: 
   results2: 
-  victory: 
-  player1: {fileID: 0}
-  player2: {fileID: 0}
+  fighterGO1: {fileID: 0}
+  fighterGO2: {fileID: 0}
 --- !u!20 &282840813
 Camera:
   m_ObjectHideFlags: 0
@@ -528,6 +525,34 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &282840815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 282840810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7ed46c484998ed43bfe9030502e6d70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerPrefab: {fileID: 1601906409503114, guid: de3436ddc495c4fbca3ead0f74e4e66b,
+    type: 2}
+  hp: 0
+  maxHP: 0
+  attkBase: 0
+  defBase: 0
+  magicBase: 0
+  magic: 0
+  attk: 0
+  def: 0
+  alive: 0
+  defeated: 0
+  inBattle: 0
+  isAttacker: 0
+  isDefender: 0
+  choosing: 0
+  person: {fileID: 0}
 --- !u!1 &396274249
 GameObject:
   m_ObjectHideFlags: 0
