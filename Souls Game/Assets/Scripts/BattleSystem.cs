@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BattleSystem : MonoBehaviour 
 {
@@ -71,12 +72,11 @@ public class BattleSystem : MonoBehaviour
             }
         }
 
-        /*if (Input.GetKeyDown(KeyCode.Space)) 
+        //Just to not have to exit play mode to reset
+        if (Input.GetKeyDown(KeyCode.Space)) 
         {
-            alive = false;
-            print("battle end");
+            Restart();
         }
-        */
 
 	}
 
@@ -442,4 +442,9 @@ public class BattleSystem : MonoBehaviour
             }
         
     } 
+
+    public void Restart()
+    {
+        SceneManager.LoadScene("TestBattle");
+    }
 }
