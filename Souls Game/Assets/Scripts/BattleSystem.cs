@@ -38,6 +38,8 @@ public class BattleSystem : MonoBehaviour
         //alive = true;
         Fighter1.SetStats();
         Fighter2.SetStats();
+        Fighter1.SetPlayerName("Player 1 ");
+        Fighter2.SetPlayerName("Player 2 ");
         Fighter1.IsAttacking(true);
         Fighter2.IsAttacking(false);
         Fighter1.SetNameBasedOnTurn();
@@ -281,19 +283,23 @@ public class BattleSystem : MonoBehaviour
                     {
                         case 'i':
                             results = "P2 was hit P1 wins";
+                            Fighter1.SetTurnDamage(Fighter1.GetAttk(), 0);
                             break;
 
                         case 'j':
                             results = "P2 blocked P1's Basic Attk. ";
+                            Fighter1.SetTurnDamage(Fighter1.GetAttk(), Fighter2.GetDef());
                             results2 = "Battle Continues";
                             break;
 
                         case 'k':
                             results = "P2 was hit P1 wins";
+                            Fighter1.SetTurnDamage(Fighter1.GetAttk(), 0);
                             break;
 
                         case 'l':
                             results = "P2 was hit P1 wins";
+                            Fighter1.SetTurnDamage(Fighter1.GetAttk(), 1);
                             break;
                     }
                 }

@@ -22,6 +22,7 @@ public class Player : MonoBehaviour
     public string leftName;
     public string downName;
     public string rightName;
+    public string playerName;
 
     public GameObject person;
     
@@ -217,5 +218,15 @@ public class Player : MonoBehaviour
             SetRightName("Combo Attk");
         }
 
+    }
+
+    public void SetPlayerName(string newPlayerName)
+    {
+        playerName = newPlayerName;
+    }
+
+    public string GetPlayerName()
+    {
+        return playerName;
     }
 }
