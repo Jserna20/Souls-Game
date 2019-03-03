@@ -18,6 +18,10 @@ public class Player : MonoBehaviour
     public bool inBattle;
     public bool isAttacker;
     public bool choosing;
+    public string upName;
+    public string leftName;
+    public string downName;
+    public string rightName;
 
     public GameObject person;
     
@@ -154,5 +158,64 @@ public class Player : MonoBehaviour
     public void DestroyMe()
     {
         Destroy(person);
+    }
+
+    public void SetUpName(string name)
+    {
+        upName = name;
+    }
+
+    public string GetUpName()
+    {
+        return upName;
+    }
+
+    public void SetLeftName(string name)
+    {
+        leftName = name;
+    }
+
+    public string GetLeftName()
+    {
+        return leftName;
+    }
+
+    public void SetDownName(string name)
+    {
+        downName = name;
+    }
+
+    public string GetDownName()
+    {
+        return downName;
+    }
+
+    public void SetRightName(string name)
+    {
+        rightName = name;
+    }
+
+    public string GetRightName()
+    {
+        return rightName;
+    }
+
+    public void SetNameBasedOnTurn()
+    {
+        if(GetAttacker())
+        {
+            SetUpName("Magic Attk");
+            SetLeftName("Basic Attk");
+            SetDownName("Buff Attk");
+            SetRightName("Combo Attk");
+        }
+        else
+        {
+            SetUpName("Magic Shield");
+            SetLeftName("Guard");
+            SetDownName("I give up");
+            SetRightName("Combo Attk");
+        }
+
     }
 }

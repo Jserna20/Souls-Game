@@ -39,6 +39,8 @@ public class BattleSystem : MonoBehaviour
         Fighter2.SetStats();
         Fighter1.IsAttacking(true);
         Fighter2.IsAttacking(false);
+        Fighter1.SetNameBasedOnTurn();
+        Fighter2.SetNameBasedOnTurn();
         /*Fighter1.SetAlive(true);
         Fighter2.SetAlive(true);
         Fighter1.SetInBattle(true);
@@ -117,11 +119,13 @@ public class BattleSystem : MonoBehaviour
                 Fighter2.IsAttacking(false);
                 Fighter1.IsAttacking(true);
             }
+            Fighter1.SetChoosing(false);
+            Fighter2.SetChoosing(false);
         }
-        else
+       else if(results.Equals("") && results2.Equals(""))
         {
             //Will reset the turn without changing it
-            print("Error!! Results Not Assigned");
+            print("Results: " + results);
             actionWords1 = "";
             actionWords2 = "";
             results = "";
@@ -131,7 +135,6 @@ public class BattleSystem : MonoBehaviour
             Fighter1.SetChoosing(false);
             Fighter2.SetChoosing(false);
         }
-
     }
 
     public void ChoosingActions()
@@ -153,7 +156,7 @@ public class BattleSystem : MonoBehaviour
             else if (Input.GetKeyDown(KeyCode.S))
             {
                 Fighter1.SetChoosing(true);
-                actionWords1 = "Skill Locked!"; //Actually does nothing for now
+                actionWords1 = "Buff Attk"; //Actually does nothing for now
                 letter1 = 's';
             }
             else if (Input.GetKeyDown(KeyCode.D))
@@ -166,7 +169,7 @@ public class BattleSystem : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.I))
             {
                 Fighter2.SetChoosing(true);
-                actionWords2 = "Magic shield";
+                actionWords2 = "Magic Shield";
                 letter2 = 'i';
             }
             else if (Input.GetKeyDown(KeyCode.J))
@@ -205,7 +208,7 @@ public class BattleSystem : MonoBehaviour
             else if (Input.GetKeyDown(KeyCode.K))
             {
                 Fighter2.SetChoosing(true);
-                actionWords2 = "Skill Locked!"; //Actually does nothing for now
+                actionWords2 = "Buff Attk"; //Actually does nothing for now
                 letter2 = 'k';
             }
             else if (Input.GetKeyDown(KeyCode.L))
@@ -218,7 +221,7 @@ public class BattleSystem : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.W))
             {
                 Fighter1.SetChoosing(true);
-                actionWords1 = "Magic shield";
+                actionWords1 = "Magic Shield";
                 letter1 = 'w';
             }
             else if (Input.GetKeyDown(KeyCode.A))
@@ -293,7 +296,7 @@ public class BattleSystem : MonoBehaviour
                     }
                 }
 
-                if (actionWords1.Equals("Skill Locked!"))
+                if (actionWords1.Equals("Buff Attk"))
                 {
                     switch (letter2)
                     {
@@ -390,7 +393,7 @@ public class BattleSystem : MonoBehaviour
                     }
                 }
 
-                if (actionWords2.Equals("Skill Locked!"))
+                if (actionWords2.Equals("Buff Attk"))
                 {
                     switch (letter1)
                     {
