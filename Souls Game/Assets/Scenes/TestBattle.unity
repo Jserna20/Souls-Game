@@ -289,8 +289,10 @@ MonoBehaviour:
   maxHP: 0
   attkBase: 0
   defBase: 0
-  magicBase: 0
-  magic: 0
+  magicAttkBase: 0
+  magicDefBase: 0
+  magicAttk: 0
+  magicDef: 0
   attk: 0
   def: 0
   alive: 0
@@ -298,6 +300,12 @@ MonoBehaviour:
   inBattle: 0
   isAttacker: 0
   choosing: 0
+  upName: 
+  leftName: 
+  downName: 
+  rightName: 
+  playerName: 
+  turndamage: 0
   person: {fileID: 0}
 --- !u!4 &155258145
 Transform:
@@ -410,8 +418,10 @@ MonoBehaviour:
   maxHP: 0
   attkBase: 0
   defBase: 0
-  magicBase: 0
-  magic: 0
+  magicAttkBase: 0
+  magicDefBase: 0
+  magicAttk: 0
+  magicDef: 0
   attk: 0
   def: 0
   alive: 0
@@ -419,6 +429,12 @@ MonoBehaviour:
   inBattle: 0
   isAttacker: 0
   choosing: 0
+  upName: 
+  leftName: 
+  downName: 
+  rightName: 
+  playerName: 
+  turndamage: 0
   person: {fileID: 0}
 --- !u!4 &176024262
 Transform:
@@ -583,6 +599,7 @@ MonoBehaviour:
   letter2: 0
   results: 
   results2: 
+  theWinner: 
 --- !u!20 &282840813
 Camera:
   m_ObjectHideFlags: 0

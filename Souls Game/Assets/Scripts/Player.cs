@@ -10,8 +10,8 @@ public class Player : MonoBehaviour
     public float attkBase;
     public float defBase;
     public float magicAttkBase;
-    public float magicAttk;
     public float magicDefBase;
+    public float magicAttk;
     public float magicDef;
     public float attk;
     public float def;
@@ -39,7 +39,7 @@ public class Player : MonoBehaviour
     public void SetStats()
     {
         CreatePerson();
-        maxHP = 40;
+        maxHP = 5;
         hp = maxHP;
         attkBase = 2;
         defBase = 2;
@@ -229,7 +229,7 @@ public class Player : MonoBehaviour
         {
             SetUpName("Magic Shield");
             SetLeftName("Guard");
-            SetDownName("Buff Attk");
+            SetDownName("I give up");
             SetRightName("Combo Attk");
         }
 
@@ -247,14 +247,14 @@ public class Player : MonoBehaviour
 
     public void SetTurnDamage(float formOfAttack, float formOfDefense)
     {
-        if(formOfDefense == 2)
+        if(formOfDefense == -2)
         {
             
             formOfAttack = formOfAttack * 2f; //This doubles the attack
             formOfDefense = 0;
             turndamage = formOfAttack - formOfDefense;
         }
-        else if(formOfDefense == 1)
+        else if(formOfDefense == -1)
         {
             formOfAttack = formOfAttack * 1.5f;
             formOfDefense = 0;

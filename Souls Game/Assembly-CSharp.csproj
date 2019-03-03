@@ -61,6 +61,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\BattleSystem.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
+    <Compile Include="Assets\Scripts\ProtoBattle.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>/Users/jesusserna/Desktop/Souls-Game/Souls Game/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>

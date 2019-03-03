@@ -86,14 +86,14 @@ public class BattleSystem : MonoBehaviour
     public void TurnResults()
     {
 
-        if (theWinner.Equals("P1 wins"))
+        if (results2.Equals("P2 was deafeated. "))
         {
             Fighter2.DestroyMe();
             print(results + results2 + theWinner);
             //alive = false;
             Fighter2.SetAlive(false);
         }
-        else if (theWinner.Equals("P2 wins"))
+        else if (results2.Equals("P1 was deafeated. "))
         {
             Fighter1.DestroyMe();
             print(results + results2 + theWinner);
@@ -122,6 +122,7 @@ public class BattleSystem : MonoBehaviour
                 Fighter2.IsAttacking(false);
                 Fighter1.IsAttacking(true);
             }
+
             Fighter1.SetChoosing(false);
             Fighter2.SetChoosing(false);
             Fighter1.SetNameBasedOnTurn();
@@ -275,7 +276,7 @@ public class BattleSystem : MonoBehaviour
 
                     case 'j':
                         results = "P1 used Magic Attk. P2 was hit. ";
-                        Fighter1.SetTurnDamage(Fighter1.GetMagicAttk(), 1);
+                        Fighter1.SetTurnDamage(Fighter1.GetMagicAttk(), -1);
                         Fighter2.TakeDamage(Fighter1.GetTurnDamage());
                         if (Fighter2.GetHP() <= 0)
                         {
@@ -291,7 +292,7 @@ public class BattleSystem : MonoBehaviour
                     case 'k':
                         results = "P2 used Buff Attk, but was still hit by P1's Magic Attk. ";
                         Fighter2.SetAttk((Fighter2.GetMagicAttk() + 1));
-                        Fighter1.SetTurnDamage(Fighter1.GetAttk(), 1);
+                        Fighter1.SetTurnDamage(Fighter1.GetAttk(), -1);
                         Fighter2.TakeDamage(Fighter1.GetTurnDamage());
                         if (Fighter2.GetHP() <= 0)
                         {
@@ -306,7 +307,7 @@ public class BattleSystem : MonoBehaviour
 
                     case 'l':
                         results = "P2 used Counter, but failed and was hit harder. ";
-                        Fighter1.SetTurnDamage(Fighter1.GetMagicAttk(), 2);
+                        Fighter1.SetTurnDamage(Fighter1.GetMagicAttk(), -2);
                         Fighter2.TakeDamage(Fighter1.GetTurnDamage());
                         if (Fighter2.GetHP() <= 0)
                         {
@@ -327,7 +328,7 @@ public class BattleSystem : MonoBehaviour
                 {
                     case 'i':
                         results = "P1 used Basic Attk. P2 was hit. ";
-                        Fighter1.SetTurnDamage(Fighter1.GetAttk(), 1);
+                        Fighter1.SetTurnDamage(Fighter1.GetAttk(), -1);
                         Fighter2.TakeDamage(Fighter1.GetTurnDamage());
                         if (Fighter2.GetHP() <= 0)
                         {
@@ -358,7 +359,7 @@ public class BattleSystem : MonoBehaviour
                     case 'k':
                         results = "P2 Buffed its Attk, but was still hit. ";
                         Fighter2.SetAttk((Fighter2.GetAttk() + 1));
-                        Fighter1.SetTurnDamage(Fighter1.GetAttk(), 1);
+                        Fighter1.SetTurnDamage(Fighter1.GetAttk(), -1);
                         Fighter2.TakeDamage(Fighter1.GetTurnDamage());
                         if (Fighter2.GetHP() <= 0)
                         {
@@ -373,7 +374,7 @@ public class BattleSystem : MonoBehaviour
 
                     case 'l':
                         results = "P2 used Counter, but failed and was hit harder. ";
-                        Fighter1.SetTurnDamage(Fighter1.GetAttk(), 2);
+                        Fighter1.SetTurnDamage(Fighter1.GetAttk(), -2);
                         Fighter2.TakeDamage(Fighter1.GetTurnDamage());
                         if (Fighter2.GetHP() <= 0)
                         {
@@ -425,7 +426,7 @@ public class BattleSystem : MonoBehaviour
                 {
                     case 'i':
                         results = "P1 used Combo Attack. P2 was hit by it. ";
-                        Fighter1.SetTurnDamage((Fighter1.GetAttk() + Fighter1.GetMagicAttk()), 1);
+                        Fighter1.SetTurnDamage((Fighter1.GetAttk() + Fighter1.GetMagicAttk()), -1);
                         Fighter2.TakeDamage(Fighter1.GetTurnDamage());
                         if (Fighter2.GetHP() <= 0)
                         {
@@ -440,7 +441,7 @@ public class BattleSystem : MonoBehaviour
 
                     case 'j':
                         results = "P1 used Combo Attack. P2 was hit by it. ";
-                        Fighter1.SetTurnDamage((Fighter1.GetAttk() + Fighter1.GetMagicAttk()), 1);
+                        Fighter1.SetTurnDamage((Fighter1.GetAttk() + Fighter1.GetMagicAttk()), -1);
                         Fighter2.TakeDamage(Fighter1.GetTurnDamage());
                         if (Fighter2.GetHP() <= 0)
                         {
@@ -456,7 +457,7 @@ public class BattleSystem : MonoBehaviour
                     case 'k':
                         results = "P1 used Combo Attack. P2 was hit by it. ";
                         Fighter2.SetAttk((Fighter2.GetAttk() + 1));
-                        Fighter1.SetTurnDamage((Fighter1.GetAttk() + Fighter1.GetMagicAttk()), 1);
+                        Fighter1.SetTurnDamage((Fighter1.GetAttk() + Fighter1.GetMagicAttk()), -1);
                         Fighter2.TakeDamage(Fighter1.GetTurnDamage());
                         if (Fighter2.GetHP() <= 0)
                         {
@@ -470,8 +471,8 @@ public class BattleSystem : MonoBehaviour
                         break;
 
                     case 'l':
-                        results = "P1 used Combo Attack. P2 was hit by it. ";
-                        Fighter2.SetTurnDamage((Fighter2.GetAttk() + Fighter2.GetMagicAttk()), 1);
+                        results = "P1 used Combo Attack. P2 used Counter. P2 hit P1. ";
+                        Fighter2.SetTurnDamage((Fighter2.GetAttk() + Fighter2.GetMagicAttk()), -1);
                         Fighter1.TakeDamage(Fighter2.GetTurnDamage());
                         if (Fighter1.GetHP() <= 0)
                         {
@@ -510,7 +511,7 @@ public class BattleSystem : MonoBehaviour
 
                     case 'a':
                         results = "P2 used Magic Attk. P1 was hit. ";
-                        Fighter2.SetTurnDamage(Fighter2.GetAttk(), 1);
+                        Fighter2.SetTurnDamage(Fighter2.GetAttk(), -1);
                         Fighter1.TakeDamage(Fighter2.GetTurnDamage());
                         if (Fighter1.GetHP() <= 0)
                         {
@@ -526,7 +527,7 @@ public class BattleSystem : MonoBehaviour
                     case 's':
                         results = "P1 used Buff Attk, but was still hit by P2's Magic Attk. ";
                         Fighter1.SetAttk((Fighter1.GetAttk() + 1));
-                        Fighter2.SetTurnDamage(Fighter2.GetAttk(), 1);
+                        Fighter2.SetTurnDamage(Fighter2.GetAttk(), -1);
                         Fighter1.TakeDamage(Fighter2.GetTurnDamage());
                         if (Fighter1.GetHP() <= 0)
                         {
@@ -541,7 +542,7 @@ public class BattleSystem : MonoBehaviour
 
                     case 'd':
                         results = "P1 used Counter, but failed and was hit harder. ";
-                        Fighter2.SetTurnDamage(Fighter2.GetAttk(), 2);
+                        Fighter2.SetTurnDamage(Fighter2.GetAttk(), -2);
                         Fighter1.TakeDamage(Fighter2.GetTurnDamage());
                         if (Fighter1.GetHP() <= 0)
                         {
@@ -562,7 +563,7 @@ public class BattleSystem : MonoBehaviour
                 {
                     case 'w':
                         results = "P2 used Basic Attk. P1 was hit. ";
-                        Fighter2.SetTurnDamage(Fighter2.GetAttk(), 1);
+                        Fighter2.SetTurnDamage(Fighter2.GetAttk(), -1);
                         Fighter1.TakeDamage(Fighter2.GetTurnDamage());
                         if (Fighter1.GetHP() <= 0)
                         {
@@ -593,7 +594,7 @@ public class BattleSystem : MonoBehaviour
                     case 's':
                         results = "P1 Buffed its Attk, but was still hit. ";
                         Fighter1.SetAttk((Fighter1.GetAttk() + 1));
-                        Fighter2.SetTurnDamage(Fighter2.GetAttk(), 1);
+                        Fighter2.SetTurnDamage(Fighter2.GetAttk(), -1);
                         Fighter1.TakeDamage(Fighter2.GetTurnDamage());
                         if (Fighter1.GetHP() <= 0)
                         {
@@ -608,7 +609,7 @@ public class BattleSystem : MonoBehaviour
 
                     case 'd':
                         results = "P1 used Counter, but failed and was hit harder. ";
-                        Fighter2.SetTurnDamage(Fighter2.GetAttk(), 2);
+                        Fighter2.SetTurnDamage(Fighter2.GetAttk(), -2);
                         Fighter1.TakeDamage(Fighter2.GetTurnDamage());
                         if (Fighter1.GetHP() <= 0)
                         {
@@ -625,7 +626,7 @@ public class BattleSystem : MonoBehaviour
 
             if (actionWords2.Equals("Buff Attk"))
             {
-                switch (letter2)
+                switch (letter1)
                 {
                     case 'w':
                         results = "P2 Buffed its Attk, P1 used Magic Shield ";
@@ -656,11 +657,11 @@ public class BattleSystem : MonoBehaviour
 
             if (actionWords1.Equals("Combo Attk"))
             {
-                switch (letter2)
+                switch (letter1)
                 {
-                    case 'i':
+                    case 'w':
                         results = "P2 used Combo Attack. P1 was hit by it. ";
-                        Fighter2.SetTurnDamage((Fighter2.GetAttk() + Fighter2.GetMagicAttk()), 1);
+                        Fighter2.SetTurnDamage((Fighter2.GetAttk() + Fighter2.GetMagicAttk()), -1);
                         Fighter1.TakeDamage(Fighter2.GetTurnDamage());
                         if (Fighter1.GetHP() <= 0)
                         {
@@ -673,9 +674,9 @@ public class BattleSystem : MonoBehaviour
                         }
                         break;
 
-                    case 'j':
+                    case 'a':
                         results = "P2 used Combo Attack. P1 was hit by it. ";
-                        Fighter2.SetTurnDamage((Fighter2.GetAttk() + Fighter2.GetMagicAttk()), 1);
+                        Fighter2.SetTurnDamage((Fighter2.GetAttk() + Fighter2.GetMagicAttk()), -1);
                         Fighter1.TakeDamage(Fighter2.GetTurnDamage());
                         if (Fighter1.GetHP() <= 0)
                         {
@@ -688,10 +689,10 @@ public class BattleSystem : MonoBehaviour
                         }
                         break;
 
-                    case 'k':
+                    case 's':
                         results = "P2 used Combo Attack. P1 was hit by it. ";
                         Fighter1.SetAttk((Fighter1.GetAttk() + 1));
-                        Fighter2.SetTurnDamage((Fighter2.GetAttk() + Fighter2.GetMagicAttk()), 1);
+                        Fighter2.SetTurnDamage((Fighter2.GetAttk() + Fighter2.GetMagicAttk()), -1);
                         Fighter1.TakeDamage(Fighter2.GetTurnDamage());
                         if (Fighter1.GetHP() <= 0)
                         {
@@ -704,9 +705,9 @@ public class BattleSystem : MonoBehaviour
                         }
                         break;
 
-                    case 'l':
-                        results = "P2 used Combo Attack. P2 used Counter. P2 hit P1. ";
-                        Fighter1.SetTurnDamage((Fighter1.GetAttk() + Fighter1.GetMagicAttk()), 1);
+                    case 'd':
+                        results = "P2 used Combo Attack. P1 used Counter. P1 hit P2. ";
+                        Fighter1.SetTurnDamage((Fighter1.GetAttk() + Fighter1.GetMagicAttk()), -1);
                         Fighter2.TakeDamage(Fighter1.GetTurnDamage());
                         if (Fighter2.GetHP() <= 0)
                         {
