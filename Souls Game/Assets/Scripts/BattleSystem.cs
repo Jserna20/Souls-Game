@@ -121,6 +121,8 @@ public class BattleSystem : MonoBehaviour
             }
             Fighter1.SetChoosing(false);
             Fighter2.SetChoosing(false);
+            Fighter1.SetNameBasedOnTurn();
+            Fighter2.SetNameBasedOnTurn();
         }
        else if(results.Equals("") && results2.Equals(""))
         {
@@ -144,50 +146,50 @@ public class BattleSystem : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.W))
             {
                 Fighter1.SetChoosing(true);
-                actionWords1 = "Magic Attk";
+                actionWords1 = Fighter1.GetUpName();
                 letter1 = 'w';
             }
             else if (Input.GetKeyDown(KeyCode.A))
             {
                 Fighter1.SetChoosing(true);
-                actionWords1 = "Basic Attk";
+                actionWords1 = Fighter1.GetLeftName();
                 letter1 = 'a';
             }
             else if (Input.GetKeyDown(KeyCode.S))
             {
                 Fighter1.SetChoosing(true);
-                actionWords1 = "Buff Attk"; //Actually does nothing for now
+                actionWords1 = Fighter1.GetDownName(); //Actually does nothing for now
                 letter1 = 's';
             }
             else if (Input.GetKeyDown(KeyCode.D))
             {
                 Fighter1.SetChoosing(true);
-                actionWords1 = "Combo Attk";
+                actionWords1 = Fighter1.GetRightName();
                 letter1 = 'd';
             }
 
             if (Input.GetKeyDown(KeyCode.I))
             {
                 Fighter2.SetChoosing(true);
-                actionWords2 = "Magic Shield";
+                actionWords2 = Fighter2.GetUpName();
                 letter2 = 'i';
             }
             else if (Input.GetKeyDown(KeyCode.J))
             {
                 Fighter2.SetChoosing(true);
-                actionWords2 = "Guard";
+                actionWords2 = Fighter2.GetLeftName();
                 letter2 = 'j';
             }
             else if (Input.GetKeyDown(KeyCode.K))
             {
                 Fighter2.SetChoosing(true);
-                actionWords2 = "I give up";
+                actionWords2 = Fighter2.GetDownName();
                 letter2 = 'k';
             }
             else if (Input.GetKeyDown(KeyCode.L))
             {
                 Fighter2.SetChoosing(true);
-                actionWords2 = "Counter";
+                actionWords2 = Fighter2.GetRightName();
                 letter2 = 'l';
             }
         }
@@ -196,50 +198,50 @@ public class BattleSystem : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.I))
             {
                 Fighter2.SetChoosing(true);
-                actionWords2 = "Magic Attk";
+                actionWords2 = Fighter2.GetUpName();
                 letter2 = 'i';
             }
             else if (Input.GetKeyDown(KeyCode.J))
             {
                 Fighter2.SetChoosing(true);
-                actionWords2 = "Basic Attk";
+                actionWords2 = Fighter2.GetLeftName();
                 letter2 = 'j';
             }
             else if (Input.GetKeyDown(KeyCode.K))
             {
                 Fighter2.SetChoosing(true);
-                actionWords2 = "Buff Attk"; //Actually does nothing for now
+                actionWords2 = Fighter2.GetDownName(); //Actually does nothing for now
                 letter2 = 'k';
             }
             else if (Input.GetKeyDown(KeyCode.L))
             {
                 Fighter2.SetChoosing(true);
-                actionWords2 = "Combo Attk";
+                actionWords2 = Fighter2.GetRightName();
                 letter2 = 'l';
             }
 
             if (Input.GetKeyDown(KeyCode.W))
             {
                 Fighter1.SetChoosing(true);
-                actionWords1 = "Magic Shield";
+                actionWords1 = Fighter1.GetUpName();
                 letter1 = 'w';
             }
             else if (Input.GetKeyDown(KeyCode.A))
             {
                 Fighter1.SetChoosing(true);
-                actionWords1 = "Guard";
+                actionWords1 = Fighter1.GetLeftName();
                 letter1 = 'a';
             }
             else if (Input.GetKeyDown(KeyCode.S))
             {
                 Fighter1.SetChoosing(true);
-                actionWords1 = "I give up";
+                actionWords1 = Fighter1.GetDownName();
                 letter1 = 's';
             }
             else if (Input.GetKeyDown(KeyCode.D))
             {
                 Fighter1.SetChoosing(true);
-                actionWords1 = "Counter";
+                actionWords1 = Fighter1.GetRightName();
                 letter1 = 'd';
             }
         } 
@@ -406,7 +408,7 @@ public class BattleSystem : MonoBehaviour
                             break;
 
                         case 's':
-                            results = "P2 was hit P1 wins";
+                            results = "P1 was hit P2 wins";
                             break;
 
                         case 'd':
