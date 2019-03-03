@@ -253,238 +253,473 @@ public class BattleSystem : MonoBehaviour
     public void CalcingResults()
     {
         if (Fighter1.GetAttacker())
+        {
+            if (actionWords1.Equals("Magic Attk"))
             {
-                if (actionWords1.Equals("Magic Attk"))
+                switch (letter2)
                 {
-                    switch (letter2)
-                    {
-                        case 'i':
-                            results = "P2 blocked P1's Magic Attk. ";
-                            theWinner = "Battle Continues";
-                            break;
+                    case 'i':
+                        results = "P1 used Magic Attk. P2 shielded it. ";
+                        Fighter1.SetTurnDamage(Fighter1.GetMagicAttk(), Fighter2.GetMagicDef());
+                        Fighter2.TakeDamage(Fighter1.GetTurnDamage());
+                        if (Fighter2.GetHP() <= 0)
+                        {
+                            results2 = "P2 was deafeated. ";
+                            theWinner = "P1 wins";
+                        }
+                        else
+                        {
+                            results2 = "Battle Continues";
+                        }
+                        break;
 
-                        case 'j':
-                            results = "P2 was hit P1 wins";
-                            //make a conditional statement here to check if health drops below 0
-                            break;
+                    case 'j':
+                        results = "P1 used Magic Attk. P2 was hit. ";
+                        Fighter1.SetTurnDamage(Fighter1.GetMagicAttk(), 1);
+                        Fighter2.TakeDamage(Fighter1.GetTurnDamage());
+                        if (Fighter2.GetHP() <= 0)
+                        {
+                            results2 = "P2 was deafeated. ";
+                            theWinner = "P1 wins";
+                        }
+                        else
+                        {
+                            results2 = "Battle Continues";
+                        }
+                        break;
 
-                        case 'k':
-                            results = "P2 was hit P1 wins";
-                            break;
+                    case 'k':
+                        results = "P2 used Buff Attk, but was still hit by P1's Magic Attk. ";
+                        Fighter2.SetAttk((Fighter2.GetMagicAttk() + 1));
+                        Fighter1.SetTurnDamage(Fighter1.GetAttk(), 1);
+                        Fighter2.TakeDamage(Fighter1.GetTurnDamage());
+                        if (Fighter2.GetHP() <= 0)
+                        {
+                            results2 = "P2 was deafeated. ";
+                            theWinner = "P1 wins";
+                        }
+                        else
+                        {
+                            results2 = "Battle Continues";
+                        }
+                        break;
 
-                        case 'l':
-                            results = "P2 was hit P1 wins";
-                            break;
-                    }
-                }
-
-                if (actionWords1.Equals("Basic Attk"))
-                {
-                    switch (letter2)
-                    {
-                        case 'i':
-                            results = "P2 was hit P1's Basic Attk. ";
-                            Fighter1.SetTurnDamage(Fighter1.GetAttk(), 1);
-                            Fighter2.TakeDamage(Fighter1.GetTurnDamage());
-                            if(Fighter2.GetHP() <= 0)
-                            {
-                                results2 = "P2 was deafeated. ";
-                                theWinner = "P1 wins";
-                            }
-                            else
-                            {
-                                results2 = "Battle Continues";
-                            }
-                            break;
-
-                        case 'j':
-                            results = "P2 guarded P1's Basic Attk. ";
-                            Fighter1.SetTurnDamage(Fighter1.GetAttk(), Fighter2.GetDef());
-                            Fighter2.TakeDamage(Fighter1.GetTurnDamage());
-                            if (Fighter2.GetHP() <= 0)
-                            {
-                                results2 = "P2 was deafeated. ";
-                                theWinner = "P1 wins";
-                            }
-                            else
-                            {
-                                results2 = "Battle Continues";
-                            }
-                            break;
-
-                        case 'k':
-                            results = "P2 Buffed its Attk, but was still hit. ";
-                            Fighter1.SetTurnDamage(Fighter1.GetAttk(), 1);
-                            Fighter2.TakeDamage(Fighter1.GetTurnDamage());
-                            if (Fighter2.GetHP() <= 0)
-                            {
-                                results2 = "P2 was deafeated. ";
-                                theWinner = "P1 wins";
-                            }
-                            else
-                            {
-                                results2 = "Battle Continues";
-                            }
-                            break;
-
-                        case 'l':
-                            results = "P2 tried to counter, but failed and was hit harder. ";
-                            Fighter1.SetTurnDamage(Fighter1.GetAttk(), 2);
-                            Fighter2.TakeDamage(Fighter1.GetTurnDamage());
-                            if (Fighter2.GetHP() <= 0)
-                            {
-                                results2 = "P2 was deafeated. ";
-                                theWinner = "P1 wins";
-                            }
-                            else
-                            {
-                                results2 = "Battle Continues";
-                            }
-                            break;
-                    }
-                }
-
-                if (actionWords1.Equals("Buff Attk"))
-                {
-                    switch (letter2)
-                    {
-                        case 'i':
-                            results = "Nothing happened. Battle Continues";
-                            theWinner = "Battle Continues";
-                            break;
-
-                        case 'j':
-                            results = "Nothing happened. Battle Continues";
-                            theWinner = "Battle Continues";
-                            break;
-
-                        case 'k':
-                            results = "P2 was hit P1 wins";
-                            break;
-
-                        case 'l':
-                            results = "Nothing happened. Battle Continues";
-                            theWinner = "Battle Continues";
-                            break;
-                    }
-                }
-
-                if (actionWords1.Equals("Combo Attk"))
-                {
-                    switch (letter2)
-                    {
-                        case 'i':
-                            results = "P2 was hit P1 wins";
-                            break;
-
-                        case 'j':
-                            results = "P2 was hit P1 wins";
-                            break;
-
-                        case 'k':
-                            results = "P2 was hit P1 wins";
-                            break;
-
-                        case 'l':
-                            results = "P1 was hit P2 wins";
-                            break;
-                    }
+                    case 'l':
+                        results = "P2 used Counter, but failed and was hit harder. ";
+                        Fighter1.SetTurnDamage(Fighter1.GetMagicAttk(), 2);
+                        Fighter2.TakeDamage(Fighter1.GetTurnDamage());
+                        if (Fighter2.GetHP() <= 0)
+                        {
+                            results2 = "P2 was deafeated. ";
+                            theWinner = "P1 wins";
+                        }
+                        else
+                        {
+                            results2 = "Battle Continues";
+                        }
+                        break;
                 }
             }
 
+            if (actionWords1.Equals("Basic Attk"))
+            {
+                switch (letter2)
+                {
+                    case 'i':
+                        results = "P1 used Basic Attk. P2 was hit. ";
+                        Fighter1.SetTurnDamage(Fighter1.GetAttk(), 1);
+                        Fighter2.TakeDamage(Fighter1.GetTurnDamage());
+                        if (Fighter2.GetHP() <= 0)
+                        {
+                            results2 = "P2 was deafeated. ";
+                            theWinner = "P1 wins";
+                        }
+                        else
+                        {
+                            results2 = "Battle Continues";
+                        }
+                        break;
+
+                    case 'j':
+                        results = "P1 used Basic Attk. P2 guarded it. ";
+                        Fighter1.SetTurnDamage(Fighter1.GetAttk(), Fighter2.GetDef());
+                        Fighter2.TakeDamage(Fighter1.GetTurnDamage());
+                        if (Fighter2.GetHP() <= 0)
+                        {
+                            results2 = "P2 was deafeated. ";
+                            theWinner = "P1 wins";
+                        }
+                        else
+                        {
+                            results2 = "Battle Continues";
+                        }
+                        break;
+
+                    case 'k':
+                        results = "P2 Buffed its Attk, but was still hit. ";
+                        Fighter2.SetAttk((Fighter2.GetAttk() + 1));
+                        Fighter1.SetTurnDamage(Fighter1.GetAttk(), 1);
+                        Fighter2.TakeDamage(Fighter1.GetTurnDamage());
+                        if (Fighter2.GetHP() <= 0)
+                        {
+                            results2 = "P2 was deafeated. ";
+                            theWinner = "P1 wins";
+                        }
+                        else
+                        {
+                            results2 = "Battle Continues";
+                        }
+                        break;
+
+                    case 'l':
+                        results = "P2 used Counter, but failed and was hit harder. ";
+                        Fighter1.SetTurnDamage(Fighter1.GetAttk(), 2);
+                        Fighter2.TakeDamage(Fighter1.GetTurnDamage());
+                        if (Fighter2.GetHP() <= 0)
+                        {
+                            results2 = "P2 was deafeated. ";
+                            theWinner = "P1 wins";
+                        }
+                        else
+                        {
+                            results2 = "Battle Continues";
+                        }
+                        break;
+                }
+            }
+
+            if (actionWords1.Equals("Buff Attk"))
+            {
+                switch (letter2)
+                {
+                    case 'i':
+                        results = "P1 Buffed its Attk, P2 used Magic Shield ";
+                        Fighter1.SetAttk((Fighter1.GetAttk() + 1));
+                        results2 = "Battle Continues";
+                        break;
+
+                    case 'j':
+                        results = "P1 Buffed its Attk, P2 used Guard. ";
+                        Fighter1.SetAttk((Fighter1.GetAttk() + 1));
+                        results2 = "Battle Continues";
+                        break;
+
+                    case 'k':
+                        results = "P1 Buffed its Attk, P2 also used Buff Attk ";
+                        Fighter1.SetAttk((Fighter1.GetAttk() + 1));
+                        Fighter2.SetAttk((Fighter2.GetAttk() + 1));
+                        results2 = "Battle Continues";
+                        break;
+
+                    case 'l':
+                        results = "P1 Buffed its Attk, P2 used Counter. Nothing happened. ";
+                        Fighter1.SetAttk((Fighter1.GetAttk() + 1));
+                        results2 = "Battle Continues";
+                        break;
+                }
+            }
+
+            if (actionWords1.Equals("Combo Attk"))
+            {
+                switch (letter2)
+                {
+                    case 'i':
+                        results = "P1 used Combo Attack. P2 was hit by it. ";
+                        Fighter1.SetTurnDamage((Fighter1.GetAttk() + Fighter1.GetMagicAttk()), 1);
+                        Fighter2.TakeDamage(Fighter1.GetTurnDamage());
+                        if (Fighter2.GetHP() <= 0)
+                        {
+                            results2 = "P2 was deafeated. ";
+                            theWinner = "P1 wins";
+                        }
+                        else
+                        {
+                            results2 = "Battle Continues";
+                        }                        
+                        break;
+
+                    case 'j':
+                        results = "P1 used Combo Attack. P2 was hit by it. ";
+                        Fighter1.SetTurnDamage((Fighter1.GetAttk() + Fighter1.GetMagicAttk()), 1);
+                        Fighter2.TakeDamage(Fighter1.GetTurnDamage());
+                        if (Fighter2.GetHP() <= 0)
+                        {
+                            results2 = "P2 was deafeated. ";
+                            theWinner = "P1 wins";
+                        }
+                        else
+                        {
+                            results2 = "Battle Continues";
+                        }
+                        break;
+
+                    case 'k':
+                        results = "P1 used Combo Attack. P2 was hit by it. ";
+                        Fighter2.SetAttk((Fighter2.GetAttk() + 1));
+                        Fighter1.SetTurnDamage((Fighter1.GetAttk() + Fighter1.GetMagicAttk()), 1);
+                        Fighter2.TakeDamage(Fighter1.GetTurnDamage());
+                        if (Fighter2.GetHP() <= 0)
+                        {
+                            results2 = "P2 was deafeated. ";
+                            theWinner = "P1 wins";
+                        }
+                        else
+                        {
+                            results2 = "Battle Continues";
+                        }                       
+                        break;
+
+                    case 'l':
+                        results = "P1 used Combo Attack. P2 was hit by it. ";
+                        Fighter2.SetTurnDamage((Fighter2.GetAttk() + Fighter2.GetMagicAttk()), 1);
+                        Fighter1.TakeDamage(Fighter2.GetTurnDamage());
+                        if (Fighter1.GetHP() <= 0)
+                        {
+                            results2 = "P1 was deafeated. ";
+                            theWinner = "P2 wins";
+                        }
+                        else
+                        {
+                            results2 = "Battle Continues";
+                        }                        
+                        break;
+                }
+            }
+        }
+
             if (Fighter2.GetAttacker())
             {
-                if (actionWords2.Equals("Magic Attk"))
+            if (actionWords2.Equals("Magic Attk"))
+            {
+                switch (letter1)
                 {
-                    switch (letter1)
-                    {
-                        case 'w':
-                            results = "P1 blocked P2's Magic Attk. ";
-                            theWinner = "Battle Continues";
-                            break;
+                    case 'w':
+                        results = "P2 used Magic Attk. P1 shielded it. ";
+                        Fighter2.SetTurnDamage(Fighter2.GetMagicAttk(), Fighter2.GetMagicDef());
+                        Fighter1.TakeDamage(Fighter2.GetTurnDamage());
+                        if (Fighter1.GetHP() <= 0)
+                        {
+                            results2 = "P1 was deafeated. ";
+                            theWinner = "P2 wins";
+                        }
+                        else
+                        {
+                            results2 = "Battle Continues";
+                        }
+                        break;
 
-                        case 'a':
-                            results = "P1 was hit P2 wins";
-                            //make a conditional statement here to check if health drops below 0
-                            break;
+                    case 'a':
+                        results = "P2 used Magic Attk. P1 was hit. ";
+                        Fighter2.SetTurnDamage(Fighter2.GetAttk(), 1);
+                        Fighter1.TakeDamage(Fighter2.GetTurnDamage());
+                        if (Fighter1.GetHP() <= 0)
+                        {
+                            results2 = "P1 was deafeated. ";
+                            theWinner = "P2 wins";
+                        }
+                        else
+                        {
+                            results2 = "Battle Continues";
+                        }
+                        break;
 
-                        case 's':
-                            results = "P1 was hit P2 wins";
-                            break;
+                    case 's':
+                        results = "P1 used Buff Attk, but was still hit by P2's Magic Attk. ";
+                        Fighter1.SetAttk((Fighter1.GetAttk() + 1));
+                        Fighter2.SetTurnDamage(Fighter2.GetAttk(), 1);
+                        Fighter1.TakeDamage(Fighter2.GetTurnDamage());
+                        if (Fighter1.GetHP() <= 0)
+                        {
+                            results2 = "P2 was deafeated. ";
+                            theWinner = "P1 wins";
+                        }
+                        else
+                        {
+                            results2 = "Battle Continues";
+                        }
+                        break;
 
-                        case 'd':
-                            results = "P1 was hit P2 wins";
-                            break;
-                    }
+                    case 'd':
+                        results = "P1 used Counter, but failed and was hit harder. ";
+                        Fighter2.SetTurnDamage(Fighter2.GetAttk(), 2);
+                        Fighter1.TakeDamage(Fighter2.GetTurnDamage());
+                        if (Fighter1.GetHP() <= 0)
+                        {
+                            results2 = "P2 was deafeated. ";
+                            theWinner = "P1 wins";
+                        }
+                        else
+                        {
+                            results2 = "Battle Continues";
+                        }
+                        break;
                 }
+            }
 
-                if (actionWords2.Equals("Basic Attk"))
+            if (actionWords2.Equals("Basic Attk"))
+            {
+                switch (letter1)
                 {
-                    switch (letter1)
-                    {
-                        case 'w':
-                            results = "P1 was hit P2 wins";
-                            break;
+                    case 'w':
+                        results = "P2 used Basic Attk. P1 was hit. ";
+                        Fighter2.SetTurnDamage(Fighter2.GetAttk(), 1);
+                        Fighter1.TakeDamage(Fighter2.GetTurnDamage());
+                        if (Fighter1.GetHP() <= 0)
+                        {
+                            results2 = "P1 was deafeated. ";
+                            theWinner = "P2 wins";
+                        }
+                        else
+                        {
+                            results2 = "Battle Continues";
+                        }
+                        break;
 
-                        case 'a':
-                            results = "P1 blocked P2's Basic Attk. ";
-                            theWinner = "Battle Continues";
-                            break;
+                    case 'a':
+                        results = "P2 used Basic Attk. P1 guarded it. ";
+                        Fighter2.SetTurnDamage(Fighter2.GetAttk(), Fighter1.GetDef());
+                        Fighter1.TakeDamage(Fighter2.GetTurnDamage());
+                        if (Fighter1.GetHP() <= 0)
+                        {
+                            results2 = "P1 was deafeated. ";
+                            theWinner = "P2 wins";
+                        }
+                        else
+                        {
+                            results2 = "Battle Continues";
+                        }
+                        break;
 
-                        case 's':
-                            results = "P1 was hit P2 wins";
-                            break;
+                    case 's':
+                        results = "P1 Buffed its Attk, but was still hit. ";
+                        Fighter1.SetAttk((Fighter1.GetAttk() + 1));
+                        Fighter2.SetTurnDamage(Fighter2.GetAttk(), 1);
+                        Fighter1.TakeDamage(Fighter2.GetTurnDamage());
+                        if (Fighter1.GetHP() <= 0)
+                        {
+                            results2 = "P1 was deafeated. ";
+                            theWinner = "P2 wins";
+                        }
+                        else
+                        {
+                            results2 = "Battle Continues";
+                        }
+                        break;
 
-                        case 'd':
-                            results = "P1 was hit P2 wins";
-                            break;
-                    }
+                    case 'd':
+                        results = "P1 used Counter, but failed and was hit harder. ";
+                        Fighter2.SetTurnDamage(Fighter2.GetAttk(), 2);
+                        Fighter1.TakeDamage(Fighter2.GetTurnDamage());
+                        if (Fighter1.GetHP() <= 0)
+                        {
+                            results2 = "P1 was deafeated. ";
+                            theWinner = "P2 wins";
+                        }
+                        else
+                        {
+                            results2 = "Battle Continues";
+                        }
+                        break;
                 }
+            }
 
-                if (actionWords2.Equals("Buff Attk"))
+            if (actionWords2.Equals("Buff Attk"))
+            {
+                switch (letter2)
                 {
-                    switch (letter1)
-                    {
-                        case 'w':
-                            results = "Nothing happened. Battle Continues";
-                            break;
+                    case 'w':
+                        results = "P2 Buffed its Attk, P1 used Magic Shield ";
+                        Fighter2.SetAttk((Fighter2.GetAttk() + 1));
+                        results2 = "Battle Continues";
+                        break;
 
-                        case 'a':
-                            results = "Nothing happened. Battle Continues";
-                            break;
+                    case 'a':
+                        results = "P2 Buffed its Attk, P1 used Guard. ";
+                        Fighter2.SetAttk((Fighter2.GetAttk() + 1));
+                        results2 = "Battle Continues";
+                        break;
 
-                        case 's':
-                            results = "P1 was hit P2 wins";
-                            break;
+                    case 's':
+                        results = "P2 Buffed its Attk, P1 also used Buff Attk ";
+                        Fighter2.SetAttk((Fighter2.GetAttk() + 1));
+                        Fighter1.SetAttk((Fighter1.GetAttk() + 1));
+                        results2 = "Battle Continues";
+                        break;
 
-                        case 'd':
-                            results = "Nothing happened. ";
-                            theWinner = "Battle Continues";
-                            break;
-                    }
+                    case 'd':
+                        results = "P2 Buffed its Attk, P1 used Counter. Nothing happened. ";
+                        Fighter2.SetAttk((Fighter2.GetAttk() + 1));
+                        results2 = "Battle Continues";
+                        break;
                 }
+            }
 
-                if (actionWords2.Equals("Combo Attk"))
+            if (actionWords1.Equals("Combo Attk"))
+            {
+                switch (letter2)
                 {
-                    switch (letter1)
-                    {
-                        case 'w':
-                            results = "P1 was hit P2 wins";
-                            break;
+                    case 'i':
+                        results = "P2 used Combo Attack. P1 was hit by it. ";
+                        Fighter2.SetTurnDamage((Fighter2.GetAttk() + Fighter2.GetMagicAttk()), 1);
+                        Fighter1.TakeDamage(Fighter2.GetTurnDamage());
+                        if (Fighter1.GetHP() <= 0)
+                        {
+                            results2 = "P1 was deafeated. ";
+                            theWinner = "P2 wins";
+                        }
+                        else
+                        {
+                            results2 = "Battle Continues";
+                        }
+                        break;
 
-                        case 'a':
-                            results = "P1 was hit P2 wins";
-                            break;
+                    case 'j':
+                        results = "P2 used Combo Attack. P1 was hit by it. ";
+                        Fighter2.SetTurnDamage((Fighter2.GetAttk() + Fighter2.GetMagicAttk()), 1);
+                        Fighter1.TakeDamage(Fighter2.GetTurnDamage());
+                        if (Fighter1.GetHP() <= 0)
+                        {
+                            results2 = "P1 was deafeated. ";
+                            theWinner = "P2 wins";
+                        }
+                        else
+                        {
+                            results2 = "Battle Continues";
+                        }
+                        break;
 
-                        case 's':
-                            results = "P1 was hit P2 wins";
-                            break;
+                    case 'k':
+                        results = "P2 used Combo Attack. P1 was hit by it. ";
+                        Fighter1.SetAttk((Fighter1.GetAttk() + 1));
+                        Fighter2.SetTurnDamage((Fighter2.GetAttk() + Fighter2.GetMagicAttk()), 1);
+                        Fighter1.TakeDamage(Fighter2.GetTurnDamage());
+                        if (Fighter1.GetHP() <= 0)
+                        {
+                            results2 = "P1 was deafeated. ";
+                            theWinner = "P2 wins";
+                        }
+                        else
+                        {
+                            results2 = "Battle Continues";
+                        }
+                        break;
 
-                        case 'd':
-                            results = "P2 was hit P1 wins";
-                            break;
-                    }
+                    case 'l':
+                        results = "P2 used Combo Attack. P2 used Counter. P2 hit P1. ";
+                        Fighter1.SetTurnDamage((Fighter1.GetAttk() + Fighter1.GetMagicAttk()), 1);
+                        Fighter2.TakeDamage(Fighter1.GetTurnDamage());
+                        if (Fighter2.GetHP() <= 0)
+                        {
+                            results2 = "P2 was deafeated. ";
+                            theWinner = "P1 wins";
+                        }
+                        else
+                        {
+                            results2 = "Battle Continues";
+                        }
+                        break;
                 }
+            }
             }
         
     } 
