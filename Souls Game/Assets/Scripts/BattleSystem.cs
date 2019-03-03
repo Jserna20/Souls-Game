@@ -24,6 +24,7 @@ public class BattleSystem : MonoBehaviour
     public char letter2;
     public string results;
     public string results2;
+    public string theWinner;
 
     //public GameObject fighterGO1;
     //public GameObject fighterGO2;
@@ -85,17 +86,17 @@ public class BattleSystem : MonoBehaviour
     public void TurnResults()
     {
 
-        if (results.Equals("P2 was hit P1 wins") && results2.Equals(""))
+        if (theWinner.Equals("P1 wins"))
         {
             Fighter2.DestroyMe();
-            print(results + results2);
+            print(results + results2 + theWinner);
             //alive = false;
             Fighter2.SetAlive(false);
         }
-        else if (results.Equals("P1 was hit P2 wins") && results2.Equals(""))
+        else if (theWinner.Equals("P2 wins"))
         {
             Fighter1.DestroyMe();
-            print(results + results2);
+            print(results + results2 + theWinner);
             //alive = false;
             Fighter1.SetAlive(false);
         }
@@ -126,14 +127,14 @@ public class BattleSystem : MonoBehaviour
             Fighter1.SetNameBasedOnTurn();
             Fighter2.SetNameBasedOnTurn();
         }
-       else if(results.Equals("") && results2.Equals(""))
+       else
         {
             //Will reset the turn without changing it
             print("Results: " + results);
             actionWords1 = "";
             actionWords2 = "";
             results = "";
-            results2 = "";
+            theWinner = "";
             letter1 = 'x';
             letter2 = 'x';
             Fighter1.SetChoosing(false);
@@ -259,7 +260,7 @@ public class BattleSystem : MonoBehaviour
                     {
                         case 'i':
                             results = "P2 blocked P1's Magic Attk. ";
-                            results2 = "Battle Continues";
+                            theWinner = "Battle Continues";
                             break;
 
                         case 'j':
@@ -282,24 +283,63 @@ public class BattleSystem : MonoBehaviour
                     switch (letter2)
                     {
                         case 'i':
-                            results = "P2 was hit P1 wins";
-                            Fighter1.SetTurnDamage(Fighter1.GetAttk(), 0);
+                            results = "P2 was hit P1's Basic Attk. ";
+                            Fighter1.SetTurnDamage(Fighter1.GetAttk(), 1);
+                            Fighter2.TakeDamage(Fighter1.GetTurnDamage());
+                            if(Fighter2.GetHP() <= 0)
+                            {
+                                results2 = "P2 was deafeated. ";
+                                theWinner = "P1 wins";
+                            }
+                            else
+                            {
+                                results2 = "Battle Continues";
+                            }
                             break;
 
                         case 'j':
-                            results = "P2 blocked P1's Basic Attk. ";
+                            results = "P2 guarded P1's Basic Attk. ";
                             Fighter1.SetTurnDamage(Fighter1.GetAttk(), Fighter2.GetDef());
-                            results2 = "Battle Continues";
+                            Fighter2.TakeDamage(Fighter1.GetTurnDamage());
+                            if (Fighter2.GetHP() <= 0)
+                            {
+                                results2 = "P2 was deafeated. ";
+                                theWinner = "P1 wins";
+                            }
+                            else
+                            {
+                                results2 = "Battle Continues";
+                            }
                             break;
 
                         case 'k':
-                            results = "P2 was hit P1 wins";
-                            Fighter1.SetTurnDamage(Fighter1.GetAttk(), 0);
+                            results = "P2 Buffed its Attk, but was still hit. ";
+                            Fighter1.SetTurnDamage(Fighter1.GetAttk(), 1);
+                            Fighter2.TakeDamage(Fighter1.GetTurnDamage());
+                            if (Fighter2.GetHP() <= 0)
+                            {
+                                results2 = "P2 was deafeated. ";
+                                theWinner = "P1 wins";
+                            }
+                            else
+                            {
+                                results2 = "Battle Continues";
+                            }
                             break;
 
                         case 'l':
-                            results = "P2 was hit P1 wins";
-                            Fighter1.SetTurnDamage(Fighter1.GetAttk(), 1);
+                            results = "P2 tried to counter, but failed and was hit harder. ";
+                            Fighter1.SetTurnDamage(Fighter1.GetAttk(), 2);
+                            Fighter2.TakeDamage(Fighter1.GetTurnDamage());
+                            if (Fighter2.GetHP() <= 0)
+                            {
+                                results2 = "P2 was deafeated. ";
+                                theWinner = "P1 wins";
+                            }
+                            else
+                            {
+                                results2 = "Battle Continues";
+                            }
                             break;
                     }
                 }
@@ -310,12 +350,12 @@ public class BattleSystem : MonoBehaviour
                     {
                         case 'i':
                             results = "Nothing happened. Battle Continues";
-                            results2 = "Battle Continues";
+                            theWinner = "Battle Continues";
                             break;
 
                         case 'j':
                             results = "Nothing happened. Battle Continues";
-                            results2 = "Battle Continues";
+                            theWinner = "Battle Continues";
                             break;
 
                         case 'k':
@@ -324,7 +364,7 @@ public class BattleSystem : MonoBehaviour
 
                         case 'l':
                             results = "Nothing happened. Battle Continues";
-                            results2 = "Battle Continues";
+                            theWinner = "Battle Continues";
                             break;
                     }
                 }
@@ -360,7 +400,7 @@ public class BattleSystem : MonoBehaviour
                     {
                         case 'w':
                             results = "P1 blocked P2's Magic Attk. ";
-                            results2 = "Battle Continues";
+                            theWinner = "Battle Continues";
                             break;
 
                         case 'a':
@@ -388,7 +428,7 @@ public class BattleSystem : MonoBehaviour
 
                         case 'a':
                             results = "P1 blocked P2's Basic Attk. ";
-                            results2 = "Battle Continues";
+                            theWinner = "Battle Continues";
                             break;
 
                         case 's':
@@ -419,7 +459,7 @@ public class BattleSystem : MonoBehaviour
 
                         case 'd':
                             results = "Nothing happened. ";
-                            results2 = "Battle Continues";
+                            theWinner = "Battle Continues";
                             break;
                     }
                 }

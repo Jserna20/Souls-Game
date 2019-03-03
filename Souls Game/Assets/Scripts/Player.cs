@@ -5,14 +5,16 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     public GameObject playerPrefab;
-    public int hp;
-    public int maxHP;
-    public int attkBase;
-    public int defBase;
-    public int magicBase;
-    public int magic;
-    public int attk;
-    public int def;
+    public float hp;
+    public float maxHP;
+    public float attkBase;
+    public float defBase;
+    public float magicAttkBase;
+    public float magicAttk;
+    public float magicDefBase;
+    public float magicDef;
+    public float attk;
+    public float def;
     public bool alive;
     public bool defeated;
     public bool inBattle;
@@ -23,6 +25,7 @@ public class Player : MonoBehaviour
     public string downName;
     public string rightName;
     public string playerName;
+    public float turndamage;
 
     public GameObject person;
     
@@ -40,10 +43,12 @@ public class Player : MonoBehaviour
         hp = maxHP;
         attkBase = 2;
         defBase = 2;
-        magicBase = 2;
+        magicAttkBase = 2;
+        magicDefBase = 2;
         attk = attkBase;
         def = defBase;
-        magic = magicBase;
+        magicAttk = magicAttkBase;
+        magicDef = magicDefBase;
         inBattle = false;
         alive = true;
         defeated = false;
@@ -56,44 +61,54 @@ public class Player : MonoBehaviour
         hp = maxHP;
     }
 
-    public void SetHP(int newHP)
+    public void SetHP(float newHP)
     {
         hp = newHP;
     }
 
-    public int GetHP()
+    public float GetHP()
     {
         return hp;
     }
 
-    public void SetAttk(int newAttk)
+    public void SetAttk(float newAttk)
     {
         attk = newAttk;
     }
 
-    public int GetAttk()
+    public float GetAttk()
     {
         return attk;
     }
 
-    public void SetDef(int newDef)
+    public void SetDef(float newDef)
     {
         def = newDef;
     }
 
-    public int GetDef()
+    public float GetDef()
     {
         return def;
     }
 
-    public void SetMagic(int newMagic)
+    public void SetMagicAttk(float newMagic)
     {
-        magic = newMagic;
+        magicAttk = newMagic;
     }
 
-    public int GetMagic()
+    public float GetMagicAttk()
     {
-        return magic;
+        return magicAttk;
+    }
+
+    public void SetMagicDef(float newMagic)
+    {
+        magicDef = newMagic;
+    }
+
+    public float GetMagicDef()
+    {
+        return magicDef;
     }
 
     public void SetAlive(bool cond)
@@ -214,7 +229,7 @@ public class Player : MonoBehaviour
         {
             SetUpName("Magic Shield");
             SetLeftName("Guard");
-            SetDownName("I give up");
+            SetDownName("Buff Attk");
             SetRightName("Combo Attk");
         }
 
@@ -228,5 +243,37 @@ public class Player : MonoBehaviour
     public string GetPlayerName()
     {
         return playerName;
+    }
+
+    public void SetTurnDamage(float formOfAttack, float formOfDefense)
+    {
+        if(formOfDefense == 2)
+        {
+            
+            formOfAttack = formOfAttack * 2f; //This doubles the attack
+            formOfDefense = 0;
+            turndamage = formOfAttack - formOfDefense;
+        }
+        else if(formOfDefense == 1)
+        {
+            formOfAttack = formOfAttack * 1.5f;
+            formOfDefense = 0;
+            turndamage = formOfAttack - formOfDefense;
+        }
+        else
+        {
+            formOfAttack = formOfAttack * 1.5f;
+            turndamage = formOfAttack - formOfDefense;
+        }
+    }
+
+    public float GetTurnDamage()
+    {
+        return turndamage;
+    }
+
+    public void TakeDamage(float damage)
+    {
+        hp = hp - damage;
     }
 }
