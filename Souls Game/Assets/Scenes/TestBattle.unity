@@ -779,6 +779,7 @@ MonoBehaviour:
   Fighter1: {fileID: 155258144}
   Fighter2: {fileID: 176024261}
   BattleCounter: {fileID: 1922280088}
+  BattleResults: {fileID: 1806103701}
   actionWords1: 
   actionWords2: 
   letter1: 0
@@ -2124,6 +2125,7 @@ GameObject:
   - component: {fileID: 1806103698}
   - component: {fileID: 1806103700}
   - component: {fileID: 1806103699}
+  - component: {fileID: 1806103701}
   m_Layer: 5
   m_Name: Results
   m_TagString: Untagged
@@ -2146,7 +2148,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 98, y: -143}
+  m_AnchoredPosition: {x: 61, y: -143}
   m_SizeDelta: {x: 200, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1806103699
@@ -2188,6 +2190,21 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1806103697}
+--- !u!114 &1806103701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1806103697}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 454e422ec0b794d0c8eb7b6acd5410a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Choser1: {fileID: 155258144}
+  Choser2: {fileID: 176024261}
+  TurnB4: {fileID: 1922280088}
+  turnText: 
 --- !u!1 &1869093880
 GameObject:
   m_ObjectHideFlags: 0
