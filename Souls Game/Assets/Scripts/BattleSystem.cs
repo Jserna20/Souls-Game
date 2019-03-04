@@ -10,6 +10,8 @@ public class BattleSystem : MonoBehaviour
     //public GameObject p2Prefab;
     public Player Fighter1;
     public Player Fighter2;
+    public BattleTurns BattleCounter;
+    public Results BattleResults;
 
     [Header("Set Dynamically")] //Delete after fighter class complete
     //public bool alive;
@@ -43,8 +45,8 @@ public class BattleSystem : MonoBehaviour
         Fighter2.SetStats();
         Fighter1.SetPlayerName("Player 1 ");
         Fighter2.SetPlayerName("Player 2 ");
-        Fighter1.IsAttacking(false);
-        Fighter2.IsAttacking(true);
+        Fighter1.IsAttacking(true);
+        Fighter2.IsAttacking(false);
         Fighter1.SetNameBasedOnTurn();
         Fighter2.SetNameBasedOnTurn();
         /*Fighter1.SetAlive(true);
@@ -92,6 +94,7 @@ public class BattleSystem : MonoBehaviour
         {
             Fighter2.DestroyMe();
             print(results + results2 + theWinner);
+            BattleResults.NewTurnText(results + results2 + theWinner);
             //alive = false;
             Fighter2.SetAlive(false);
         }
@@ -99,12 +102,15 @@ public class BattleSystem : MonoBehaviour
         {
             Fighter1.DestroyMe();
             print(results + results2 + theWinner);
+            BattleResults.NewTurnText(results + results2 + theWinner);
             //alive = false;
             Fighter1.SetAlive(false);
         }
         else if(results2.Equals("Battle Continues"))
         {
             print(results + results2);
+            BattleResults.NewTurnText(results + results2);
+            BattleCounter.IncreaseTurn();
             actionWords1 = "";
             actionWords2 = "";
             results = "";

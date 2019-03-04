@@ -60,11 +60,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\BattleSystem.cs" />
+    <Compile Include="Assets\Scripts\BattleTurns.cs" />
     <Compile Include="Assets\Scripts\DownAction.cs" />
     <Compile Include="Assets\Scripts\HPDisplay.cs" />
     <Compile Include="Assets\Scripts\LeftAction.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
-    <Compile Include="Assets\Scripts\ProtoBattle.cs" />
+    <Compile Include="Assets\Scripts\Results.cs" />
     <Compile Include="Assets\Scripts\RightAction.cs" />
     <Compile Include="Assets\Scripts\StatsDisplay.cs" />
     <Compile Include="Assets\Scripts\UpAction.cs" />
