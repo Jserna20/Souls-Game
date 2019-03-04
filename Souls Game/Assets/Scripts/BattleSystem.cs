@@ -43,8 +43,8 @@ public class BattleSystem : MonoBehaviour
         Fighter2.SetStats();
         Fighter1.SetPlayerName("Player 1 ");
         Fighter2.SetPlayerName("Player 2 ");
-        Fighter1.IsAttacking(true);
-        Fighter2.IsAttacking(false);
+        Fighter1.IsAttacking(false);
+        Fighter2.IsAttacking(true);
         Fighter1.SetNameBasedOnTurn();
         Fighter2.SetNameBasedOnTurn();
         /*Fighter1.SetAlive(true);
@@ -657,7 +657,7 @@ public class BattleSystem : MonoBehaviour
                 }
             }
 
-            if (actionWords1.Equals("Combo Attk"))
+            if (actionWords2.Equals("Combo Attk"))
             {
                 switch (letter1)
                 {

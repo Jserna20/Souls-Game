@@ -247,8 +247,8 @@ public class Player : MonoBehaviour
         {
             SetUpName("Magic Shield");
             SetLeftName("Guard");
-            SetDownName("I give up");
-            SetRightName("Combo Attk");
+            SetDownName("Buff Attk");
+            SetRightName("Counter");
         }
 
     }

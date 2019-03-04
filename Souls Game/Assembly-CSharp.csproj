@@ -60,10 +60,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\BattleSystem.cs" />
+    <Compile Include="Assets\Scripts\DownAction.cs" />
     <Compile Include="Assets\Scripts\HPDisplay.cs" />
+    <Compile Include="Assets\Scripts\LeftAction.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
     <Compile Include="Assets\Scripts\ProtoBattle.cs" />
+    <Compile Include="Assets\Scripts\RightAction.cs" />
     <Compile Include="Assets\Scripts\StatsDisplay.cs" />
+    <Compile Include="Assets\Scripts\UpAction.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>/Users/jesusserna/Desktop/Souls-Game/Souls Game/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>

@@ -1,11 +1,15 @@
 ﻿<Properties StartupConfiguration="{873CDC47-ED37-532E-1D2C-4033D830FDCA}|">
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/HPDisplay.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/UpAction.cs">
     <Files>
       <File FileName="Assets/Scripts/BattleSystem.cs" Line="41" Column="33" />
-      <File FileName="Assets/Scripts/Player.cs" Line="41" Column="19" />
-      <File FileName="Assets/Scripts/StatsDisplay.cs" Line="6" Column="1" />
-      <File FileName="Assets/Scripts/HPDisplay.cs" Line="5" Column="16" />
+      <File FileName="Assets/Scripts/Player.cs" Line="88" Column="22" />
+      <File FileName="Assets/Scripts/StatsDisplay.cs" Line="17" Column="17" />
+      <File FileName="Assets/Scripts/HPDisplay.cs" Line="4" Column="1" />
+      <File FileName="Assets/Scripts/LeftAction.cs" Line="4" Column="1" />
+      <File FileName="Assets/Scripts/RightAction.cs" Line="20" Column="38" />
+      <File FileName="Assets/Scripts/DownAction.cs" Line="6" Column="18" />
+      <File FileName="Assets/Scripts/UpAction.cs" Line="6" Column="15" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
