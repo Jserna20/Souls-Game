@@ -1,10 +1,11 @@
 ﻿<Properties StartupConfiguration="{873CDC47-ED37-532E-1D2C-4033D830FDCA}|">
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/StatsDisplay.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/HPDisplay.cs">
     <Files>
-      <File FileName="Assets/Scripts/BattleSystem.cs" Line="709" Column="84" />
-      <File FileName="Assets/Scripts/Player.cs" Line="42" Column="18" />
-      <File FileName="Assets/Scripts/StatsDisplay.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/BattleSystem.cs" Line="41" Column="33" />
+      <File FileName="Assets/Scripts/Player.cs" Line="41" Column="19" />
+      <File FileName="Assets/Scripts/StatsDisplay.cs" Line="6" Column="1" />
+      <File FileName="Assets/Scripts/HPDisplay.cs" Line="5" Column="16" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

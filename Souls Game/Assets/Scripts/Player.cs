@@ -38,7 +38,7 @@ public class Player : MonoBehaviour
 	
     public void SetStats()
     {
-        maxHP = 5;
+        maxHP = 20;
         hp = maxHP;
         attkBase = 2;
         defBase = 2;
@@ -60,6 +60,14 @@ public class Player : MonoBehaviour
         hp = maxHP;
     }
 
+    public void RestoreStats()
+    {
+        attk = attkBase;
+        def = defBase;
+        magicAttk = magicAttkBase;
+        magicDef = magicDefBase;
+    }
+
     public void SetHP(float newHP)
     {
         hp = newHP;
@@ -69,6 +77,17 @@ public class Player : MonoBehaviour
     {
         return hp;
     }
+
+    public void SetMaxHP(float newMax)
+    {
+        maxHP = newMax;
+    }
+
+    public float GetMaxHP()
+    {
+        return maxHP;
+    }
+
 
     public void SetAttk(float newAttk)
     {
