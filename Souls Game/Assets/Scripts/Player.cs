@@ -38,7 +38,6 @@ public class Player : MonoBehaviour
 	
     public void SetStats()
     {
-        CreatePerson();
         maxHP = 5;
         hp = maxHP;
         attkBase = 2;

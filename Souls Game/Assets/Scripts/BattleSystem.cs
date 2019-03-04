@@ -37,6 +37,8 @@ public class BattleSystem : MonoBehaviour
         //fighterGO1 = Instantiate(p1Prefab) as GameObject;
         //fighterGO2 = Instantiate(p2Prefab) as GameObject;
         //alive = true;
+        Fighter1.CreatePerson();
+        Fighter2.CreatePerson();
         Fighter1.SetStats();
         Fighter2.SetStats();
         Fighter1.SetPlayerName("Player 1 ");
