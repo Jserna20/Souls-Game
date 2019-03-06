@@ -26,6 +26,7 @@ public class Player : MonoBehaviour
     public string rightName;
     public string playerName;
     public float turndamage;
+    public int numToDetermineStatBuff;
 
     public GameObject person;
     
@@ -293,5 +294,39 @@ public class Player : MonoBehaviour
     public void TakeDamage(float damage)
     {
         hp = hp - damage;
+    }
+
+    public void SetARandomStatBuff(float buff)
+    {
+        numToDetermineStatBuff = Random.Range(0, 4);
+
+        if (numToDetermineStatBuff == 0)
+            BuffAttk(buff);
+        else if (numToDetermineStatBuff == 1)
+            BuffDef(buff);
+        else if (numToDetermineStatBuff == 2)
+            BuffMagicAttk(buff);
+        else if (numToDetermineStatBuff == 3)
+            BuffMagicDef(buff);
+    }
+
+    public void BuffDef(float buff)
+    {
+        def = def + buff;
+    }
+
+    public void BuffAttk(float buff)
+    {
+        attk = attk + buff;
+    }
+
+    public void BuffMagicDef(float buff)
+    {
+        magicDef = magicDef + buff;
+    }
+
+    public void BuffMagicAttk(float buff)
+    {
+        magicAttk = magicAttk + buff;
     }
 }
