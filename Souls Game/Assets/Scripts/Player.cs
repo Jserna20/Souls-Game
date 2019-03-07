@@ -241,14 +241,14 @@ public class Player : MonoBehaviour
         {
             SetUpName("Magic Attk");
             SetLeftName("Basic Attk");
-            SetDownName("Buff Attk");
+            SetDownName("Random Buff");
             SetRightName("Combo Attk");
         }
         else
         {
             SetUpName("Magic Shield");
             SetLeftName("Guard");
-            SetDownName("Buff Attk");
+            SetDownName("Random Buff");
             SetRightName("Counter");
         }
 
@@ -308,6 +308,8 @@ public class Player : MonoBehaviour
             BuffMagicAttk(buff);
         else if (numToDetermineStatBuff == 3)
             BuffMagicDef(buff);
+        else
+            print("Error did not buff one of the Stats possible");
     }
 
     public void BuffDef(float buff)
@@ -328,5 +330,10 @@ public class Player : MonoBehaviour
     public void BuffMagicAttk(float buff)
     {
         magicAttk = magicAttk + buff;
+    }
+
+    public int GetNumToDetermineStatBuff()
+    {
+        return numToDetermineStatBuff;
     }
 }

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class BattleSystem : MonoBehaviour 
+public class BattleSystem : MonoBehaviour
 {
     [Header("Set in Inspector")]
     //public GameObject p1Prefab;
@@ -30,10 +30,10 @@ public class BattleSystem : MonoBehaviour
 
     //public GameObject fighterGO1;
     //public GameObject fighterGO2;
-    
 
-	// Use this for initialization
-	void Awake() 
+
+    // Use this for initialization
+    void Awake()
     {
         print("Battle Start!");
         //fighterGO1 = Instantiate(p1Prefab) as GameObject;
@@ -61,10 +61,10 @@ public class BattleSystem : MonoBehaviour
         Fighter2.GetChoosing();
         letter1 = 'x';
         letter2 = 'x';*/
-	}
-	
-	// Update is called once per frame
-	void Update () 
+    }
+
+    // Update is called once per frame
+    void Update()
     {
         if (Fighter1.GetAlive() && Fighter2.GetAlive())
         {
@@ -72,7 +72,7 @@ public class BattleSystem : MonoBehaviour
             {
                 ChoosingActions();
             }
-            if(Fighter1.GetChoosing() && Fighter2.GetChoosing())
+            if (Fighter1.GetChoosing() && Fighter2.GetChoosing())
             {
                 CalcingResults();
                 TurnResults();
@@ -80,12 +80,12 @@ public class BattleSystem : MonoBehaviour
         }
 
         //Just to not have to exit play mode to reset
-        if (Input.GetKeyDown(KeyCode.Space)) 
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             Restart();
         }
 
-	}
+    }
 
     public void TurnResults()
     {
@@ -106,7 +106,7 @@ public class BattleSystem : MonoBehaviour
             //alive = false;
             Fighter1.SetAlive(false);
         }
-        else if(results2.Equals("Battle Continues"))
+        else if (results2.Equals("Battle Continues"))
         {
             print(results + results2);
             BattleResults.NewTurnText(results + results2);
@@ -120,7 +120,7 @@ public class BattleSystem : MonoBehaviour
             //p1Chose = false;
             //p2Chose = false;
 
-            if(Fighter1.GetAttacker())
+            if (Fighter1.GetAttacker())
             {
                 Fighter1.IsAttacking(false);
                 Fighter2.IsAttacking(true);
@@ -136,7 +136,7 @@ public class BattleSystem : MonoBehaviour
             Fighter1.SetNameBasedOnTurn();
             Fighter2.SetNameBasedOnTurn();
         }
-       else
+        else
         {
             //Will reset the turn without changing it
             print("Results: " + results);
@@ -180,25 +180,25 @@ public class BattleSystem : MonoBehaviour
                 letter1 = 'd';
             }
 
-            if (Input.GetKeyDown(KeyCode.I))
+            if (Input.GetKeyDown(KeyCode.UpArrow))
             {
                 Fighter2.SetChoosing(true);
                 actionWords2 = Fighter2.GetUpName();
                 letter2 = 'i';
             }
-            else if (Input.GetKeyDown(KeyCode.J))
+            else if (Input.GetKeyDown(KeyCode.LeftArrow))
             {
                 Fighter2.SetChoosing(true);
                 actionWords2 = Fighter2.GetLeftName();
                 letter2 = 'j';
             }
-            else if (Input.GetKeyDown(KeyCode.K))
+            else if (Input.GetKeyDown(KeyCode.DownArrow))
             {
                 Fighter2.SetChoosing(true);
                 actionWords2 = Fighter2.GetDownName();
                 letter2 = 'k';
             }
-            else if (Input.GetKeyDown(KeyCode.L))
+            else if (Input.GetKeyDown(KeyCode.RightArrow))
             {
                 Fighter2.SetChoosing(true);
                 actionWords2 = Fighter2.GetRightName();
@@ -207,25 +207,25 @@ public class BattleSystem : MonoBehaviour
         }
         else if (Fighter2.GetAttacker())
         {
-            if (Input.GetKeyDown(KeyCode.I))
+            if (Input.GetKeyDown(KeyCode.UpArrow))
             {
                 Fighter2.SetChoosing(true);
                 actionWords2 = Fighter2.GetUpName();
                 letter2 = 'i';
             }
-            else if (Input.GetKeyDown(KeyCode.J))
+            else if (Input.GetKeyDown(KeyCode.LeftArrow))
             {
                 Fighter2.SetChoosing(true);
                 actionWords2 = Fighter2.GetLeftName();
                 letter2 = 'j';
             }
-            else if (Input.GetKeyDown(KeyCode.K))
+            else if (Input.GetKeyDown(KeyCode.DownArrow))
             {
                 Fighter2.SetChoosing(true);
-                actionWords2 = Fighter2.GetDownName(); //Actually does nothing for now
+                actionWords2 = Fighter2.GetDownName();
                 letter2 = 'k';
             }
-            else if (Input.GetKeyDown(KeyCode.L))
+            else if (Input.GetKeyDown(KeyCode.RightArrow))
             {
                 Fighter2.SetChoosing(true);
                 actionWords2 = Fighter2.GetRightName();
@@ -256,7 +256,7 @@ public class BattleSystem : MonoBehaviour
                 actionWords1 = Fighter1.GetRightName();
                 letter1 = 'd';
             }
-        } 
+        }
     }
 
     public void CalcingResults()
@@ -298,7 +298,7 @@ public class BattleSystem : MonoBehaviour
                         break;
 
                     case 'k':
-                        results = "P2 used Buff Attk, but was still hit by P1's Magic Attk. ";
+                        results = "P2 used Random Buff, but was still hit by P1's Magic Attk. ";
                         Fighter2.SetAttk((Fighter2.GetMagicAttk() + 1));
                         Fighter1.SetTurnDamage(Fighter1.GetAttk(), -1);
                         Fighter2.TakeDamage(Fighter1.GetTurnDamage());
@@ -365,8 +365,8 @@ public class BattleSystem : MonoBehaviour
                         break;
 
                     case 'k':
-                        results = "P2 Buffed its Attk, but was still hit. ";
-                        Fighter2.SetAttk((Fighter2.GetAttk() + 1));
+                        results = "P2 used Random Buff, but was still hit. ";
+                        Fighter2.SetARandomStatBuff(1);
                         Fighter1.SetTurnDamage(Fighter1.GetAttk(), -1);
                         Fighter2.TakeDamage(Fighter1.GetTurnDamage());
                         if (Fighter2.GetHP() <= 0)
@@ -397,32 +397,32 @@ public class BattleSystem : MonoBehaviour
                 }
             }
 
-            if (actionWords1.Equals("Buff Attk"))
+            if (actionWords1.Equals("Random Buff"))
             {
                 switch (letter2)
                 {
                     case 'i':
-                        results = "P1 Buffed its Attk, P2 used Magic Shield ";
-                        Fighter1.SetAttk((Fighter1.GetAttk() + 1));
+                        results = "P1 used Random Buff, P2 used Magic Shield ";
+                        Fighter1.SetARandomStatBuff(1);
                         results2 = "Battle Continues";
                         break;
 
                     case 'j':
-                        results = "P1 Buffed its Attk, P2 used Guard. ";
-                        Fighter1.SetAttk((Fighter1.GetAttk() + 1));
+                        results = "P1 used Random Buff, P2 used Guard. ";
+                        Fighter1.SetARandomStatBuff(1);
                         results2 = "Battle Continues";
                         break;
 
                     case 'k':
-                        results = "P1 Buffed its Attk, P2 also used Buff Attk ";
-                        Fighter1.SetAttk((Fighter1.GetAttk() + 1));
-                        Fighter2.SetAttk((Fighter2.GetAttk() + 1));
+                        results = "P1 used Random Buff, P2 also used Random Buff ";
+                        Fighter1.SetARandomStatBuff(1);
+                        Fighter2.SetARandomStatBuff(1);
                         results2 = "Battle Continues";
                         break;
 
                     case 'l':
-                        results = "P1 Buffed its Attk, P2 used Counter. Nothing happened. ";
-                        Fighter1.SetAttk((Fighter1.GetAttk() + 1));
+                        results = "P1 used Random Buff, P2 used Counter. Nothing happened. ";
+                        Fighter1.SetARandomStatBuff(1);
                         results2 = "Battle Continues";
                         break;
                 }
@@ -444,7 +444,7 @@ public class BattleSystem : MonoBehaviour
                         else
                         {
                             results2 = "Battle Continues";
-                        }                        
+                        }
                         break;
 
                     case 'j':
@@ -464,7 +464,7 @@ public class BattleSystem : MonoBehaviour
 
                     case 'k':
                         results = "P1 used Combo Attack. P2 was hit by it. ";
-                        Fighter2.SetAttk((Fighter2.GetAttk() + 1));
+                        Fighter2.SetARandomStatBuff(1);
                         Fighter1.SetTurnDamage((Fighter1.GetAttk() + Fighter1.GetMagicAttk()), -1);
                         Fighter2.TakeDamage(Fighter1.GetTurnDamage());
                         if (Fighter2.GetHP() <= 0)
@@ -475,7 +475,7 @@ public class BattleSystem : MonoBehaviour
                         else
                         {
                             results2 = "Battle Continues";
-                        }                       
+                        }
                         break;
 
                     case 'l':
@@ -490,14 +490,14 @@ public class BattleSystem : MonoBehaviour
                         else
                         {
                             results2 = "Battle Continues";
-                        }                        
+                        }
                         break;
                 }
             }
         }
 
-            if (Fighter2.GetAttacker())
-            {
+        if (Fighter2.GetAttacker())
+        {
             if (actionWords2.Equals("Magic Attk"))
             {
                 switch (letter1)
@@ -533,8 +533,8 @@ public class BattleSystem : MonoBehaviour
                         break;
 
                     case 's':
-                        results = "P1 used Buff Attk, but was still hit by P2's Magic Attk. ";
-                        Fighter1.SetAttk((Fighter1.GetAttk() + 1));
+                        results = "P1 used Random Buff, but was still hit by P2's Magic Attk. ";
+                        Fighter1.SetARandomStatBuff(1);
                         Fighter2.SetTurnDamage(Fighter2.GetAttk(), -1);
                         Fighter1.TakeDamage(Fighter2.GetTurnDamage());
                         if (Fighter1.GetHP() <= 0)
@@ -600,8 +600,8 @@ public class BattleSystem : MonoBehaviour
                         break;
 
                     case 's':
-                        results = "P1 Buffed its Attk, but was still hit. ";
-                        Fighter1.SetAttk((Fighter1.GetAttk() + 1));
+                        results = "P1 used Random Buff, but was still hit. ";
+                        Fighter1.SetARandomStatBuff(1);
                         Fighter2.SetTurnDamage(Fighter2.GetAttk(), -1);
                         Fighter1.TakeDamage(Fighter2.GetTurnDamage());
                         if (Fighter1.GetHP() <= 0)
@@ -632,32 +632,32 @@ public class BattleSystem : MonoBehaviour
                 }
             }
 
-            if (actionWords2.Equals("Buff Attk"))
+            if (actionWords2.Equals("Random Buff"))
             {
                 switch (letter1)
                 {
                     case 'w':
-                        results = "P2 Buffed its Attk, P1 used Magic Shield ";
-                        Fighter2.SetAttk((Fighter2.GetAttk() + 1));
+                        results = "P2 used Random Buff, P1 used Magic Shield ";
+                        Fighter2.SetARandomStatBuff(1);
                         results2 = "Battle Continues";
                         break;
 
                     case 'a':
-                        results = "P2 Buffed its Attk, P1 used Guard. ";
-                        Fighter2.SetAttk((Fighter2.GetAttk() + 1));
+                        results = "P2 used Random Buff, P1 used Guard. ";
+                        Fighter2.SetARandomStatBuff(1);
                         results2 = "Battle Continues";
                         break;
 
                     case 's':
-                        results = "P2 Buffed its Attk, P1 also used Buff Attk ";
-                        Fighter2.SetAttk((Fighter2.GetAttk() + 1));
-                        Fighter1.SetAttk((Fighter1.GetAttk() + 1));
+                        results = "P2 used Random Buff, P1 also used Random Buff ";
+                        Fighter2.SetARandomStatBuff(1);
+                        Fighter1.SetARandomStatBuff(1);
                         results2 = "Battle Continues";
                         break;
 
                     case 'd':
-                        results = "P2 Buffed its Attk, P1 used Counter. Nothing happened. ";
-                        Fighter2.SetAttk((Fighter2.GetAttk() + 1));
+                        results = "P2 used Random Buff, P1 used Counter. Nothing happened. ";
+                        Fighter2.SetARandomStatBuff(1);
                         results2 = "Battle Continues";
                         break;
                 }
@@ -699,7 +699,7 @@ public class BattleSystem : MonoBehaviour
 
                     case 's':
                         results = "P2 used Combo Attack. P1 was hit by it. ";
-                        Fighter1.SetAttk((Fighter1.GetAttk() + 1));
+                        Fighter1.SetARandomStatBuff(1);
                         Fighter2.SetTurnDamage((Fighter2.GetAttk() + Fighter2.GetMagicAttk()), -1);
                         Fighter1.TakeDamage(Fighter2.GetTurnDamage());
                         if (Fighter1.GetHP() <= 0)
@@ -729,9 +729,9 @@ public class BattleSystem : MonoBehaviour
                         break;
                 }
             }
-            }
-        
-    } 
+        }
+
+    }
 
     public void Restart()
     {
