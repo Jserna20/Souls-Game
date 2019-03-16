@@ -26,7 +26,7 @@ public class Menu : MonoBehaviour
     public bool onWeaponsB;
     public bool onShieldsB;
     public bool onStatsB;
-    public int topLayerCursor;
+    public int layerCursor;
 
 
 	// Use this for initialization
@@ -46,14 +46,14 @@ public class Menu : MonoBehaviour
         shieldHalo.SetActive(false);
         statsHalo.SetActive(false);
 
-        topLayerCursor = 0;
+        layerCursor = 0;
 	}
 	
 	// Update is called once per frame
 	void Update () 
     {
         CheckForInput();
-        switch(topLayerCursor)
+        switch(layerCursor)
         {
             case 0:
                 if (previousSelectedHalo != null)
@@ -62,36 +62,48 @@ public class Menu : MonoBehaviour
                 }
 
                 mapHalo.SetActive(true);
+                onMapB = true;
+                MakeMapOnly();
                 previousSelectedHalo = mapHalo;
                 break;
 
             case 1:
                 previousSelectedHalo.SetActive(false);
                 actionHalo.SetActive(true);
+                onActionB = true;
+                MakeActionOnly();
                 previousSelectedHalo = actionHalo;
                 break;
 
             case 2:
                 previousSelectedHalo.SetActive(false);
                 itemsHalo.SetActive(true);
+                onItemsB = true;
+                MakeMapOnly();
                 previousSelectedHalo = itemsHalo;
                 break;
 
             case 3:
                 previousSelectedHalo.SetActive(false);
                 weaponsHalo.SetActive(true);
+                onWeaponsB = true;
+                MakeWeaponsOnly();
                 previousSelectedHalo = weaponsHalo;
                 break;
 
             case 4:
                 previousSelectedHalo.SetActive(false);
                 shieldHalo.SetActive(true);
+                onShieldsB = true;
+                MakeShieldsOnly();
                 previousSelectedHalo = shieldHalo;
                 break;
 
             case 5:
                 previousSelectedHalo.SetActive(false);
                 statsHalo.SetActive(true);
+                onStatsB = true;
+                MakeStatsOnly();
                 previousSelectedHalo = statsHalo;
                 break;
         }
@@ -101,22 +113,80 @@ public class Menu : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.DownArrow))
         {
-            topLayerCursor++;
-            if(topLayerCursor > 5 )
+            layerCursor++;
+            if(layerCursor > 5 )
             {
-                topLayerCursor = 5;
+                layerCursor = 5;
             }
         }
 
         if(Input.GetKeyDown(KeyCode.UpArrow))
         {
-            topLayerCursor--;
-            if(topLayerCursor < 0)
+            layerCursor--;
+            if(layerCursor < 0)
             {
-                topLayerCursor = 0;
+                layerCursor = 0;
             }
         }
 
     }
 
+    public void CheckForSelection()
+    {
+        
+    }
+
+    public void MakeMapOnly()
+    {
+            onActionB = false;
+            onItemsB = false;
+            onWeaponsB = false;
+            onShieldsB = false;
+            onStatsB = false;
+    }
+
+    public void MakeActionOnly()
+    {
+        onMapB = false;
+        onItemsB = false;
+        onWeaponsB = false;
+        onShieldsB = false;
+        onStatsB = false;
+    }
+
+    public void MakeItemsOnly()
+    {
+        onMapB = false;
+        onActionB = false;
+        onWeaponsB = false;
+        onShieldsB = false;
+        onStatsB = false;
+    }
+
+    public void MakeWeaponsOnly()
+    {
+        onMapB = false;
+        onActionB = false;
+        onItemsB = false;
+        onShieldsB = false;
+        onStatsB = false;
+    }
+
+    public void MakeShieldsOnly()
+    {
+        onMapB = false;
+        onActionB = false;
+        onItemsB = false;
+        onWeaponsB = false;
+        onStatsB = false;
+    }
+
+    public void MakeStatsOnly()
+    {
+        onMapB = false;
+        onActionB = false;
+        onItemsB = false;
+        onWeaponsB = false;
+        onShieldsB = false;
+    }
 }
