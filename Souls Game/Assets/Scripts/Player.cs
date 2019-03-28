@@ -272,17 +272,29 @@ public class Player : MonoBehaviour
             formOfAttack = formOfAttack * 2f; //This doubles the attack
             formOfDefense = 0;
             turndamage = formOfAttack - formOfDefense;
+            if(turndamage < 0)
+            {
+                turndamage = 0;
+            }
         }
         else if(formOfDefense == -1)
         {
             formOfAttack = formOfAttack * 1.5f;
             formOfDefense = 0;
             turndamage = formOfAttack - formOfDefense;
+            if (turndamage < 0)
+            {
+                turndamage = 0;
+            }
         }
         else
         {
             formOfAttack = formOfAttack * 1.5f;
             turndamage = formOfAttack - formOfDefense;
+            if (turndamage < 0)
+            {
+                turndamage = 0;
+            }
         }
     }
 
