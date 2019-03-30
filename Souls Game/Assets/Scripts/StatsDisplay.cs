@@ -17,9 +17,9 @@ public class StatsDisplay : MonoBehaviour
 	void Update () 
     {
         Text gt = this.GetComponent<Text>();
-        gt.text = "Attk: \t\t\t" + YourStats.GetAttk() +
-            " Def: \t\t\t\t" + YourStats.GetDef() +
-            " MagAttk: \t\t" + YourStats.GetMagicAttk() + 
-            " MagDef \t\t" + YourStats.GetMagicDef();
+        gt.text = "Attk:\t\t\t" + YourStats.GetAttk() +
+            "\nDef:\t\t\t" + YourStats.GetDef() +
+            "\nMagAttk:\t" + YourStats.GetMagicAttk() + 
+            "\nMagDef:\t" + YourStats.GetMagicDef();
 	}
 }
