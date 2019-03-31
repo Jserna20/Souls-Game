@@ -9,11 +9,14 @@ public class MovementInOW : MonoBehaviour
     [Header("Set In Inspector")]
     public float movementSpeed = 0.5f;
     public GameObject playerInOWPF;
+    public GameObject worldCam;
+    public Menu menuHalos;
 
     [Header("Set Dynamically")]
     public GameObject playerInOW;
     public Vector3 playerSpot;
     public Vector3 playerRotation;
+    public Vector3 worldCamPos;
     public Quaternion flip;
     public bool movingMode;
     public bool facingRightSide;
@@ -24,6 +27,7 @@ public class MovementInOW : MonoBehaviour
         playerInOW = Instantiate(playerInOWPF) as GameObject;
         playerSpot = Vector3.zero;
         playerRotation = Vector3.zero;
+        worldCamPos = new Vector3(0, 0, -10);
         facingRightSide = true;
         flip = playerInOW.transform.localRotation;
 	}
@@ -35,13 +39,19 @@ public class MovementInOW : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.DownArrow))
             {
-                playerSpot = playerSpot + (Vector3.down * movementSpeed);
+                playerSpot += (Vector3.down * movementSpeed);
+                worldCamPos += (Vector3.down * movementSpeed);
                 playerInOW.transform.position = playerSpot;
+                worldCam.transform.position = worldCamPos;
+                MatchHalosWithCam(Vector3.down * movementSpeed);
             }
             else if (Input.GetKeyDown(KeyCode.UpArrow))
             {
-                playerSpot = playerSpot + (Vector3.up * movementSpeed);
+                playerSpot += (Vector3.up * movementSpeed);
+                worldCamPos += (Vector3.up * movementSpeed);
                 playerInOW.transform.position = playerSpot;
+                worldCam.transform.position = worldCamPos;
+                MatchHalosWithCam(Vector3.up * movementSpeed);
             }
             else if (Input.GetKeyDown(KeyCode.RightArrow))
             {
@@ -51,8 +61,11 @@ public class MovementInOW : MonoBehaviour
                     flip.y -= 180;
                     playerInOW.transform.rotation = flip;
                 }
-                playerSpot = playerSpot + (Vector3.right * movementSpeed);
+                playerSpot += (Vector3.right * movementSpeed);
+                worldCamPos += (Vector3.right * movementSpeed);
                 playerInOW.transform.position = playerSpot;
+                worldCam.transform.position = worldCamPos;
+                MatchHalosWithCam(Vector3.right * movementSpeed);
             }
             else if (Input.GetKeyDown(KeyCode.LeftArrow))
             {
@@ -63,9 +76,11 @@ public class MovementInOW : MonoBehaviour
                     playerInOW.transform.rotation = flip;
 
                 }
-                playerSpot = playerSpot + (Vector3.left * movementSpeed);
+                playerSpot += (Vector3.left * movementSpeed);
+                worldCamPos += (Vector3.left * movementSpeed);
                 playerInOW.transform.position = playerSpot;
-
+                worldCam.transform.position = worldCamPos;
+                MatchHalosWithCam(Vector3.left * movementSpeed);
             }
         }
     
@@ -79,5 +94,15 @@ public class MovementInOW : MonoBehaviour
     public bool GetMovingMode()
     {
         return movingMode;
+    }
+
+    public void MatchHalosWithCam(Vector3 newLocation)
+    {
+        menuHalos.mapHalo.transform.position += newLocation;
+        menuHalos.actionHalo.transform.position += newLocation;
+        menuHalos.itemsHalo.transform.position += newLocation;
+        menuHalos.weaponsHalo.transform.position += newLocation;
+        menuHalos.shieldHalo.transform.position += newLocation;
+        menuHalos.statsHalo.transform.position += newLocation;
     }
 }

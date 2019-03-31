@@ -287,6 +287,48 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 276936560}
+--- !u!1001 &342802820
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4361590726553140, guid: 0361dbac97e9048fc97fcd4421a60949, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4361590726553140, guid: 0361dbac97e9048fc97fcd4421a60949, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4361590726553140, guid: 0361dbac97e9048fc97fcd4421a60949, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4361590726553140, guid: 0361dbac97e9048fc97fcd4421a60949, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4361590726553140, guid: 0361dbac97e9048fc97fcd4421a60949, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4361590726553140, guid: 0361dbac97e9048fc97fcd4421a60949, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4361590726553140, guid: 0361dbac97e9048fc97fcd4421a60949, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4361590726553140, guid: 0361dbac97e9048fc97fcd4421a60949, type: 2}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 0361dbac97e9048fc97fcd4421a60949, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &479587841
 GameObject:
   m_ObjectHideFlags: 0
@@ -317,9 +359,12 @@ MonoBehaviour:
   movementSpeed: 0.5
   playerInOWPF: {fileID: 1213785032313272, guid: 6da11f0d1464241eaa7260225dad751c,
     type: 2}
+  worldCam: {fileID: 706620421}
+  menuHalos: {fileID: 1141624411}
   playerInOW: {fileID: 0}
   playerSpot: {x: 0, y: 0, z: 0}
   playerRotation: {x: 0, y: 0, z: 0}
+  worldCamPos: {x: 0, y: 0, z: 0}
   flip: {x: 0, y: 0, z: 0, w: 0}
   movingMode: 0
   facingRightSide: 0
