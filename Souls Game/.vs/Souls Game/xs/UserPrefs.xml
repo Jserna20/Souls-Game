@@ -1,8 +1,8 @@
 ﻿<Properties StartupConfiguration="{873CDC47-ED37-532E-1D2C-4033D830FDCA}|">
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ButtonMakerTest.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/MovementInOW.cs">
     <Files>
-      <File FileName="Assets/Scripts/BattleSystem.cs" Line="216" Column="22" />
+      <File FileName="Assets/Scripts/BattleSystem.cs" Line="83" Column="37" />
       <File FileName="Assets/Scripts/StatsDisplay.cs" Line="20" Column="31" />
       <File FileName="Assets/Scripts/HPDisplay.cs" Line="4" Column="1" />
       <File FileName="Assets/Scripts/LeftAction.cs" Line="19" Column="45" />
@@ -10,12 +10,12 @@
       <File FileName="Assets/Scripts/DownAction.cs" Line="20" Column="37" />
       <File FileName="Assets/Scripts/UpAction.cs" Line="4" Column="1" />
       <File FileName="Assets/Scripts/BattleTurns.cs" Line="34" Column="27" />
-      <File FileName="Assets/Scripts/Results.cs" Line="4" Column="1" />
+      <File FileName="Assets/Scripts/Results.cs" Line="17" Column="28" />
       <File FileName="Assets/Scripts/HelpMenu.cs" Line="4" Column="35" />
       <File FileName="Assets/Scripts/Player.cs" Line="165" Column="9" />
-      <File FileName="Assets/Scripts/Menu.cs" Line="13" Column="35" />
+      <File FileName="Assets/Scripts/Menu.cs" Line="167" Column="27" />
       <File FileName="Assets/Scripts/SubMenu.cs" Line="8" Column="11" />
-      <File FileName="Assets/Scripts/ButtonMakerTest.cs" Line="7" Column="5" />
+      <File FileName="Assets/Scripts/MovementInOW.cs" Line="32" Column="59" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

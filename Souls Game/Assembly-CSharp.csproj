@@ -61,12 +61,12 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\BattleSystem.cs" />
     <Compile Include="Assets\Scripts\BattleTurns.cs" />
-    <Compile Include="Assets\Scripts\ButtonMakerTest.cs" />
     <Compile Include="Assets\Scripts\DownAction.cs" />
     <Compile Include="Assets\Scripts\HelpMenu.cs" />
     <Compile Include="Assets\Scripts\HPDisplay.cs" />
     <Compile Include="Assets\Scripts\LeftAction.cs" />
     <Compile Include="Assets\Scripts\Menu.cs" />
+    <Compile Include="Assets\Scripts\MovementInOW.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
     <Compile Include="Assets\Scripts\Results.cs" />
     <Compile Include="Assets\Scripts\RightAction.cs" />
