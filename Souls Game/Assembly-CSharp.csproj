@@ -61,6 +61,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\BattleSystem.cs" />
     <Compile Include="Assets\Scripts\BattleTurns.cs" />
+    <Compile Include="Assets\Scripts\ButtonMakerTest.cs" />
     <Compile Include="Assets\Scripts\DownAction.cs" />
     <Compile Include="Assets\Scripts\HelpMenu.cs" />
     <Compile Include="Assets\Scripts\HPDisplay.cs" />

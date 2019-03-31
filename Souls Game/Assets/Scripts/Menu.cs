@@ -11,6 +11,7 @@ public class Menu : MonoBehaviour
     public GameObject weaponsHaloPF;
     public GameObject shieldHaloPF;
     public GameObject statsHaloPF;
+    public GameObject canvasPF;
 
     [Header("Set Dynamically")]
     public GameObject mapHalo;
@@ -20,12 +21,20 @@ public class Menu : MonoBehaviour
     public GameObject shieldHalo;
     public GameObject statsHalo;
     public GameObject previousSelectedHalo;
+    public GameObject canvas;
+    public GameObject mapButton;
+    public GameObject actionButton;
+    public GameObject itemsButton;
+    public GameObject weaponsButton;
+    public GameObject shieldsButton;
+    public GameObject statsButton;
     public bool onMapB;
     public bool onActionB;
     public bool onItemsB;
     public bool onWeaponsB;
     public bool onShieldsB;
     public bool onStatsB;
+    public bool inMenuMode;
     public int layerCursor;
 
 
@@ -38,75 +47,83 @@ public class Menu : MonoBehaviour
         weaponsHalo = Instantiate(weaponsHaloPF) as GameObject;
         shieldHalo = Instantiate(shieldHaloPF) as GameObject;
         statsHalo = Instantiate(statsHaloPF) as GameObject;
+        canvas = Instantiate(canvasPF) as GameObject;
 
-        mapHalo.SetActive(true);
+        inMenuMode = false;
+        mapHalo.SetActive(false);
         actionHalo.SetActive(false);
         itemsHalo.SetActive(false);
         weaponsHalo.SetActive(false);
         shieldHalo.SetActive(false);
         statsHalo.SetActive(false);
-
+        canvas.SetActive(false);
         layerCursor = 0;
 	}
 	
 	// Update is called once per frame
 	void Update () 
     {
-        CheckForInput();
-        switch(layerCursor)
+        SwitchingModes();
+        if(inMenuMode)
         {
-            case 0:
-                if (previousSelectedHalo != null)
-                {
+            canvas.SetActive(true);
+            CheckForInput();
+            switch (layerCursor)
+            {
+                case 0:
+                    if (previousSelectedHalo != null)
+                    {
+                        previousSelectedHalo.SetActive(false);
+                    }
+
+                    mapHalo.SetActive(true);
+                    onMapB = true;
+                    MakeMapOnly();
+                    previousSelectedHalo = mapHalo;
+                    break;
+
+                case 1:
                     previousSelectedHalo.SetActive(false);
-                }
+                    actionHalo.SetActive(true);
+                    onActionB = true;
+                    MakeActionOnly();
+                    previousSelectedHalo = actionHalo;
+                    break;
 
-                mapHalo.SetActive(true);
-                onMapB = true;
-                MakeMapOnly();
-                previousSelectedHalo = mapHalo;
-                break;
+                case 2:
+                    previousSelectedHalo.SetActive(false);
+                    itemsHalo.SetActive(true);
+                    onItemsB = true;
+                    MakeMapOnly();
+                    previousSelectedHalo = itemsHalo;
+                    break;
 
-            case 1:
-                previousSelectedHalo.SetActive(false);
-                actionHalo.SetActive(true);
-                onActionB = true;
-                MakeActionOnly();
-                previousSelectedHalo = actionHalo;
-                break;
+                case 3:
+                    previousSelectedHalo.SetActive(false);
+                    weaponsHalo.SetActive(true);
+                    onWeaponsB = true;
+                    MakeWeaponsOnly();
+                    previousSelectedHalo = weaponsHalo;
+                    break;
 
-            case 2:
-                previousSelectedHalo.SetActive(false);
-                itemsHalo.SetActive(true);
-                onItemsB = true;
-                MakeMapOnly();
-                previousSelectedHalo = itemsHalo;
-                break;
+                case 4:
+                    previousSelectedHalo.SetActive(false);
+                    shieldHalo.SetActive(true);
+                    onShieldsB = true;
+                    MakeShieldsOnly();
+                    previousSelectedHalo = shieldHalo;
+                    break;
 
-            case 3:
-                previousSelectedHalo.SetActive(false);
-                weaponsHalo.SetActive(true);
-                onWeaponsB = true;
-                MakeWeaponsOnly();
-                previousSelectedHalo = weaponsHalo;
-                break;
-
-            case 4:
-                previousSelectedHalo.SetActive(false);
-                shieldHalo.SetActive(true);
-                onShieldsB = true;
-                MakeShieldsOnly();
-                previousSelectedHalo = shieldHalo;
-                break;
-
-            case 5:
-                previousSelectedHalo.SetActive(false);
-                statsHalo.SetActive(true);
-                onStatsB = true;
-                MakeStatsOnly();
-                previousSelectedHalo = statsHalo;
-                break;
+                case 5:
+                    previousSelectedHalo.SetActive(false);
+                    statsHalo.SetActive(true);
+                    onStatsB = true;
+                    MakeStatsOnly();
+                    previousSelectedHalo = statsHalo;
+                    break;
+            }
         }
+
 	}
 
     public void CheckForInput()
@@ -131,9 +148,36 @@ public class Menu : MonoBehaviour
 
     }
 
-    public void CheckForSelection()
+    public void SwitchingModes()
     {
+        if (Input.GetKeyDown(KeyCode.Z))
+            inMenuMode = true;
         
+        if(Input.GetKeyDown(KeyCode.X))
+            {
+                inMenuMode = false;
+                ResetButtonQueue();
+            }
+
+
+    }
+
+    public void ResetButtonQueue()
+    {
+        onMapB = false;
+        onActionB = false;
+        onItemsB = false;
+        onWeaponsB = false;
+        onShieldsB = false;
+        onStatsB = false;
+        mapHalo.SetActive(false);
+        actionHalo.SetActive(false);
+        itemsHalo.SetActive(false);
+        weaponsHalo.SetActive(false);
+        shieldHalo.SetActive(false);
+        statsHalo.SetActive(false);
+        canvas.SetActive(false);
+
     }
 
     public void MakeMapOnly()
