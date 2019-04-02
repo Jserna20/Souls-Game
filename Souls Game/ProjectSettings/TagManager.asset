@@ -42,3 +42,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Background
+    uniqueID: 171617309
+    locked: 0
+  - name: Objects
+    uniqueID: 2315303285
+    locked: 0
+  - name: People
+    uniqueID: 3634592985
+    locked: 0
+  - name: Halos
+    uniqueID: 2722837821
+    locked: 0

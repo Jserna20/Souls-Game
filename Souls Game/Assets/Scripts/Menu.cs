@@ -14,6 +14,7 @@ public class Menu : MonoBehaviour
     public GameObject canvasPF;
     public MovementInOW movingPlayer;
 
+
     [Header("Set Dynamically")]
     public GameObject mapHalo;
     public GameObject actionHalo;
