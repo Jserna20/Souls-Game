@@ -66,6 +66,7 @@
     <Compile Include="Assets\Scripts\HelpMenu.cs" />
     <Compile Include="Assets\Scripts\HPDisplay.cs" />
     <Compile Include="Assets\Scripts\LeftAction.cs" />
+    <Compile Include="Assets\Scripts\LevelAndExp.cs" />
     <Compile Include="Assets\Scripts\Menu.cs" />
     <Compile Include="Assets\Scripts\MovementInOW.cs" />
     <Compile Include="Assets\Scripts\MovingCam.cs" />

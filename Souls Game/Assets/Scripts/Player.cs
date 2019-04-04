@@ -27,6 +27,9 @@ public class Player : MonoBehaviour
     public string playerName;
     public float turndamage;
     public int numToDetermineStatBuff;
+    public int exp;
+    public int maxEXP;
+    public int lvl;
 
     public GameObject person;
     
@@ -39,12 +42,15 @@ public class Player : MonoBehaviour
 	
     public void SetStats()
     {
+        lvl = 1;
         maxHP = 20;
         hp = maxHP;
         attkBase = 2;
         defBase = 2;
         magicAttkBase = 2;
         magicDefBase = 2;
+        exp = 0;
+        maxEXP = 10;
         attk = attkBase;
         def = defBase;
         magicAttk = magicAttkBase;
@@ -68,6 +74,31 @@ public class Player : MonoBehaviour
         magicAttk = magicAttkBase;
         magicDef = magicDefBase;
     }
+
+    public void LevelUp()
+    {
+        RestoreHP();
+        RestoreStats();
+        exp = 0;
+        maxEXP += 10;
+        lvl++;
+    }
+
+    public int GetLvl()
+    {
+        return lvl;
+    }
+
+    public int GetMaxEXP()
+    {
+        return maxEXP;
+    }
+
+    public int GetExp()
+    {
+        return exp;
+    }
+
 
     public void SetHP(float newHP)
     {

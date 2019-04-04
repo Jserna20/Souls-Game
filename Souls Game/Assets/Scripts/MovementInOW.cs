@@ -11,6 +11,7 @@ public class MovementInOW : MonoBehaviour
     public GameObject playerInOWPF;
     public GameObject worldCam;
     public Menu menuHalos;
+    public Player statsOfPlayer;
 
     [Header("Set Dynamically")]
     public GameObject playerInOW;
@@ -30,6 +31,7 @@ public class MovementInOW : MonoBehaviour
         worldCamPos = new Vector3(0, 0, -10);
         facingRightSide = true;
         flip = playerInOW.transform.localRotation;
+        statsOfPlayer.SetStats();
 	}
 	
 	// Update is called once per frame
