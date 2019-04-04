@@ -12,6 +12,7 @@ public class BattleSystem : MonoBehaviour
     public Player Fighter2;
     public BattleTurns BattleCounter;
     public Results BattleResults;
+    public float endDelay = 2f;
 
     [Header("Set Dynamically")] //Delete after fighter class complete
     //public bool alive;
@@ -97,6 +98,8 @@ public class BattleSystem : MonoBehaviour
             BattleResults.NewTurnText(results + results2 + theWinner);
             //alive = false;
             Fighter2.SetAlive(false);
+            DelayedOWReturn(endDelay);
+
         }
         else if (results2.Equals("P1 was deafeated. "))
         {
@@ -737,4 +740,15 @@ public class BattleSystem : MonoBehaviour
     {
         SceneManager.LoadScene("TestBattle");
     }
+
+    public void DelayedOWReturn(float delay)
+    {
+        Invoke("BackToOW", delay);
+    }
+
+    public void BackToOW()
+    {
+        SceneManager.LoadScene("TestBoard");
+    }
+
 }

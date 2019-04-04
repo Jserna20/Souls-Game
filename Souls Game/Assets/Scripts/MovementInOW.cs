@@ -1,10 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MovementInOW : MonoBehaviour 
 {
-    static private MovementInOW S;
 
     [Header("Set In Inspector")]
     public float movementSpeed = 0.5f;
@@ -12,6 +12,7 @@ public class MovementInOW : MonoBehaviour
     public GameObject worldCam;
     public Menu menuHalos;
     public Player statsOfPlayer;
+    public int stepcounter;
 
     [Header("Set Dynamically")]
     public GameObject playerInOW;
@@ -21,6 +22,7 @@ public class MovementInOW : MonoBehaviour
     public Quaternion flip;
     public bool movingMode;
     public bool facingRightSide;
+    public int stepsUntilFight;
 
 	// Use this for initialization
 	void Awake () 
@@ -32,6 +34,8 @@ public class MovementInOW : MonoBehaviour
         facingRightSide = true;
         flip = playerInOW.transform.localRotation;
         statsOfPlayer.SetStats();
+        stepcounter = 0;
+        stepsUntilFight = Random.Range(1, 11);
 	}
 	
 	// Update is called once per frame
@@ -41,6 +45,7 @@ public class MovementInOW : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.DownArrow))
             {
+                stepcounter++;
                 playerSpot += (Vector3.down * movementSpeed);
                 worldCamPos += (Vector3.down * movementSpeed);
                 playerInOW.transform.position = playerSpot;
@@ -49,6 +54,7 @@ public class MovementInOW : MonoBehaviour
             }
             else if (Input.GetKeyDown(KeyCode.UpArrow))
             {
+                stepcounter++;
                 playerSpot += (Vector3.up * movementSpeed);
                 worldCamPos += (Vector3.up * movementSpeed);
                 playerInOW.transform.position = playerSpot;
@@ -57,6 +63,7 @@ public class MovementInOW : MonoBehaviour
             }
             else if (Input.GetKeyDown(KeyCode.RightArrow))
             {
+                stepcounter++;
                 if (!facingRightSide)
                 {
                     facingRightSide = true;
@@ -71,6 +78,7 @@ public class MovementInOW : MonoBehaviour
             }
             else if (Input.GetKeyDown(KeyCode.LeftArrow))
             {
+                stepcounter++;
                 if (facingRightSide)
                 {
                     facingRightSide = false;
@@ -88,7 +96,15 @@ public class MovementInOW : MonoBehaviour
     
 	}
 
-    public void SetMovingMode(bool cond)
+	private void LateUpdate()
+	{
+        if(stepcounter == stepsUntilFight)
+        {
+            SceneManager.LoadScene("TestBattle");
+        }
+	}
+
+	public void SetMovingMode(bool cond)
     {
         movingMode = cond;
     }
