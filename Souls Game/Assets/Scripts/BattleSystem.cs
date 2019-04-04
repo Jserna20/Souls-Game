@@ -13,6 +13,7 @@ public class BattleSystem : MonoBehaviour
     public BattleTurns BattleCounter;
     public Results BattleResults;
     public float endDelay = 2f;
+    public PlayerPrefManager StatStorage;
 
     [Header("Set Dynamically")] //Delete after fighter class complete
     //public bool alive;
@@ -42,7 +43,16 @@ public class BattleSystem : MonoBehaviour
         //alive = true;
         Fighter1.CreatePerson();
         Fighter2.CreatePerson();
-        Fighter1.SetStats();
+        if (PlayerPrefs.HasKey("HP"))
+        {
+            StatStorage.GetAllStats();
+        }
+        else
+        {
+            Fighter1.SetStats();
+            StatStorage.SetAllStats(Fighter1.GetHP(), Fighter1.GetMaxHP(), Fighter1.GetAttk(), Fighter1.GetAttkBase(), Fighter1.GetDef(), Fighter1.GetDefBase(), Fighter1.GetMagicAttk(), Fighter1.GetMagicAttkBase(), Fighter1.GetMagicDef(), Fighter1.GetMagicDefBase());
+            PlayerPrefs.Save();
+        }
         Fighter2.SetStats();
         Fighter1.SetPlayerName("Player 1 ");
         Fighter2.SetPlayerName("Player 2 ");
@@ -98,6 +108,8 @@ public class BattleSystem : MonoBehaviour
             BattleResults.NewTurnText(results + results2 + theWinner);
             //alive = false;
             Fighter2.SetAlive(false);
+            StatStorage.SetAllStats(Fighter1.GetHP(), Fighter1.GetMaxHP(), Fighter1.GetAttk(), Fighter1.GetAttkBase(), Fighter1.GetDef(), Fighter1.GetDefBase(), Fighter1.GetMagicAttk(), Fighter1.GetMagicAttkBase(), Fighter1.GetMagicDef(), Fighter1.GetMagicDefBase());
+            PlayerPrefs.Save();
             DelayedOWReturn(endDelay);
 
         }

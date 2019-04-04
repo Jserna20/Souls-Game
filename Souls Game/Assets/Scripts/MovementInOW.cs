@@ -13,6 +13,7 @@ public class MovementInOW : MonoBehaviour
     public Menu menuHalos;
     public Player statsOfPlayer;
     public int stepcounter;
+    public PlayerPrefManager StorageOW;
 
     [Header("Set Dynamically")]
     public GameObject playerInOW;
@@ -33,7 +34,14 @@ public class MovementInOW : MonoBehaviour
         worldCamPos = new Vector3(0, 0, -10);
         facingRightSide = true;
         flip = playerInOW.transform.localRotation;
-        statsOfPlayer.SetStats();
+        if(PlayerPrefs.HasKey("HP"))
+        {
+            StorageOW.GetAllStats();
+        }
+        else
+        {
+            statsOfPlayer.SetStats();
+        }
         stepcounter = 0;
         stepsUntilFight = Random.Range(1, 11);
 	}

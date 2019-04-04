@@ -77,11 +77,16 @@ public class Player : MonoBehaviour
 
     public void LevelUp()
     {
-        RestoreHP();
-        RestoreStats();
         exp = 0;
         maxEXP += 10;
+        attkBase++;
+        defBase++;
+        magicAttkBase++;
+        magicDefBase++;
+        maxHP += 5;
         lvl++;
+        RestoreStats();
+
     }
 
     public int GetLvl()
@@ -378,5 +383,25 @@ public class Player : MonoBehaviour
     public int GetNumToDetermineStatBuff()
     {
         return numToDetermineStatBuff;
+    }
+
+    public float GetAttkBase()
+    {
+        return attkBase;
+    }
+
+    public float GetDefBase()
+    {
+        return defBase;
+    }
+
+    public float GetMagicAttkBase()
+    {
+        return magicAttkBase;
+    }
+
+    public float GetMagicDefBase()
+    {
+        return magicDefBase;
     }
 }

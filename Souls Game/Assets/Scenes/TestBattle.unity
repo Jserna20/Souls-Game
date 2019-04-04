@@ -392,6 +392,9 @@ MonoBehaviour:
   playerName: 
   turndamage: 0
   numToDetermineStatBuff: 0
+  exp: 0
+  maxEXP: 0
+  lvl: 0
   person: {fileID: 0}
 --- !u!4 &155258145
 Transform:
@@ -522,6 +525,9 @@ MonoBehaviour:
   playerName: 
   turndamage: 0
   numToDetermineStatBuff: 0
+  exp: 0
+  maxEXP: 0
+  lvl: 0
   person: {fileID: 0}
 --- !u!4 &176024262
 Transform:
@@ -782,6 +788,8 @@ MonoBehaviour:
   Fighter2: {fileID: 176024261}
   BattleCounter: {fileID: 1922280088}
   BattleResults: {fileID: 1806103701}
+  endDelay: 2
+  StatStorage: {fileID: 1062555375}
   actionWords1: 
   actionWords2: 
   letter1: 0
@@ -925,6 +933,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   YourHP: {fileID: 176024261}
+  hpofPlayer: 0
+  maxHPofPlayer: 0
 --- !u!1 &396274249
 GameObject:
   m_ObjectHideFlags: 0
@@ -1548,6 +1558,59 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   YourAction: {fileID: 176024261}
+--- !u!1 &1062555374
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1062555376}
+  - component: {fileID: 1062555375}
+  m_Layer: 0
+  m_Name: StatStorage
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1062555375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1062555374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d789a74dba87e4aea9eb53a0de52e431, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 0
+  maxHP: 0
+  attkBase: 0
+  defBase: 0
+  magicAttkBase: 0
+  magicDefBase: 0
+  magicAttk: 0
+  magicDef: 0
+  attk: 0
+  def: 0
+  exp: 0
+  maxEXP: 0
+  lvl: 0
+--- !u!4 &1062555376
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1062555374}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.772444, y: -0.48140526, z: -10.019661}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1251915378
 GameObject:
   m_ObjectHideFlags: 0
@@ -2679,6 +2742,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   YourHP: {fileID: 155258144}
+  hpofPlayer: 0
+  maxHPofPlayer: 0
 --- !u!1 &2135253446
 GameObject:
   m_ObjectHideFlags: 0
