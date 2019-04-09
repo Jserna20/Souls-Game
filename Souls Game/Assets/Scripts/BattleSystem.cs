@@ -43,7 +43,7 @@ public class BattleSystem : MonoBehaviour
         //alive = true;
         Fighter1.CreatePerson();
         Fighter2.CreatePerson();
-        if (PlayerPrefs.HasKey("HP"))
+        /*if (PlayerPrefs.HasKey("HP"))
         {
             StatStorage.GetAllStats();
         }
@@ -52,6 +52,15 @@ public class BattleSystem : MonoBehaviour
             Fighter1.SetStats();
             StatStorage.SetAllStats(Fighter1.GetHP(), Fighter1.GetMaxHP(), Fighter1.GetAttk(), Fighter1.GetAttkBase(), Fighter1.GetDef(), Fighter1.GetDefBase(), Fighter1.GetMagicAttk(), Fighter1.GetMagicAttkBase(), Fighter1.GetMagicDef(), Fighter1.GetMagicDefBase());
             PlayerPrefs.Save();
+        }
+        */
+        Fighter1.SetStats();
+        //StatStorage.SetAllStats(Fighter1.GetHP(), Fighter1.GetMaxHP(), Fighter1.GetAttk(), Fighter1.GetAttkBase(), Fighter1.GetDef(), Fighter1.GetDefBase(), Fighter1.GetMagicAttk(), Fighter1.GetMagicAttkBase(), Fighter1.GetMagicDef(), Fighter1.GetMagicDefBase());
+        StatStorage.GetAllStats();
+        StatStorage.Save();
+        if(StatStorage.GetHPValue() != Fighter1.GetHP())
+        {
+            Fighter1.SetHP(StatStorage.GetHPValue());
         }
         Fighter2.SetStats();
         Fighter1.SetPlayerName("Player 1 ");
@@ -74,8 +83,8 @@ public class BattleSystem : MonoBehaviour
         letter2 = 'x';*/
     }
 
-    // Update is called once per frame
-    void Update()
+	// Update is called once per frame
+	void Update()
     {
         if (Fighter1.GetAlive() && Fighter2.GetAlive())
         {
@@ -98,7 +107,12 @@ public class BattleSystem : MonoBehaviour
 
     }
 
-    public void TurnResults()
+	private void LateUpdate()
+	{
+        StatStorage.Save();
+	}
+
+	public void TurnResults()
     {
 
         if (results2.Equals("P2 was deafeated. "))
@@ -314,7 +328,7 @@ public class BattleSystem : MonoBehaviour
 
                     case 'k':
                         results = "P2 used Random Buff, but was still hit by P1's Magic Attk. ";
-                        Fighter2.SetAttk((Fighter2.GetMagicAttk() + 1));
+                        Fighter2.SetARandomStatBuff(1);
                         Fighter1.SetTurnDamage(Fighter1.GetAttk(), -1);
                         Fighter2.TakeDamage(Fighter1.GetTurnDamage());
                         if (Fighter2.GetHP() <= 0)
@@ -419,18 +433,30 @@ public class BattleSystem : MonoBehaviour
                     case 'i':
                         results = "P1 used Random Buff, P2 used Magic Shield ";
                         Fighter1.SetARandomStatBuff(1);
+                        StatStorage.SetAttkValue(Fighter1.GetAttk());
+                        StatStorage.SetDefValue(Fighter1.GetDef());
+                        StatStorage.SetMagAttkValue(Fighter1.GetMagicDef());
+                        StatStorage.SetMagDefValue(Fighter1.GetMagicDef());
                         results2 = "Battle Continues";
                         break;
 
                     case 'j':
                         results = "P1 used Random Buff, P2 used Guard. ";
                         Fighter1.SetARandomStatBuff(1);
+                        StatStorage.SetAttkValue(Fighter1.GetAttk());
+                        StatStorage.SetDefValue(Fighter1.GetDef());
+                        StatStorage.SetMagAttkValue(Fighter1.GetMagicDef());
+                        StatStorage.SetMagDefValue(Fighter1.GetMagicDef());
                         results2 = "Battle Continues";
                         break;
 
                     case 'k':
                         results = "P1 used Random Buff, P2 also used Random Buff ";
                         Fighter1.SetARandomStatBuff(1);
+                        StatStorage.SetAttkValue(Fighter1.GetAttk());
+                        StatStorage.SetDefValue(Fighter1.GetDef());
+                        StatStorage.SetMagAttkValue(Fighter1.GetMagicDef());
+                        StatStorage.SetMagDefValue(Fighter1.GetMagicDef());
                         Fighter2.SetARandomStatBuff(1);
                         results2 = "Battle Continues";
                         break;
@@ -438,6 +464,10 @@ public class BattleSystem : MonoBehaviour
                     case 'l':
                         results = "P1 used Random Buff, P2 used Counter. Nothing happened. ";
                         Fighter1.SetARandomStatBuff(1);
+                        StatStorage.SetAttkValue(Fighter1.GetAttk());
+                        StatStorage.SetDefValue(Fighter1.GetDef());
+                        StatStorage.SetMagAttkValue(Fighter1.GetMagicDef());
+                        StatStorage.SetMagDefValue(Fighter1.GetMagicDef());
                         results2 = "Battle Continues";
                         break;
                 }
@@ -497,6 +527,7 @@ public class BattleSystem : MonoBehaviour
                         results = "P1 used Combo Attack. P2 used Counter. P2 hit P1. ";
                         Fighter2.SetTurnDamage((Fighter2.GetAttk() + Fighter2.GetMagicAttk()), -1);
                         Fighter1.TakeDamage(Fighter2.GetTurnDamage());
+                        StatStorage.SetHPValue(Fighter1.GetHP());
                         if (Fighter1.GetHP() <= 0)
                         {
                             results2 = "P1 was deafeated. ";
@@ -521,6 +552,7 @@ public class BattleSystem : MonoBehaviour
                         results = "P2 used Magic Attk. P1 shielded it. ";
                         Fighter2.SetTurnDamage(Fighter2.GetMagicAttk(), Fighter2.GetMagicDef());
                         Fighter1.TakeDamage(Fighter2.GetTurnDamage());
+                        StatStorage.SetHPValue(Fighter1.GetHP());
                         if (Fighter1.GetHP() <= 0)
                         {
                             results2 = "P1 was deafeated. ";
@@ -536,6 +568,7 @@ public class BattleSystem : MonoBehaviour
                         results = "P2 used Magic Attk. P1 was hit. ";
                         Fighter2.SetTurnDamage(Fighter2.GetAttk(), -1);
                         Fighter1.TakeDamage(Fighter2.GetTurnDamage());
+                        StatStorage.SetHPValue(Fighter1.GetHP());
                         if (Fighter1.GetHP() <= 0)
                         {
                             results2 = "P1 was deafeated. ";
@@ -550,8 +583,13 @@ public class BattleSystem : MonoBehaviour
                     case 's':
                         results = "P1 used Random Buff, but was still hit by P2's Magic Attk. ";
                         Fighter1.SetARandomStatBuff(1);
+                        StatStorage.SetAttkValue(Fighter1.GetAttk());
+                        StatStorage.SetDefValue(Fighter1.GetDef());
+                        StatStorage.SetMagAttkValue(Fighter1.GetMagicDef());
+                        StatStorage.SetMagDefValue(Fighter1.GetMagicDef());
                         Fighter2.SetTurnDamage(Fighter2.GetAttk(), -1);
                         Fighter1.TakeDamage(Fighter2.GetTurnDamage());
+                        StatStorage.SetHPValue(Fighter1.GetHP());
                         if (Fighter1.GetHP() <= 0)
                         {
                             results2 = "P2 was deafeated. ";
@@ -567,6 +605,7 @@ public class BattleSystem : MonoBehaviour
                         results = "P1 used Counter, but failed and was hit harder. ";
                         Fighter2.SetTurnDamage(Fighter2.GetAttk(), -2);
                         Fighter1.TakeDamage(Fighter2.GetTurnDamage());
+                        StatStorage.SetHPValue(Fighter1.GetHP());
                         if (Fighter1.GetHP() <= 0)
                         {
                             results2 = "P2 was deafeated. ";
@@ -588,6 +627,7 @@ public class BattleSystem : MonoBehaviour
                         results = "P2 used Basic Attk. P1 was hit. ";
                         Fighter2.SetTurnDamage(Fighter2.GetAttk(), -1);
                         Fighter1.TakeDamage(Fighter2.GetTurnDamage());
+                        StatStorage.SetHPValue(Fighter1.GetHP());
                         if (Fighter1.GetHP() <= 0)
                         {
                             results2 = "P1 was deafeated. ";
@@ -603,6 +643,7 @@ public class BattleSystem : MonoBehaviour
                         results = "P2 used Basic Attk. P1 guarded it. ";
                         Fighter2.SetTurnDamage(Fighter2.GetAttk(), Fighter1.GetDef());
                         Fighter1.TakeDamage(Fighter2.GetTurnDamage());
+                        StatStorage.SetHPValue(Fighter1.GetHP());
                         if (Fighter1.GetHP() <= 0)
                         {
                             results2 = "P1 was deafeated. ";
@@ -617,8 +658,13 @@ public class BattleSystem : MonoBehaviour
                     case 's':
                         results = "P1 used Random Buff, but was still hit. ";
                         Fighter1.SetARandomStatBuff(1);
+                        StatStorage.SetAttkValue(Fighter1.GetAttk());
+                        StatStorage.SetDefValue(Fighter1.GetDef());
+                        StatStorage.SetMagAttkValue(Fighter1.GetMagicDef());
+                        StatStorage.SetMagDefValue(Fighter1.GetMagicDef());
                         Fighter2.SetTurnDamage(Fighter2.GetAttk(), -1);
                         Fighter1.TakeDamage(Fighter2.GetTurnDamage());
+                        StatStorage.SetHPValue(Fighter1.GetHP());
                         if (Fighter1.GetHP() <= 0)
                         {
                             results2 = "P1 was deafeated. ";
@@ -634,6 +680,7 @@ public class BattleSystem : MonoBehaviour
                         results = "P1 used Counter, but failed and was hit harder. ";
                         Fighter2.SetTurnDamage(Fighter2.GetAttk(), -2);
                         Fighter1.TakeDamage(Fighter2.GetTurnDamage());
+                        StatStorage.SetHPValue(Fighter1.GetHP());
                         if (Fighter1.GetHP() <= 0)
                         {
                             results2 = "P1 was deafeated. ";
@@ -667,6 +714,10 @@ public class BattleSystem : MonoBehaviour
                         results = "P2 used Random Buff, P1 also used Random Buff ";
                         Fighter2.SetARandomStatBuff(1);
                         Fighter1.SetARandomStatBuff(1);
+                        StatStorage.SetAttkValue(Fighter1.GetAttk());
+                        StatStorage.SetDefValue(Fighter1.GetDef());
+                        StatStorage.SetMagAttkValue(Fighter1.GetMagicDef());
+                        StatStorage.SetMagDefValue(Fighter1.GetMagicDef());
                         results2 = "Battle Continues";
                         break;
 
@@ -686,6 +737,7 @@ public class BattleSystem : MonoBehaviour
                         results = "P2 used Combo Attack. P1 was hit by it. ";
                         Fighter2.SetTurnDamage((Fighter2.GetAttk() + Fighter2.GetMagicAttk()), -1);
                         Fighter1.TakeDamage(Fighter2.GetTurnDamage());
+                        StatStorage.SetHPValue(Fighter1.GetHP());
                         if (Fighter1.GetHP() <= 0)
                         {
                             results2 = "P1 was deafeated. ";
@@ -701,6 +753,7 @@ public class BattleSystem : MonoBehaviour
                         results = "P2 used Combo Attack. P1 was hit by it. ";
                         Fighter2.SetTurnDamage((Fighter2.GetAttk() + Fighter2.GetMagicAttk()), -1);
                         Fighter1.TakeDamage(Fighter2.GetTurnDamage());
+                        StatStorage.SetHPValue(Fighter1.GetHP());
                         if (Fighter1.GetHP() <= 0)
                         {
                             results2 = "P1 was deafeated. ";
@@ -715,8 +768,13 @@ public class BattleSystem : MonoBehaviour
                     case 's':
                         results = "P2 used Combo Attack. P1 was hit by it. ";
                         Fighter1.SetARandomStatBuff(1);
+                        StatStorage.SetAttkValue(Fighter1.GetAttk());
+                        StatStorage.SetDefValue(Fighter1.GetDef());
+                        StatStorage.SetMagAttkValue(Fighter1.GetMagicDef());
+                        StatStorage.SetMagDefValue(Fighter1.GetMagicDef());
                         Fighter2.SetTurnDamage((Fighter2.GetAttk() + Fighter2.GetMagicAttk()), -1);
                         Fighter1.TakeDamage(Fighter2.GetTurnDamage());
+                        StatStorage.SetHPValue(Fighter1.GetHP());
                         if (Fighter1.GetHP() <= 0)
                         {
                             results2 = "P1 was deafeated. ";

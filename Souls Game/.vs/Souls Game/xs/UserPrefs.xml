@@ -4,8 +4,8 @@
     <Files>
       <File FileName="Assets/Scripts/Menu.cs" Line="16" Column="5" />
       <File FileName="Assets/Scripts/SubMenu.cs" Line="8" Column="11" />
-      <File FileName="Assets/Scripts/MovementInOW.cs" Line="103" Column="50" />
-      <File FileName="Assets/Scripts/BattleSystem.cs" Line="101" Column="39" />
+      <File FileName="Assets/Scripts/MovementInOW.cs" Line="103" Column="10" />
+      <File FileName="Assets/Scripts/BattleSystem.cs" Line="101" Column="30" />
       <File FileName="Assets/Scripts/Enemy.cs" Line="69" Column="6" />
       <File FileName="Assets/Scripts/RightAction.cs" Line="13" Column="1" />
       <File FileName="Assets/Scripts/StatsDisplay.cs" Line="13" Column="1" />

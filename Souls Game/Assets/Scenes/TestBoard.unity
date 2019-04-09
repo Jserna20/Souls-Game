@@ -891,6 +891,7 @@ MonoBehaviour:
   exp: 0
   maxEXP: 0
   lvl: 0
+  PlayerStats: {fileID: 1884476854}
 --- !u!4 &2062448497
 Transform:
   m_ObjectHideFlags: 0

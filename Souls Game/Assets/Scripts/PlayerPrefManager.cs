@@ -17,27 +17,66 @@ public class PlayerPrefManager : MonoBehaviour
     public int exp;
     public int maxEXP;
     public int lvl;
+    public Player PlayerStats;
 
 	// Use this for initialization
 	void Awake () 
     {
-        PlayerPrefs.SetFloat("HP", hp);
-        PlayerPrefs.SetFloat("MaxHP", maxHP);
-        PlayerPrefs.SetFloat("AttkBase", attkBase);
-        PlayerPrefs.SetFloat("DefBase", defBase);
-        PlayerPrefs.SetFloat("MagAttkBase", magicAttkBase);
-        PlayerPrefs.SetFloat("MagDefBase", magicDefBase);
-        PlayerPrefs.SetFloat("Attk", attk);
-        PlayerPrefs.SetFloat("Def", def);
-        PlayerPrefs.SetFloat("MagAttk", magicAttk);
-        PlayerPrefs.SetFloat("MagDef", magicDef);
-        PlayerPrefs.SetInt("EXP", exp);
-        PlayerPrefs.SetInt("MaxExp", maxEXP);
-        PlayerPrefs.SetInt("LVL", lvl);
+        
+            PlayerStats.SetStats();
+            hp = PlayerStats.GetHP();
+            maxHP = PlayerStats.GetMaxHP();
+            attkBase = PlayerStats.GetAttkBase();
+            defBase = PlayerStats.GetDefBase();
+            magicAttkBase = PlayerStats.GetMagicAttkBase();
+            magicDefBase = PlayerStats.GetMagicDefBase();
+            attk = PlayerStats.GetAttk();
+            def = PlayerStats.GetDef();
+            magicAttk = PlayerStats.GetMagicAttk();
+            magicDef = PlayerStats.GetMagicDef();
+            exp = PlayerStats.GetExp();
+            maxEXP = PlayerStats.GetMaxEXP();
+            lvl = PlayerStats.GetLvl();
+
+            PlayerPrefs.SetFloat("HP", hp);
+            PlayerPrefs.SetFloat("MaxHP", maxHP);
+            PlayerPrefs.SetFloat("AttkBase", attkBase);
+            PlayerPrefs.SetFloat("DefBase", defBase);
+            PlayerPrefs.SetFloat("MagAttkBase", magicAttkBase);
+            PlayerPrefs.SetFloat("MagDefBase", magicDefBase);
+            PlayerPrefs.SetFloat("Attk", attk);
+            PlayerPrefs.SetFloat("Def", def);
+            PlayerPrefs.SetFloat("MagAttk", magicAttk);
+            PlayerPrefs.SetFloat("MagDef", magicDef);
+            PlayerPrefs.SetInt("EXP", exp);
+            PlayerPrefs.SetInt("MaxExp", maxEXP);
+            PlayerPrefs.SetInt("LVL", lvl);
 
 	}
-	
-    public void Save()
+
+    public void GetSavedStats()
+    {
+        OnEnable();
+    }
+
+	public void OnEnable()
+	{
+        hp = PlayerPrefs.GetFloat("HP"); 
+        maxHP = PlayerPrefs.GetFloat("MaxHP");
+        attk = PlayerPrefs.GetFloat("Attk");
+        attkBase = PlayerPrefs.GetFloat("AttkBase");
+        def = PlayerPrefs.GetFloat("Def");
+        defBase = PlayerPrefs.GetFloat("DefBase");
+        magicAttk = PlayerPrefs.GetFloat("MagAttk");
+        magicAttkBase = PlayerPrefs.GetFloat("MagAttkBase"); 
+        magicDef = PlayerPrefs.GetFloat("MagDef"); 
+        magicDefBase = PlayerPrefs.GetFloat("MagDefBase"); 
+        exp = PlayerPrefs.GetInt("EXP"); 
+        maxEXP = PlayerPrefs.GetInt("MaxExp"); 
+        lvl = PlayerPrefs.GetInt("LVL");
+	}
+
+	public void Save()
     {
         PlayerPrefs.Save();
     }
@@ -116,54 +155,68 @@ public class PlayerPrefManager : MonoBehaviour
         SetMagDefBaseValue(newMagDefBase);
     }
 
-    public void GetHPValue()
+    public float GetHPValue()
     {
-        PlayerPrefs.GetFloat("HP");
+        return PlayerPrefs.GetFloat("HP");
     }
 
-    public void GetMaxHPValue()
+    public float GetMaxHPValue()
     {
-        PlayerPrefs.GetFloat("MaxHP");
+        return PlayerPrefs.GetFloat("MaxHP");
     }
 
-    public void GetAttkValue()
+    public float GetAttkValue()
     {
-        PlayerPrefs.GetFloat("Attk");
+        return PlayerPrefs.GetFloat("Attk");
     }
 
-    public void GetAttkBaseValue()
+    public float GetAttkBaseValue()
     {
-        PlayerPrefs.GetFloat("AttkBase");
+        return PlayerPrefs.GetFloat("AttkBase");
     }
 
-    public void GetDefValue()
+    public float GetDefValue()
     {
-        PlayerPrefs.GetFloat("Def");
+        return PlayerPrefs.GetFloat("Def");
     }
 
-    public void GetDefBaseValue()
+    public float GetDefBaseValue()
     {
-        PlayerPrefs.GetFloat("DefBase");
+        return PlayerPrefs.GetFloat("DefBase");
     }
 
-    public void GetMagAttkValue()
+    public float GetMagAttkValue()
     {
-        PlayerPrefs.GetFloat("MagAttk");
+        return PlayerPrefs.GetFloat("MagAttk");
     }
 
-    public void GetMagAttkBaseValue()
+    public float GetMagAttkBaseValue()
     {
-        PlayerPrefs.GetFloat("MagAttkBase");
+        return PlayerPrefs.GetFloat("MagAttkBase");
     }
 
-    public void GetMagDefValue()
+    public float GetMagDefValue()
     {
-        PlayerPrefs.GetFloat("MagDef");
+        return PlayerPrefs.GetFloat("MagDef");
     }
 
-    public void GetMagDefBaseValue()
+    public float GetMagDefBaseValue()
     {
-        PlayerPrefs.GetFloat("MagDefBase");
+        return PlayerPrefs.GetFloat("MagDefBase");
+    }
+
+    public int GetEXP()
+    {
+        return PlayerPrefs.GetInt("EXP");
+    }
+
+    public int GetMaxExp()
+    {
+        return PlayerPrefs.GetInt("MaxExp");
+    }
+    public int GetLVL()
+    {
+        return PlayerPrefs.GetInt("LVL");
     }
 
     public void GetAllStats()
@@ -178,5 +231,32 @@ public class PlayerPrefManager : MonoBehaviour
         GetAttkBaseValue();
         GetMagDefValue();
         GetMagDefBaseValue();
+        GetEXP();
+        GetMaxExp();
+        GetLVL();
     }
+
 }
+
+/*
+ * if(PlayerPrefs.HasKey("HP"))
+        {
+            PlayerPrefs.GetFloat("HP");
+            PlayerPrefs.GetFloat("MaxHP");
+            PlayerPrefs.GetFloat("AttkBase");
+            PlayerPrefs.GetFloat("DefBase");
+            PlayerPrefs.GetFloat("MagAttkBase");
+            PlayerPrefs.GetFloat("MagDefBase");
+            PlayerPrefs.GetFloat("Attk");
+            PlayerPrefs.GetFloat("Def");
+            PlayerPrefs.GetFloat("MagAttk");
+            PlayerPrefs.GetFloat("MagDef");
+            PlayerPrefs.GetInt("EXP");
+            PlayerPrefs.GetInt("MaxExp");
+            PlayerPrefs.GetInt("LVL");
+        }
+        else
+        {
+        
+        }
+        */
