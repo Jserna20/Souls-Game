@@ -130,6 +130,12 @@ public class BattleSystem : MonoBehaviour
             print(results + results2 + theWinner);
             BattleResults.NewTurnText(results + results2 + theWinner);
             Fighter2.SetAlive(false);
+            PlayerStats.EXP += 5;
+            if(PlayerStats.EXP >= PlayerStats.MaxEXP)
+            {
+                PlayerStats.LevelUp();
+            }
+            PlayerStats.InBattle = false;
             PlayerPrefManager.PrefManager.Save();
             DelayedOWReturn(endDelay);
 
