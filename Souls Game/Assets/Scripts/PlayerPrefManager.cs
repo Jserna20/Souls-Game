@@ -4,76 +4,59 @@ using UnityEngine;
 
 public class PlayerPrefManager : MonoBehaviour 
 {
-    public float hp;
-    public float maxHP;
-    public float attkBase;
-    public float defBase;
-    public float magicAttkBase;
-    public float magicDefBase;
-    public float magicAttk;
-    public float magicDef;
-    public float attk;
-    public float def;
-    public int exp;
-    public int maxEXP;
-    public int lvl;
-    public Player PlayerStats;
+    public static PlayerPrefManager PrefManager
+    {
+        get;
+        set;
+    }
+
+    public float hpS;
+    public float maxHPS;
+    public float attkBaseS;
+    public float defBaseS;
+    public float magicAttkBaseS;
+    public float magicDefBaseS;
+    public float magicAttkS;
+    public float magicDefS;
+    public float attkS;
+    public float defS;
+    public int expS;
+    public int maxEXPS;
+    public int lvlS;
 
 	// Use this for initialization
 	void Awake () 
     {
-        
-            PlayerStats.SetStats();
-            hp = PlayerStats.GetHP();
-            maxHP = PlayerStats.GetMaxHP();
-            attkBase = PlayerStats.GetAttkBase();
-            defBase = PlayerStats.GetDefBase();
-            magicAttkBase = PlayerStats.GetMagicAttkBase();
-            magicDefBase = PlayerStats.GetMagicDefBase();
-            attk = PlayerStats.GetAttk();
-            def = PlayerStats.GetDef();
-            magicAttk = PlayerStats.GetMagicAttk();
-            magicDef = PlayerStats.GetMagicDef();
-            exp = PlayerStats.GetExp();
-            maxEXP = PlayerStats.GetMaxEXP();
-            lvl = PlayerStats.GetLvl();
+        PrefManager = this;
+        PlayerStats.SetStats();
+        hpS = PlayerStats.HP;
+        maxHPS = PlayerStats.MaxHP;
+        attkBaseS = PlayerStats.AttackBase;
+        defBaseS = PlayerStats.DefenseBase;
+        magicAttkBaseS = PlayerStats.MagicAttkBase;
+        magicDefBaseS = PlayerStats.MagicDefBase;
+        attkS = PlayerStats.Attk;
+        defS = PlayerStats.Def;
+        magicAttkS = PlayerStats.MagicAttk;
+        magicDefS = PlayerStats.MagicDef;
+        expS = PlayerStats.EXP;
+        maxEXPS = PlayerStats.MaxEXP;
+        lvlS = PlayerStats.LVL;
 
-            PlayerPrefs.SetFloat("HP", hp);
-            PlayerPrefs.SetFloat("MaxHP", maxHP);
-            PlayerPrefs.SetFloat("AttkBase", attkBase);
-            PlayerPrefs.SetFloat("DefBase", defBase);
-            PlayerPrefs.SetFloat("MagAttkBase", magicAttkBase);
-            PlayerPrefs.SetFloat("MagDefBase", magicDefBase);
-            PlayerPrefs.SetFloat("Attk", attk);
-            PlayerPrefs.SetFloat("Def", def);
-            PlayerPrefs.SetFloat("MagAttk", magicAttk);
-            PlayerPrefs.SetFloat("MagDef", magicDef);
-            PlayerPrefs.SetInt("EXP", exp);
-            PlayerPrefs.SetInt("MaxExp", maxEXP);
-            PlayerPrefs.SetInt("LVL", lvl);
+            PlayerPrefs.SetFloat("hpS", hpS);
+            PlayerPrefs.SetFloat("MaxHP", maxHPS);
+            PlayerPrefs.SetFloat("AttkBase", attkBaseS);
+            PlayerPrefs.SetFloat("DefBase", defBaseS);
+            PlayerPrefs.SetFloat("MagAttkBase", magicAttkBaseS);
+            PlayerPrefs.SetFloat("MagDefBase", magicDefBaseS);
+            PlayerPrefs.SetFloat("attkS", attkS);
+            PlayerPrefs.SetFloat("defS", defS);
+            PlayerPrefs.SetFloat("MagAttk", magicAttkS);
+            PlayerPrefs.SetFloat("MagDef", magicDefS);
+            PlayerPrefs.SetInt("expS", expS);
+            PlayerPrefs.SetInt("MaxExp", maxEXPS);
+            PlayerPrefs.SetInt("lvlS", lvlS);
 
-	}
-
-    public void GetSavedStats()
-    {
-        OnEnable();
-    }
-
-	public void OnEnable()
-	{
-        hp = PlayerPrefs.GetFloat("HP"); 
-        maxHP = PlayerPrefs.GetFloat("MaxHP");
-        attk = PlayerPrefs.GetFloat("Attk");
-        attkBase = PlayerPrefs.GetFloat("AttkBase");
-        def = PlayerPrefs.GetFloat("Def");
-        defBase = PlayerPrefs.GetFloat("DefBase");
-        magicAttk = PlayerPrefs.GetFloat("MagAttk");
-        magicAttkBase = PlayerPrefs.GetFloat("MagAttkBase"); 
-        magicDef = PlayerPrefs.GetFloat("MagDef"); 
-        magicDefBase = PlayerPrefs.GetFloat("MagDefBase"); 
-        exp = PlayerPrefs.GetInt("EXP"); 
-        maxEXP = PlayerPrefs.GetInt("MaxExp"); 
-        lvl = PlayerPrefs.GetInt("LVL");
 	}
 
 	public void Save()
@@ -83,62 +66,62 @@ public class PlayerPrefManager : MonoBehaviour
 
     public void SetHPValue(float value)
     {
-        hp = value;
-        PlayerPrefs.SetFloat("HP", hp);
+        hpS = value;
+        PlayerPrefs.SetFloat("hpS", hpS);
     }
 
     public void SetMaxHPValue(float value)
     {
-        maxHP = value;
-        PlayerPrefs.SetFloat("MaxHP", maxHP);
+        maxHPS = value;
+        PlayerPrefs.SetFloat("MaxHP", maxHPS);
     }
 
     public void SetAttkValue(float value)
     {
-        attk = value;
-        PlayerPrefs.SetFloat("Attk", attk);
+        attkS = value;
+        PlayerPrefs.SetFloat("attkS", attkS);
     }
 
     public void SetAttkBaseValue(float value)
     {
-        attkBase = value;
-        PlayerPrefs.SetFloat("AttkBase", attkBase);
+        attkBaseS = value;
+        PlayerPrefs.SetFloat("AttkBase", attkBaseS);
     }
 
     public void SetDefValue(float value)
     {
-        def = value;
-        PlayerPrefs.SetFloat("Def", def);
+        defS = value;
+        PlayerPrefs.SetFloat("defS", defS);
     }
 
     public void SetDefBaseValue(float value)
     {
-        defBase = value;
-        PlayerPrefs.SetFloat("DefBase", defBase);
+        defBaseS = value;
+        PlayerPrefs.SetFloat("DefBase", defBaseS);
     }
 
     public void SetMagAttkValue(float value)
     {
-        magicAttk = value;
-        PlayerPrefs.SetFloat("MagAttk", magicAttk);
+        magicAttkS = value;
+        PlayerPrefs.SetFloat("MagAttk", magicAttkS);
     }
 
     public void SetMagAttkBaseValue(float value)
     {
-        magicAttkBase = value;
-        PlayerPrefs.SetFloat("MagAttkBase", hp);
+        magicAttkBaseS = value;
+        PlayerPrefs.SetFloat("MagAttkBase", hpS);
     }
 
     public void SetMagDefValue(float value)
     {
-        magicDef = value;
-        PlayerPrefs.SetFloat("MagDef", magicDef);
+        magicDefS = value;
+        PlayerPrefs.SetFloat("MagDef", magicDefS);
     }
 
     public void SetMagDefBaseValue(float value)
     {
-        magicDefBase = value;
-        PlayerPrefs.SetFloat("MagDefBase", magicDefBase);
+        magicDefBaseS = value;
+        PlayerPrefs.SetFloat("MagDefBase", magicDefBaseS);
     }
 
     public void SetAllStats(float newHP, float newMaxHP, float newAttk, float newAttkBase, float newDef, float newDefBase, float newMagAttk, float newMagAttkBase, float newMagDef, float newMagDefBase)
@@ -157,7 +140,7 @@ public class PlayerPrefManager : MonoBehaviour
 
     public float GetHPValue()
     {
-        return PlayerPrefs.GetFloat("HP");
+        return PlayerPrefs.GetFloat("hpS");
     }
 
     public float GetMaxHPValue()
@@ -167,7 +150,7 @@ public class PlayerPrefManager : MonoBehaviour
 
     public float GetAttkValue()
     {
-        return PlayerPrefs.GetFloat("Attk");
+        return PlayerPrefs.GetFloat("attkS");
     }
 
     public float GetAttkBaseValue()
@@ -177,7 +160,7 @@ public class PlayerPrefManager : MonoBehaviour
 
     public float GetDefValue()
     {
-        return PlayerPrefs.GetFloat("Def");
+        return PlayerPrefs.GetFloat("defS");
     }
 
     public float GetDefBaseValue()
@@ -207,7 +190,7 @@ public class PlayerPrefManager : MonoBehaviour
 
     public int GetEXP()
     {
-        return PlayerPrefs.GetInt("EXP");
+        return PlayerPrefs.GetInt("expS");
     }
 
     public int GetMaxExp()
@@ -216,7 +199,7 @@ public class PlayerPrefManager : MonoBehaviour
     }
     public int GetLVL()
     {
-        return PlayerPrefs.GetInt("LVL");
+        return PlayerPrefs.GetInt("lvlS");
     }
 
     public void GetAllStats()
@@ -239,21 +222,21 @@ public class PlayerPrefManager : MonoBehaviour
 }
 
 /*
- * if(PlayerPrefs.HasKey("HP"))
+ * if(PlayerPrefs.HasKey("hpS"))
         {
-            PlayerPrefs.GetFloat("HP");
+            PlayerPrefs.GetFloat("hpS");
             PlayerPrefs.GetFloat("MaxHP");
             PlayerPrefs.GetFloat("AttkBase");
             PlayerPrefs.GetFloat("DefBase");
             PlayerPrefs.GetFloat("MagAttkBase");
             PlayerPrefs.GetFloat("MagDefBase");
-            PlayerPrefs.GetFloat("Attk");
-            PlayerPrefs.GetFloat("Def");
+            PlayerPrefs.GetFloat("attkS");
+            PlayerPrefs.GetFloat("defS");
             PlayerPrefs.GetFloat("MagAttk");
             PlayerPrefs.GetFloat("MagDef");
-            PlayerPrefs.GetInt("EXP");
+            PlayerPrefs.GetInt("expS");
             PlayerPrefs.GetInt("MaxExp");
-            PlayerPrefs.GetInt("LVL");
+            PlayerPrefs.GetInt("lvlS");
         }
         else
         {

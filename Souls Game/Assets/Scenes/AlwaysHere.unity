@@ -194,73 +194,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1519520762
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1519520764}
-  - component: {fileID: 1519520763}
-  m_Layer: 0
-  m_Name: Player
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1519520763
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1519520762}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7ed46c484998ed43bfe9030502e6d70, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerPrefab: {fileID: 0}
-  hp: 0
-  maxHP: 0
-  attkBase: 0
-  defBase: 0
-  magicAttkBase: 0
-  magicDefBase: 0
-  magicAttk: 0
-  magicDef: 0
-  attk: 0
-  def: 0
-  alive: 0
-  defeated: 0
-  inBattle: 0
-  isAttacker: 0
-  choosing: 0
-  upName: 
-  leftName: 
-  downName: 
-  rightName: 
-  playerName: 
-  turndamage: 0
-  numToDetermineStatBuff: 0
-  exp: 0
-  maxEXP: 0
-  lvl: 0
-  person: {fileID: 0}
---- !u!4 &1519520764
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1519520762}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1782510516
 GameObject:
   m_ObjectHideFlags: 0
@@ -288,20 +221,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d789a74dba87e4aea9eb53a0de52e431, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 0
-  maxHP: 0
-  attkBase: 0
-  defBase: 0
-  magicAttkBase: 0
-  magicDefBase: 0
-  magicAttk: 0
-  magicDef: 0
-  attk: 0
-  def: 0
-  exp: 0
-  maxEXP: 0
-  lvl: 0
-  PlayerStats: {fileID: 1519520763}
+  hpS: 0
+  maxHPS: 0
+  attkBaseS: 0
+  defBaseS: 0
+  magicAttkBaseS: 0
+  magicDefBaseS: 0
+  magicAttkS: 0
+  magicDefS: 0
+  attkS: 0
+  defS: 0
+  expS: 0
+  maxEXPS: 0
+  lvlS: 0
 --- !u!4 &1782510518
 Transform:
   m_ObjectHideFlags: 0

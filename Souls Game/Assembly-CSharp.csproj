@@ -60,12 +60,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\BattleSystem.cs" />
-    <Compile Include="Assets\Scripts\BattleTurns.cs" />
-    <Compile Include="Assets\Scripts\DownAction.cs" />
+    <Compile Include="Assets\Scripts\Displays\BattleTurns.cs" />
+    <Compile Include="Assets\Scripts\Displays\DownAction.cs" />
+    <Compile Include="Assets\Scripts\Displays\HPDisplay.cs" />
+    <Compile Include="Assets\Scripts\Displays\LeftAction.cs" />
+    <Compile Include="Assets\Scripts\Displays\Results.cs" />
+    <Compile Include="Assets\Scripts\Displays\RightAction.cs" />
+    <Compile Include="Assets\Scripts\Displays\StatsDisplay.cs" />
+    <Compile Include="Assets\Scripts\Displays\UpAction.cs" />
     <Compile Include="Assets\Scripts\Enemy.cs" />
     <Compile Include="Assets\Scripts\HelpMenu.cs" />
-    <Compile Include="Assets\Scripts\HPDisplay.cs" />
-    <Compile Include="Assets\Scripts\LeftAction.cs" />
     <Compile Include="Assets\Scripts\LevelAndExp.cs" />
     <Compile Include="Assets\Scripts\ManagerClass.cs" />
     <Compile Include="Assets\Scripts\Menu.cs" />
@@ -73,11 +77,9 @@
     <Compile Include="Assets\Scripts\MovingCam.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
     <Compile Include="Assets\Scripts\PlayerPrefManager.cs" />
-    <Compile Include="Assets\Scripts\Results.cs" />
-    <Compile Include="Assets\Scripts\RightAction.cs" />
-    <Compile Include="Assets\Scripts\StatsDisplay.cs" />
+    <Compile Include="Assets\Scripts\PlayerStats.cs" />
+    <Compile Include="Assets\Scripts\PrefManager.cs" />
     <Compile Include="Assets\Scripts\SubMenu.cs" />
-    <Compile Include="Assets\Scripts\UpAction.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>/Users/jesusserna/Desktop/Souls-Game/Souls Game/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>

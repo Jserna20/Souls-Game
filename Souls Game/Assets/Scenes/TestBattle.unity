@@ -196,7 +196,7 @@ Transform:
   m_LocalScale: {x: 657.81744, y: 1.0011413, z: 3.043736}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 122.173004, y: 89.354996, z: 89.99999}
 --- !u!1 &109834845
 GameObject:
@@ -208,7 +208,7 @@ GameObject:
   - component: {fileID: 109834846}
   m_Layer: 0
   m_Name: P2Choses
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -243,7 +243,7 @@ GameObject:
   - component: {fileID: 123905017}
   m_Layer: 5
   m_Name: P2jAction
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -341,71 +341,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 123905015}
---- !u!1 &155258143
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 155258145}
-  - component: {fileID: 155258144}
-  m_Layer: 0
-  m_Name: Fighter1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &155258144
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 155258143}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7ed46c484998ed43bfe9030502e6d70, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hp: 0
-  maxHP: 0
-  attkBase: 0
-  defBase: 0
-  magicAttkBase: 0
-  magicDefBase: 0
-  magicAttk: 0
-  magicDef: 0
-  attk: 0
-  def: 0
-  alive: 0
-  defeated: 0
-  inBattle: 0
-  isAttacker: 0
-  choosing: 0
-  upName: 
-  leftName: 
-  downName: 
-  rightName: 
-  playerName: 
-  turndamage: 0
-  numToDetermineStatBuff: 0
-  exp: 0
-  maxEXP: 0
-  lvl: 0
---- !u!4 &155258145
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 155258143}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.5, y: 4.2, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &170076733
 GameObject:
   m_ObjectHideFlags: 0
@@ -534,7 +469,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &205846295
 GameObject:
@@ -549,7 +484,7 @@ GameObject:
   - component: {fileID: 205846299}
   m_Layer: 5
   m_Name: Left Action
-  m_TagString: Untagged
+  m_TagString: Human
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -622,7 +557,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 466e36006f6ca40fe8dced3d9789dffa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  YourAction: {fileID: 155258144}
+  YourAction: {fileID: 176024261}
 --- !u!1 &222403317
 GameObject:
   m_ObjectHideFlags: 0
@@ -636,7 +571,7 @@ GameObject:
   - component: {fileID: 222403321}
   m_Layer: 5
   m_Name: P1 Stats
-  m_TagString: Untagged
+  m_TagString: Human
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -709,7 +644,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9f7608a7f67b40878bbea8f20ba67b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  YourStats: {fileID: 155258144}
+  YourStats: {fileID: 176024261}
 --- !u!1 &260316393
 GameObject:
   m_ObjectHideFlags: 0
@@ -720,7 +655,7 @@ GameObject:
   - component: {fileID: 260316394}
   m_Layer: 0
   m_Name: P1Choses
-  m_TagString: Untagged
+  m_TagString: Human
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -780,7 +715,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   p1Prefab: {fileID: 1861863886187170, guid: f4b846ab3d3fe0a4b92e95ad808f85b9, type: 2}
   p2Prefab: {fileID: 1094403750047258, guid: 83c69f9d5b1a99745a91d57c56f6751b, type: 2}
-  Fighter1: {fileID: 155258144}
   Fighter2: {fileID: 176024261}
   BattleCounter: {fileID: 1922280088}
   BattleResults: {fileID: 1806103701}
@@ -788,7 +722,6 @@ MonoBehaviour:
   loaded: 0
   endDelay: 2
   scene: 1
-  StatStorage: {fileID: 1062555375}
   actionWords1: 
   actionWords2: 
   letter1: 0
@@ -860,7 +793,7 @@ GameObject:
   - component: {fileID: 330408837}
   m_Layer: 5
   m_Name: P2 HP
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -934,8 +867,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   YourHP: {fileID: 176024261}
-  hpofPlayer: 0
-  maxHPofPlayer: 0
 --- !u!1 &396274249
 GameObject:
   m_ObjectHideFlags: 0
@@ -949,7 +880,7 @@ GameObject:
   - component: {fileID: 396274253}
   m_Layer: 5
   m_Name: Up Action
-  m_TagString: Untagged
+  m_TagString: Human
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1022,7 +953,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35fe253a04c7044f19b647a50b7097de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  YourAction: {fileID: 155258144}
+  YourAction: {fileID: 176024261}
 --- !u!1 &433114613
 GameObject:
   m_ObjectHideFlags: 0
@@ -1036,7 +967,7 @@ GameObject:
   - component: {fileID: 433114617}
   m_Layer: 5
   m_Name: P2 Stats
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1123,7 +1054,7 @@ GameObject:
   - component: {fileID: 679140063}
   m_Layer: 5
   m_Name: Up Action
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1311,7 +1242,7 @@ GameObject:
   - component: {fileID: 923531028}
   m_Layer: 5
   m_Name: Right Action
-  m_TagString: Untagged
+  m_TagString: Human
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1384,7 +1315,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5880c88db00f646a8a2e1150f1965a80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  YourAction: {fileID: 155258144}
+  YourAction: {fileID: 176024261}
 --- !u!1 &937989900
 GameObject:
   m_ObjectHideFlags: 0
@@ -1398,7 +1329,7 @@ GameObject:
   - component: {fileID: 937989904}
   m_Layer: 5
   m_Name: Down Action
-  m_TagString: Untagged
+  m_TagString: Human
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1471,7 +1402,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6afccc4ba768f47aba720bc33a7019b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  YourAction: {fileID: 155258144}
+  YourAction: {fileID: 176024261}
 --- !u!1 &955295823
 GameObject:
   m_ObjectHideFlags: 0
@@ -1485,7 +1416,7 @@ GameObject:
   - component: {fileID: 955295827}
   m_Layer: 5
   m_Name: Left Action
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1559,60 +1490,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   YourAction: {fileID: 176024261}
---- !u!1 &1062555374
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1062555376}
-  - component: {fileID: 1062555375}
-  m_Layer: 0
-  m_Name: StatStorage
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1062555375
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1062555374}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d789a74dba87e4aea9eb53a0de52e431, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hp: 0
-  maxHP: 0
-  attkBase: 0
-  defBase: 0
-  magicAttkBase: 0
-  magicDefBase: 0
-  magicAttk: 0
-  magicDef: 0
-  attk: 0
-  def: 0
-  exp: 0
-  maxEXP: 0
-  lvl: 0
-  PlayerStats: {fileID: 155258144}
---- !u!4 &1062555376
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1062555374}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.772444, y: -0.48140526, z: -10.019661}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1251915378
 GameObject:
   m_ObjectHideFlags: 0
@@ -1626,7 +1503,7 @@ GameObject:
   - component: {fileID: 1251915382}
   m_Layer: 5
   m_Name: Down Action
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1772,7 +1649,7 @@ Transform:
   m_LocalScale: {x: 146.51599, y: 3707.7314, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 57.883003}
 --- !u!1 &1420265180
 GameObject:
@@ -1787,7 +1664,7 @@ GameObject:
   - component: {fileID: 1420265182}
   m_Layer: 5
   m_Name: P1dAction
-  m_TagString: Untagged
+  m_TagString: Human
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1898,7 +1775,7 @@ GameObject:
   - component: {fileID: 1482419210}
   m_Layer: 5
   m_Name: P1aAction
-  m_TagString: Untagged
+  m_TagString: Human
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2009,7 +1886,7 @@ GameObject:
   - component: {fileID: 1518558557}
   m_Layer: 5
   m_Name: P2kAction
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2120,7 +1997,7 @@ GameObject:
   - component: {fileID: 1542795211}
   m_Layer: 5
   m_Name: Right Action
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2342,8 +2219,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 454e422ec0b794d0c8eb7b6acd5410a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Choser1: {fileID: 155258144}
-  Choser2: {fileID: 176024261}
   TurnB4: {fileID: 1922280088}
   turnText: 
 --- !u!1 &1869093880
@@ -2359,7 +2234,7 @@ GameObject:
   - component: {fileID: 1869093882}
   m_Layer: 5
   m_Name: P2kAction
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2486,8 +2361,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c15bd1b817c04ce19d2f6ce31ba1300, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Choser1: {fileID: 155258144}
-  Choser2: {fileID: 176024261}
   turnNumber: 0
 --- !u!224 &1922280089
 RectTransform:
@@ -2559,7 +2432,7 @@ GameObject:
   - component: {fileID: 2019120017}
   m_Layer: 5
   m_Name: P2jAction
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2670,7 +2543,7 @@ GameObject:
   - component: {fileID: 2118749547}
   m_Layer: 5
   m_Name: P1 HP
-  m_TagString: Untagged
+  m_TagString: Human
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2743,9 +2616,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31577afc5caa24a7cac7adb9a9c2fefc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  YourHP: {fileID: 155258144}
-  hpofPlayer: 0
-  maxHPofPlayer: 0
+  YourHP: {fileID: 176024261}
 --- !u!1 &2135253446
 GameObject:
   m_ObjectHideFlags: 0
@@ -2759,7 +2630,7 @@ GameObject:
   - component: {fileID: 2135253448}
   m_Layer: 5
   m_Name: P1sAction
-  m_TagString: Untagged
+  m_TagString: Human
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2870,7 +2741,7 @@ GameObject:
   - component: {fileID: 2137480962}
   m_Layer: 5
   m_Name: P1wAction
-  m_TagString: Untagged
+  m_TagString: Human
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

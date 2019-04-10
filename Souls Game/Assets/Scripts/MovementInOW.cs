@@ -12,11 +12,9 @@ public class MovementInOW : MonoBehaviour
     public GameObject worldCam;
     public Menu menuHalos;
     public int scene;
-    public Player statsOfPlayer;
     public int stepcounter;
     public bool loaded;
     public bool unloaded;
-    public PlayerPrefManager StorageOW;
 
     [Header("Set Dynamically")]
     public GameObject playerInOW;
@@ -37,13 +35,6 @@ public class MovementInOW : MonoBehaviour
         worldCamPos = new Vector3(0, 0, -10);
         facingRightSide = true;
         flip = playerInOW.transform.localRotation;
-        statsOfPlayer.SetStats();
-        StorageOW.GetAllStats();
-        StorageOW.Save();
-        if (StorageOW.GetHPValue() != statsOfPlayer.GetHP())
-        {
-            statsOfPlayer.SetHP(StorageOW.GetHPValue());
-        }
         stepcounter = 0;
         stepsUntilFight = Random.Range(1, 11);
 	}
@@ -52,7 +43,7 @@ public class MovementInOW : MonoBehaviour
 	void Update () 
     {
 
-        if(!statsOfPlayer.GetInBattle())
+        if(!PlayerStats.InBattle)
         {
             if (movingMode)
             {
@@ -114,7 +105,7 @@ public class MovementInOW : MonoBehaviour
 	{
         if((stepcounter == stepsUntilFight) && !loaded)
         {
-            statsOfPlayer.SetInBattle(true);
+            PlayerStats.InBattle = true;
             menuHalos.inBattle = true;
             Destroy(playerInOW);
             SceneManager.LoadSceneAsync(scene, LoadSceneMode.Additive);

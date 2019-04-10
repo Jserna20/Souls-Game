@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Button
+  - Human
+  - Enemy
   layers:
   - Default
   - TransparentFX

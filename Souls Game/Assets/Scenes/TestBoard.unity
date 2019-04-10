@@ -241,10 +241,9 @@ MonoBehaviour:
   worldCam: {fileID: 706620421}
   menuHalos: {fileID: 1141624411}
   scene: 2
-  statsOfPlayer: {fileID: 1884476854}
   stepcounter: 0
   loaded: 0
-  StorageOW: {fileID: 2062448496}
+  unloaded: 0
   playerInOW: {fileID: 0}
   playerSpot: {x: 0, y: 0, z: 0}
   playerRotation: {x: 0, y: 0, z: 0}
@@ -280,7 +279,7 @@ GameObject:
   - component: {fileID: 569710028}
   m_Layer: 5
   m_Name: Level&Exp
-  m_TagString: Untagged
+  m_TagString: Human
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -356,7 +355,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53de9e334681649078e48de1886c35ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  YourLvlExp: {fileID: 1884476854}
 --- !u!1 &706620421
 GameObject:
   m_ObjectHideFlags: 0
@@ -554,6 +552,7 @@ MonoBehaviour:
   weaponsButton: {fileID: 0}
   shieldsButton: {fileID: 0}
   statsButton: {fileID: 0}
+  inBattle: 0
   onMapB: 0
   onActionB: 0
   onItemsB: 0
@@ -654,7 +653,7 @@ GameObject:
   - component: {fileID: 1631937170}
   m_Layer: 5
   m_Name: HP Bar
-  m_TagString: Untagged
+  m_TagString: Human
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -732,9 +731,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31577afc5caa24a7cac7adb9a9c2fefc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  YourHP: {fileID: 1884476854}
-  hpofPlayer: 0
-  maxHPofPlayer: 0
 --- !u!1001 &1863551078
 Prefab:
   m_ObjectHideFlags: 0
@@ -772,7 +768,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4260545259743996, guid: 7d582ba47c43b49a4814cff7feb5c741, type: 2}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4260545259743996, guid: 7d582ba47c43b49a4814cff7feb5c741, type: 2}
       propertyPath: m_LocalScale.x
@@ -785,125 +781,3 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7d582ba47c43b49a4814cff7feb5c741, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &1884476853
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1884476855}
-  - component: {fileID: 1884476854}
-  m_Layer: 0
-  m_Name: PlayerStats
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1884476854
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1884476853}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7ed46c484998ed43bfe9030502e6d70, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerPrefab: {fileID: 1213785032313272, guid: 6da11f0d1464241eaa7260225dad751c,
-    type: 2}
-  hp: 0
-  maxHP: 0
-  attkBase: 0
-  defBase: 0
-  magicAttkBase: 0
-  magicDefBase: 0
-  magicAttk: 0
-  magicDef: 0
-  attk: 0
-  def: 0
-  alive: 0
-  defeated: 0
-  inBattle: 0
-  isAttacker: 0
-  choosing: 0
-  upName: 
-  leftName: 
-  downName: 
-  rightName: 
-  playerName: 
-  turndamage: 0
-  numToDetermineStatBuff: 0
-  exp: 0
-  maxEXP: 0
-  lvl: 0
-  person: {fileID: 0}
---- !u!4 &1884476855
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1884476853}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 466.5931, y: 301.65097, z: 1.1960799}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &2062448495
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 2062448497}
-  - component: {fileID: 2062448496}
-  m_Layer: 0
-  m_Name: OWStorage
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &2062448496
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2062448495}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d789a74dba87e4aea9eb53a0de52e431, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hp: 0
-  maxHP: 0
-  attkBase: 0
-  defBase: 0
-  magicAttkBase: 0
-  magicDefBase: 0
-  magicAttk: 0
-  magicDef: 0
-  attk: 0
-  def: 0
-  exp: 0
-  maxEXP: 0
-  lvl: 0
-  PlayerStats: {fileID: 1884476854}
---- !u!4 &2062448497
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2062448495}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.772444, y: -0.48140526, z: -10.019661}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
