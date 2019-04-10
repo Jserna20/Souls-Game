@@ -368,8 +368,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7ed46c484998ed43bfe9030502e6d70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerPrefab: {fileID: 1861863886187170, guid: f4b846ab3d3fe0a4b92e95ad808f85b9,
-    type: 2}
   hp: 0
   maxHP: 0
   attkBase: 0
@@ -395,7 +393,6 @@ MonoBehaviour:
   exp: 0
   maxEXP: 0
   lvl: 0
-  person: {fileID: 0}
 --- !u!4 &155258145
 Transform:
   m_ObjectHideFlags: 0
@@ -501,8 +498,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7ed46c484998ed43bfe9030502e6d70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerPrefab: {fileID: 1094403750047258, guid: 83c69f9d5b1a99745a91d57c56f6751b,
-    type: 2}
   hp: 0
   maxHP: 0
   attkBase: 0
@@ -528,7 +523,6 @@ MonoBehaviour:
   exp: 0
   maxEXP: 0
   lvl: 0
-  person: {fileID: 0}
 --- !u!4 &176024262
 Transform:
   m_ObjectHideFlags: 0
@@ -784,11 +778,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec18bc512b8ad48d08974787204f3c25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  p1Prefab: {fileID: 1861863886187170, guid: f4b846ab3d3fe0a4b92e95ad808f85b9, type: 2}
+  p2Prefab: {fileID: 1094403750047258, guid: 83c69f9d5b1a99745a91d57c56f6751b, type: 2}
   Fighter1: {fileID: 155258144}
   Fighter2: {fileID: 176024261}
   BattleCounter: {fileID: 1922280088}
   BattleResults: {fileID: 1806103701}
+  unloaded: 0
+  loaded: 0
   endDelay: 2
+  scene: 1
   StatStorage: {fileID: 1062555375}
   actionWords1: 
   actionWords2: 
@@ -797,6 +796,8 @@ MonoBehaviour:
   results: 
   results2: 
   theWinner: 
+  fighterGO1: {fileID: 0}
+  fighterGO2: {fileID: 0}
 --- !u!20 &282840813
 Camera:
   m_ObjectHideFlags: 0

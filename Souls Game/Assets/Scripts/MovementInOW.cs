@@ -11,8 +11,11 @@ public class MovementInOW : MonoBehaviour
     public GameObject playerInOWPF;
     public GameObject worldCam;
     public Menu menuHalos;
+    public int scene;
     public Player statsOfPlayer;
     public int stepcounter;
+    public bool loaded;
+    public bool unloaded;
     public PlayerPrefManager StorageOW;
 
     [Header("Set Dynamically")]
@@ -34,13 +37,12 @@ public class MovementInOW : MonoBehaviour
         worldCamPos = new Vector3(0, 0, -10);
         facingRightSide = true;
         flip = playerInOW.transform.localRotation;
-        if(PlayerPrefs.HasKey("HP"))
+        statsOfPlayer.SetStats();
+        StorageOW.GetAllStats();
+        StorageOW.Save();
+        if (StorageOW.GetHPValue() != statsOfPlayer.GetHP())
         {
-            StorageOW.GetAllStats();
-        }
-        else
-        {
-            statsOfPlayer.SetStats();
+            statsOfPlayer.SetHP(StorageOW.GetHPValue());
         }
         stepcounter = 0;
         stepsUntilFight = Random.Range(1, 11);
@@ -49,56 +51,60 @@ public class MovementInOW : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
     {
-        if(movingMode)
-        {
-            if (Input.GetKeyDown(KeyCode.DownArrow))
-            {
-                stepcounter++;
-                playerSpot += (Vector3.down * movementSpeed);
-                worldCamPos += (Vector3.down * movementSpeed);
-                playerInOW.transform.position = playerSpot;
-                worldCam.transform.position = worldCamPos;
-                MatchHalosWithCam(Vector3.down * movementSpeed);
-            }
-            else if (Input.GetKeyDown(KeyCode.UpArrow))
-            {
-                stepcounter++;
-                playerSpot += (Vector3.up * movementSpeed);
-                worldCamPos += (Vector3.up * movementSpeed);
-                playerInOW.transform.position = playerSpot;
-                worldCam.transform.position = worldCamPos;
-                MatchHalosWithCam(Vector3.up * movementSpeed);
-            }
-            else if (Input.GetKeyDown(KeyCode.RightArrow))
-            {
-                stepcounter++;
-                if (!facingRightSide)
-                {
-                    facingRightSide = true;
-                    flip.y -= 180;
-                    playerInOW.transform.rotation = flip;
-                }
-                playerSpot += (Vector3.right * movementSpeed);
-                worldCamPos += (Vector3.right * movementSpeed);
-                playerInOW.transform.position = playerSpot;
-                worldCam.transform.position = worldCamPos;
-                MatchHalosWithCam(Vector3.right * movementSpeed);
-            }
-            else if (Input.GetKeyDown(KeyCode.LeftArrow))
-            {
-                stepcounter++;
-                if (facingRightSide)
-                {
-                    facingRightSide = false;
-                    flip.y += 180;
-                    playerInOW.transform.rotation = flip;
 
+        if(!statsOfPlayer.GetInBattle())
+        {
+            if (movingMode)
+            {
+                if (Input.GetKeyDown(KeyCode.DownArrow))
+                {
+                    stepcounter++;
+                    playerSpot += (Vector3.down * movementSpeed);
+                    worldCamPos += (Vector3.down * movementSpeed);
+                    playerInOW.transform.position = playerSpot;
+                    worldCam.transform.position = worldCamPos;
+                    MatchHalosWithCam(Vector3.down * movementSpeed);
                 }
-                playerSpot += (Vector3.left * movementSpeed);
-                worldCamPos += (Vector3.left * movementSpeed);
-                playerInOW.transform.position = playerSpot;
-                worldCam.transform.position = worldCamPos;
-                MatchHalosWithCam(Vector3.left * movementSpeed);
+                else if (Input.GetKeyDown(KeyCode.UpArrow))
+                {
+                    stepcounter++;
+                    playerSpot += (Vector3.up * movementSpeed);
+                    worldCamPos += (Vector3.up * movementSpeed);
+                    playerInOW.transform.position = playerSpot;
+                    worldCam.transform.position = worldCamPos;
+                    MatchHalosWithCam(Vector3.up * movementSpeed);
+                }
+                else if (Input.GetKeyDown(KeyCode.RightArrow))
+                {
+                    stepcounter++;
+                    if (!facingRightSide)
+                    {
+                        facingRightSide = true;
+                        flip.y -= 180;
+                        playerInOW.transform.rotation = flip;
+                    }
+                    playerSpot += (Vector3.right * movementSpeed);
+                    worldCamPos += (Vector3.right * movementSpeed);
+                    playerInOW.transform.position = playerSpot;
+                    worldCam.transform.position = worldCamPos;
+                    MatchHalosWithCam(Vector3.right * movementSpeed);
+                }
+                else if (Input.GetKeyDown(KeyCode.LeftArrow))
+                {
+                    stepcounter++;
+                    if (facingRightSide)
+                    {
+                        facingRightSide = false;
+                        flip.y += 180;
+                        playerInOW.transform.rotation = flip;
+
+                    }
+                    playerSpot += (Vector3.left * movementSpeed);
+                    worldCamPos += (Vector3.left * movementSpeed);
+                    playerInOW.transform.position = playerSpot;
+                    worldCam.transform.position = worldCamPos;
+                    MatchHalosWithCam(Vector3.left * movementSpeed);
+                }
             }
         }
     
@@ -106,9 +112,13 @@ public class MovementInOW : MonoBehaviour
 
 	private void LateUpdate()
 	{
-        if(stepcounter == stepsUntilFight)
+        if((stepcounter == stepsUntilFight) && !loaded)
         {
-            SceneManager.LoadScene("TestBattle");
+            statsOfPlayer.SetInBattle(true);
+            menuHalos.inBattle = true;
+            Destroy(playerInOW);
+            SceneManager.LoadSceneAsync(scene, LoadSceneMode.Additive);
+            loaded = true;
         }
 	}
 
@@ -131,4 +141,10 @@ public class MovementInOW : MonoBehaviour
         menuHalos.shieldHalo.transform.position += newLocation;
         menuHalos.statsHalo.transform.position += newLocation;
     }
+
+    /*
+     * unloaded = true;
+
+            ManagerClass.Manager.UnloadScene(scene);
+     */
 }

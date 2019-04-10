@@ -6,13 +6,16 @@ using UnityEngine.SceneManagement;
 public class BattleSystem : MonoBehaviour
 {
     [Header("Set in Inspector")]
-    //public GameObject p1Prefab;
-    //public GameObject p2Prefab;
+    public GameObject p1Prefab;
+    public GameObject p2Prefab;
     public Player Fighter1;
     public Player Fighter2;
     public BattleTurns BattleCounter;
     public Results BattleResults;
+    public bool unloaded;
+    public bool loaded;
     public float endDelay = 2f;
+    public int scene = 1;
     public PlayerPrefManager StatStorage;
 
     [Header("Set Dynamically")] //Delete after fighter class complete
@@ -29,20 +32,17 @@ public class BattleSystem : MonoBehaviour
     public string results;
     public string results2;
     public string theWinner;
-
-    //public GameObject fighterGO1;
-    //public GameObject fighterGO2;
+    public GameObject fighterGO1;
+    public GameObject fighterGO2;
 
 
     // Use this for initialization
     void Awake()
     {
         print("Battle Start!");
-        //fighterGO1 = Instantiate(p1Prefab) as GameObject;
-        //fighterGO2 = Instantiate(p2Prefab) as GameObject;
+        fighterGO1 = Instantiate(p1Prefab) as GameObject;
+        fighterGO2 = Instantiate(p2Prefab) as GameObject;
         //alive = true;
-        Fighter1.CreatePerson();
-        Fighter2.CreatePerson();
         /*if (PlayerPrefs.HasKey("HP"))
         {
             StatStorage.GetAllStats();
@@ -65,6 +65,8 @@ public class BattleSystem : MonoBehaviour
         Fighter2.SetStats();
         Fighter1.SetPlayerName("Player 1 ");
         Fighter2.SetPlayerName("Player 2 ");
+        Fighter1.SetInBattle(true);
+        unloaded = false;
         Fighter1.IsAttacking(true);
         Fighter2.IsAttacking(false);
         Fighter1.SetNameBasedOnTurn();
@@ -86,6 +88,13 @@ public class BattleSystem : MonoBehaviour
 	// Update is called once per frame
 	void Update()
     {
+        if(!unloaded)
+        {
+            unloaded = true;
+
+            ManagerClass.Manager.UnloadScene(scene);
+        }
+
         if (Fighter1.GetAlive() && Fighter2.GetAlive())
         {
             if (!(Fighter1.GetChoosing() && Fighter2.GetChoosing()))
@@ -117,19 +126,20 @@ public class BattleSystem : MonoBehaviour
 
         if (results2.Equals("P2 was deafeated. "))
         {
-            Fighter2.DestroyMe();
+            Destroy(fighterGO2);
             print(results + results2 + theWinner);
             BattleResults.NewTurnText(results + results2 + theWinner);
             //alive = false;
             Fighter2.SetAlive(false);
             StatStorage.SetAllStats(Fighter1.GetHP(), Fighter1.GetMaxHP(), Fighter1.GetAttk(), Fighter1.GetAttkBase(), Fighter1.GetDef(), Fighter1.GetDefBase(), Fighter1.GetMagicAttk(), Fighter1.GetMagicAttkBase(), Fighter1.GetMagicDef(), Fighter1.GetMagicDefBase());
+
             PlayerPrefs.Save();
             DelayedOWReturn(endDelay);
 
         }
         else if (results2.Equals("P1 was deafeated. "))
         {
-            Fighter1.DestroyMe();
+            Destroy(fighterGO1);
             print(results + results2 + theWinner);
             BattleResults.NewTurnText(results + results2 + theWinner);
             //alive = false;
@@ -818,7 +828,9 @@ public class BattleSystem : MonoBehaviour
 
     public void BackToOW()
     {
-        SceneManager.LoadScene("TestBoard");
+        SceneManager.LoadSceneAsync(scene, LoadSceneMode.Additive);
+        ManagerClass.Manager.UnloadScene(scene + 1);
+
     }
 
 }

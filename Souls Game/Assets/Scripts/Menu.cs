@@ -30,6 +30,7 @@ public class Menu : MonoBehaviour
     public GameObject weaponsButton;
     public GameObject shieldsButton;
     public GameObject statsButton;
+    public bool inBattle;
     public bool onMapB;
     public bool onActionB;
     public bool onItemsB;
@@ -66,67 +67,70 @@ public class Menu : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
     {
-        SwitchingModes();
-        if(inMenuMode)
+        if(!inBattle)
         {
-            canvas.SetActive(true);
-            CheckForInput();
-            switch (layerCursor)
+            SwitchingModes();
+            if (inMenuMode)
             {
-                case 0:
-                    if (previousSelectedHalo != null)
-                    {
+                canvas.SetActive(true);
+                CheckForInput();
+                switch (layerCursor)
+                {
+                    case 0:
+                        if (previousSelectedHalo != null)
+                        {
+                            previousSelectedHalo.SetActive(false);
+                        }
+
+                        mapHalo.SetActive(true);
+                        onMapB = true;
+                        MakeMapOnly();
+                        previousSelectedHalo = mapHalo;
+                        break;
+
+                    case 1:
                         previousSelectedHalo.SetActive(false);
-                    }
+                        actionHalo.SetActive(true);
+                        onActionB = true;
+                        MakeActionOnly();
+                        previousSelectedHalo = actionHalo;
+                        break;
 
-                    mapHalo.SetActive(true);
-                    onMapB = true;
-                    MakeMapOnly();
-                    previousSelectedHalo = mapHalo;
-                    break;
+                    case 2:
+                        previousSelectedHalo.SetActive(false);
+                        itemsHalo.SetActive(true);
+                        onItemsB = true;
+                        MakeMapOnly();
+                        previousSelectedHalo = itemsHalo;
+                        break;
 
-                case 1:
-                    previousSelectedHalo.SetActive(false);
-                    actionHalo.SetActive(true);
-                    onActionB = true;
-                    MakeActionOnly();
-                    previousSelectedHalo = actionHalo;
-                    break;
+                    case 3:
+                        previousSelectedHalo.SetActive(false);
+                        weaponsHalo.SetActive(true);
+                        onWeaponsB = true;
+                        MakeWeaponsOnly();
+                        previousSelectedHalo = weaponsHalo;
+                        break;
 
-                case 2:
-                    previousSelectedHalo.SetActive(false);
-                    itemsHalo.SetActive(true);
-                    onItemsB = true;
-                    MakeMapOnly();
-                    previousSelectedHalo = itemsHalo;
-                    break;
+                    case 4:
+                        previousSelectedHalo.SetActive(false);
+                        shieldHalo.SetActive(true);
+                        onShieldsB = true;
+                        MakeShieldsOnly();
+                        previousSelectedHalo = shieldHalo;
+                        break;
 
-                case 3:
-                    previousSelectedHalo.SetActive(false);
-                    weaponsHalo.SetActive(true);
-                    onWeaponsB = true;
-                    MakeWeaponsOnly();
-                    previousSelectedHalo = weaponsHalo;
-                    break;
-
-                case 4:
-                    previousSelectedHalo.SetActive(false);
-                    shieldHalo.SetActive(true);
-                    onShieldsB = true;
-                    MakeShieldsOnly();
-                    previousSelectedHalo = shieldHalo;
-                    break;
-
-                case 5:
-                    previousSelectedHalo.SetActive(false);
-                    statsHalo.SetActive(true);
-                    onStatsB = true;
-                    MakeStatsOnly();
-                    previousSelectedHalo = statsHalo;
-                    break;
+                    case 5:
+                        previousSelectedHalo.SetActive(false);
+                        statsHalo.SetActive(true);
+                        onStatsB = true;
+                        MakeStatsOnly();
+                        previousSelectedHalo = statsHalo;
+                        break;
+                }
             }
-        }
 
+        }
 	}
 
     public void CheckForInput()

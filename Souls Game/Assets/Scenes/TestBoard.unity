@@ -240,8 +240,10 @@ MonoBehaviour:
     type: 2}
   worldCam: {fileID: 706620421}
   menuHalos: {fileID: 1141624411}
+  scene: 2
   statsOfPlayer: {fileID: 1884476854}
   stepcounter: 0
+  loaded: 0
   StorageOW: {fileID: 2062448496}
   playerInOW: {fileID: 0}
   playerSpot: {x: 0, y: 0, z: 0}
