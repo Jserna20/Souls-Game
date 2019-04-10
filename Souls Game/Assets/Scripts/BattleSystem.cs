@@ -135,6 +135,7 @@ public class BattleSystem : MonoBehaviour
             {
                 PlayerStats.LevelUp();
             }
+            PlayerStats.RestoreStats();
             PlayerStats.InBattle = false;
             PlayerPrefManager.PrefManager.Save();
             DelayedOWReturn(endDelay);
