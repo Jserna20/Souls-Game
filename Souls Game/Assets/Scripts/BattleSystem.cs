@@ -213,8 +213,6 @@ public class BattleSystem : MonoBehaviour
                 PlayerStats.Choosing = true;
                 actionWords1 = PlayerStats.LeftName;
                 letter1 = 'a';
-                float volume = Random.Range(lowRange, highRange);
-                source.PlayOneShot(punch, 3f);
             }
             else if (Input.GetKeyDown(KeyCode.S))
             {
@@ -381,6 +379,8 @@ public class BattleSystem : MonoBehaviour
 
             if (actionWords1.Equals("Basic Attk"))
             {
+                float volume = Random.Range(lowRange, highRange);
+                source.PlayOneShot(punch, 3f);
                 switch (letter2)
                 {
                     case 'i':
