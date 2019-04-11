@@ -16,10 +16,15 @@ public class BattleSystem : MonoBehaviour
     public bool loaded;
     public float endDelay = 2f;
     public int scene = 1;
-    public AudioClip punch;
+    public AudioClip attkSound;
+    public AudioClip magAttkSound;
+    public AudioClip defSound;
+    public AudioClip magDefSound;
+    public AudioClip buffSound;
     private AudioSource source;
     private float lowRange = .75f;
     private float highRange = 1f;
+    private float volume;
 
     [Header("Set Dynamically")] //Delete after fighter class complete
     //public bool alive;
@@ -111,12 +116,6 @@ public class BattleSystem : MonoBehaviour
                 CalcingResults();
                 TurnResults();
             }
-        }
-
-        //Just to not have to exit play mode to reset
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            Restart();
         }
 
     }
@@ -312,6 +311,9 @@ public class BattleSystem : MonoBehaviour
         {
             if (actionWords1.Equals("Magic Attk"))
             {
+                
+                source.PlayOneShot(magAttkSound);
+
                 switch (letter2)
                 {
                     case 'i':
@@ -379,8 +381,8 @@ public class BattleSystem : MonoBehaviour
 
             if (actionWords1.Equals("Basic Attk"))
             {
-                float volume = Random.Range(lowRange, highRange);
-                source.PlayOneShot(punch, 3f);
+                
+                source.PlayOneShot(attkSound, 3f);
                 switch (letter2)
                 {
                     case 'i':
@@ -448,6 +450,8 @@ public class BattleSystem : MonoBehaviour
 
             if (actionWords1.Equals("Random Buff"))
             {
+                
+                source.PlayOneShot(buffSound, 3f);
                 switch (letter2)
                 {
                     case 'i':
@@ -551,6 +555,7 @@ public class BattleSystem : MonoBehaviour
             {
                 switch (letter1)
                 {
+                    
                     case 'w':
                         results = "P2 used Magic Attk. P1 shielded it. ";
                         Fighter2.SetTurnDamage(Fighter2.GetMagicAttk(), Fighter2.GetMagicDef());
@@ -780,11 +785,6 @@ public class BattleSystem : MonoBehaviour
             }
         }
 
-    }
-
-    public void Restart()
-    {
-        SceneManager.LoadScene("TestBattle");
     }
 
     public void DelayedOWReturn(float delay)
