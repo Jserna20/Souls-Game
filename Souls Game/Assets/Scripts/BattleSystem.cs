@@ -16,6 +16,10 @@ public class BattleSystem : MonoBehaviour
     public bool loaded;
     public float endDelay = 2f;
     public int scene = 1;
+    public AudioClip punch;
+    private AudioSource source;
+    private float lowRange = .75f;
+    private float highRange = 1f;
 
     [Header("Set Dynamically")] //Delete after fighter class complete
     //public bool alive;
@@ -38,6 +42,7 @@ public class BattleSystem : MonoBehaviour
     // Use this for initialization
     void Awake()
     {
+        source = GetComponent<AudioSource>();
         print("Battle Start!");
         fighterGO1 = Instantiate(p1Prefab) as GameObject;
         fighterGO2 = Instantiate(p2Prefab) as GameObject;
@@ -92,7 +97,7 @@ public class BattleSystem : MonoBehaviour
         {
             unloaded = true;
 
-            ManagerClass.Manager.UnloadScene(scene);
+        ManagerClass.Manager.UnloadScene(scene);
         }
 
         if (PlayerStats.Alive && Fighter2.GetAlive())
@@ -208,6 +213,8 @@ public class BattleSystem : MonoBehaviour
                 PlayerStats.Choosing = true;
                 actionWords1 = PlayerStats.LeftName;
                 letter1 = 'a';
+                float volume = Random.Range(lowRange, highRange);
+                source.PlayOneShot(punch, 3f);
             }
             else if (Input.GetKeyDown(KeyCode.S))
             {
