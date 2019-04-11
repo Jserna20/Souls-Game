@@ -79,14 +79,14 @@ public static class PlayerStats
             UpName = "Magic Attk";
             LeftName = "Basic Attk";
             DownName = "Random Buff";
-            RightName ="Combo Attk";
+            RightName = "Combo Attk";
         }
         else
         {
             UpName = "Magic Shield";
-            LeftName ="Guard";
+            LeftName = "Guard";
             DownName = "Random Buff";
-            RightName ="Counter";
+            RightName = "Counter";
         }
 
     }
@@ -323,7 +323,7 @@ public static class PlayerStats
     {
         get
         {
-            return exp; 
+            return exp;
         }
         set
         {

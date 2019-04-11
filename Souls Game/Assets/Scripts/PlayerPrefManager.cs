@@ -28,6 +28,7 @@ public class PlayerPrefManager : MonoBehaviour
 	void Awake () 
     {
         PrefManager = this;
+
         PlayerStats.SetStats();
         hpS = PlayerStats.HP;
         maxHPS = PlayerStats.MaxHP;
@@ -43,20 +44,19 @@ public class PlayerPrefManager : MonoBehaviour
         maxEXPS = PlayerStats.MaxEXP;
         lvlS = PlayerStats.LVL;
 
-            PlayerPrefs.SetFloat("hpS", hpS);
-            PlayerPrefs.SetFloat("MaxHP", maxHPS);
-            PlayerPrefs.SetFloat("AttkBase", attkBaseS);
-            PlayerPrefs.SetFloat("DefBase", defBaseS);
-            PlayerPrefs.SetFloat("MagAttkBase", magicAttkBaseS);
-            PlayerPrefs.SetFloat("MagDefBase", magicDefBaseS);
-            PlayerPrefs.SetFloat("attkS", attkS);
-            PlayerPrefs.SetFloat("defS", defS);
-            PlayerPrefs.SetFloat("MagAttk", magicAttkS);
-            PlayerPrefs.SetFloat("MagDef", magicDefS);
-            PlayerPrefs.SetInt("expS", expS);
-            PlayerPrefs.SetInt("MaxExp", maxEXPS);
-            PlayerPrefs.SetInt("lvlS", lvlS);
-
+        PlayerPrefs.SetFloat("hpS", hpS);
+        PlayerPrefs.SetFloat("MaxHP", maxHPS);
+        PlayerPrefs.SetFloat("AttkBase", attkBaseS);
+        PlayerPrefs.SetFloat("DefBase", defBaseS);
+        PlayerPrefs.SetFloat("MagAttkBase", magicAttkBaseS);
+        PlayerPrefs.SetFloat("MagDefBase", magicDefBaseS);
+        PlayerPrefs.SetFloat("attkS", attkS);
+        PlayerPrefs.SetFloat("defS", defS);
+        PlayerPrefs.SetFloat("MagAttk", magicAttkS);
+        PlayerPrefs.SetFloat("MagDef", magicDefS);
+        PlayerPrefs.SetInt("expS", expS);
+        PlayerPrefs.SetInt("MaxExp", maxEXPS);
+        PlayerPrefs.SetInt("lvlS", lvlS);
 	}
 
 	public void Save()
@@ -220,6 +220,57 @@ public class PlayerPrefManager : MonoBehaviour
     }
 
 }
+/*
+ * if(PlayerPrefs.HasKey("hpS"))
+        {
+            PlayerStats.HP = PlayerPrefs.GetFloat("hpS");
+            PlayerStats.MaxHP = PlayerPrefs.GetFloat("MaxHP");
+            PlayerStats.AttackBase = PlayerPrefs.GetFloat("AttkBase");
+            PlayerStats.DefenseBase = PlayerPrefs.GetFloat("DefBase");
+            PlayerStats.MagicAttkBase = PlayerPrefs.GetFloat("MagAttkBase");
+            PlayerStats.MagicDefBase = PlayerPrefs.GetFloat("MagDefBase");
+            PlayerStats.Attk = PlayerPrefs.GetFloat("attkS");
+            PlayerStats.Def = PlayerPrefs.GetFloat("defS");
+            PlayerStats.MagicAttk = PlayerPrefs.GetFloat("MagAttk");
+            PlayerStats.MagicDef = PlayerPrefs.GetFloat("MagDef");
+            PlayerStats.EXP = PlayerPrefs.GetInt("expS");
+            PlayerStats.MaxEXP = PlayerPrefs.GetInt("MaxExp");
+            PlayerStats.LVL = PlayerPrefs.GetInt("lvlS");
+        }
+        else
+        {
+            PlayerStats.SetStats();
+            hpS = PlayerStats.HP;
+            maxHPS = PlayerStats.MaxHP;
+            attkBaseS = PlayerStats.AttackBase;
+            defBaseS = PlayerStats.DefenseBase;
+            magicAttkBaseS = PlayerStats.MagicAttkBase;
+            magicDefBaseS = PlayerStats.MagicDefBase;
+            attkS = PlayerStats.Attk;
+            defS = PlayerStats.Def;
+            magicAttkS = PlayerStats.MagicAttk;
+            magicDefS = PlayerStats.MagicDef;
+            expS = PlayerStats.EXP;
+            maxEXPS = PlayerStats.MaxEXP;
+            lvlS = PlayerStats.LVL;
+
+            PlayerPrefs.SetFloat("hpS", hpS);
+            PlayerPrefs.SetFloat("MaxHP", maxHPS);
+            PlayerPrefs.SetFloat("AttkBase", attkBaseS);
+            PlayerPrefs.SetFloat("DefBase", defBaseS);
+            PlayerPrefs.SetFloat("MagAttkBase", magicAttkBaseS);
+            PlayerPrefs.SetFloat("MagDefBase", magicDefBaseS);
+            PlayerPrefs.SetFloat("attkS", attkS);
+            PlayerPrefs.SetFloat("defS", defS);
+            PlayerPrefs.SetFloat("MagAttk", magicAttkS);
+            PlayerPrefs.SetFloat("MagDef", magicDefS);
+            PlayerPrefs.SetInt("expS", expS);
+            PlayerPrefs.SetInt("MaxExp", maxEXPS);
+            PlayerPrefs.SetInt("lvlS", lvlS);
+
+        }
+ */
+
 
 /*
  * if(PlayerPrefs.HasKey("hpS"))
