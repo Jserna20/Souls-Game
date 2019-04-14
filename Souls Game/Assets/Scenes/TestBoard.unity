@@ -208,15 +208,15 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!1 &479587841
+--- !u!1 &61346175
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 479587843}
-  - component: {fileID: 479587842}
+  - component: {fileID: 61346177}
+  - component: {fileID: 61346176}
   m_Layer: 0
   m_Name: MovementScript
   m_TagString: Untagged
@@ -224,12 +224,12 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &479587842
+--- !u!114 &61346176
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 479587841}
+  m_GameObject: {fileID: 61346175}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4c08b7943adf548f4aabfea4fafb0f8e, type: 3}
@@ -252,18 +252,18 @@ MonoBehaviour:
   movingMode: 0
   facingRightSide: 0
   stepsUntilFight: 0
---- !u!4 &479587843
+--- !u!4 &61346177
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 479587841}
+  m_GameObject: {fileID: 61346175}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &569710026
 GameObject:
@@ -537,7 +537,7 @@ MonoBehaviour:
   statsHaloPF: {fileID: 1157047618127418, guid: 6306cf98ac25a4c628ecdf26b5c1f3f7,
     type: 2}
   canvasPF: {fileID: 1639068640452194, guid: 4128950593dcc46238cb2d3c17fe8a3d, type: 2}
-  movingPlayer: {fileID: 479587842}
+  movingPlayer: {fileID: 61346176}
   mapHalo: {fileID: 0}
   actionHalo: {fileID: 0}
   itemsHalo: {fileID: 0}
@@ -731,6 +731,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31577afc5caa24a7cac7adb9a9c2fefc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  YourHP: {fileID: 0}
 --- !u!1001 &1863551078
 Prefab:
   m_ObjectHideFlags: 0
@@ -768,7 +769,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4260545259743996, guid: 7d582ba47c43b49a4814cff7feb5c741, type: 2}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4260545259743996, guid: 7d582ba47c43b49a4814cff7feb5c741, type: 2}
       propertyPath: m_LocalScale.x

@@ -60,6 +60,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\BattleSystem.cs" />
+    <Compile Include="Assets\Scripts\CharacterController2D.cs" />
     <Compile Include="Assets\Scripts\Displays\BattleTurns.cs" />
     <Compile Include="Assets\Scripts\Displays\DownAction.cs" />
     <Compile Include="Assets\Scripts\Displays\HPDisplay.cs" />
