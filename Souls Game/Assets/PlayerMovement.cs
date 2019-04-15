@@ -23,9 +23,12 @@ public class PlayerMovement : MonoBehaviour
 
             animator.SetFloat("HorSpeed", Mathf.Abs(horizontalMove));
             animator.SetFloat("VerSpeed", verticalMove);
+
         }
         else
         {
+            animator.SetFloat("HorSpeed", 0f);
+            animator.SetFloat("VerSpeed", 0f);
             horizontalMove = 0;
             verticalMove = 0;
         }
