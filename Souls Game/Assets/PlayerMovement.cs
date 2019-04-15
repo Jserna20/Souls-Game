@@ -15,23 +15,27 @@ public class PlayerMovement : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
     {
-        horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
-        verticalMove = Input.GetAxisRaw("Vertical") * runSpeed;
 
         if(!Menu.inMenuMode)
         {
+            horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
+            verticalMove = Input.GetAxisRaw("Vertical") * runSpeed;
+
             animator.SetFloat("HorSpeed", Mathf.Abs(horizontalMove));
             animator.SetFloat("VerSpeed", verticalMove);
+        }
+        else
+        {
+            horizontalMove = 0;
+            verticalMove = 0;
         }
 
 	}
 
 	private void FixedUpdate()
 	{
-        if(!Menu.inMenuMode)
-        {
+        
             controller.MoveHorizontal(horizontalMove * Time.fixedDeltaTime);
             controller.MoveVertical(verticalMove * Time.fixedDeltaTime);
-        }
 	}
 }

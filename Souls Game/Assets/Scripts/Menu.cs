@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class Menu : MonoBehaviour 
 {
-    [Header("Set In Inspector")]
-    public GameObject mapHaloPF;
+    //[Header("Set In Inspector")]
+    //public GameObject canvasPF;
+    /*
+     * public GameObject mapHaloPF;
     public GameObject actionHaloPF;
     public GameObject itemsHaloPF;
     public GameObject weaponsHaloPF;
     public GameObject shieldHaloPF;
     public GameObject statsHaloPF;
-    public GameObject canvasPF;
-
+     */
 
     [Header("Set Dynamically")]
     public GameObject mapHalo;
@@ -43,13 +44,13 @@ public class Menu : MonoBehaviour
 	// Use this for initialization
 	void Awake () 
     {
-        mapHalo = Instantiate(mapHaloPF) as GameObject;
-        actionHalo = Instantiate(actionHaloPF) as GameObject;
-        itemsHalo = Instantiate(itemsHaloPF) as GameObject;
-        weaponsHalo = Instantiate(weaponsHaloPF) as GameObject;
-        shieldHalo = Instantiate(shieldHaloPF) as GameObject;
-        statsHalo = Instantiate(statsHaloPF) as GameObject;
-        canvas = Instantiate(canvasPF) as GameObject;
+        mapHalo = GameObject.Find("MapHaloB");
+        actionHalo = GameObject.Find("ActionHaloB");
+        itemsHalo = GameObject.Find("ItemsHaloB");
+        weaponsHalo = GameObject.Find("WeaponsHaloB");
+        shieldHalo = GameObject.Find("ShieldsHaloB");
+        statsHalo = GameObject.Find("StatsHaloB");
+        canvas = GameObject.Find("Canvas");
 
         inMenuMode = false;
         mapHalo.SetActive(false);

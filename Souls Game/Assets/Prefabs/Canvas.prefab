@@ -41,7 +41,7 @@ GameObject:
   - component: {fileID: 114179687206133028}
   - component: {fileID: 114255783252498664}
   m_Layer: 5
-  m_Name: ActionHalo
+  m_Name: ActionHaloB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -127,7 +127,7 @@ GameObject:
   - component: {fileID: 114024381954014084}
   - component: {fileID: 114737500051963606}
   m_Layer: 5
-  m_Name: StatsHalo
+  m_Name: StatsHaloB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -145,7 +145,7 @@ GameObject:
   - component: {fileID: 114398388924676448}
   - component: {fileID: 114673271761775332}
   m_Layer: 5
-  m_Name: ShieldsHalo
+  m_Name: ShieldsHaloB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -181,7 +181,7 @@ GameObject:
   - component: {fileID: 114746416192613446}
   - component: {fileID: 114471336157620402}
   m_Layer: 5
-  m_Name: WeaponsHalo
+  m_Name: WeaponsHaloB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -234,7 +234,7 @@ GameObject:
   - component: {fileID: 114335846704446758}
   - component: {fileID: 114391063056022128}
   m_Layer: 5
-  m_Name: ItemsHalo
+  m_Name: ItemsHaloB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -356,7 +356,7 @@ GameObject:
   - component: {fileID: 114194574628772970}
   - component: {fileID: 114776452413790780}
   m_Layer: 5
-  m_Name: MapHalo
+  m_Name: MapHaloB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
