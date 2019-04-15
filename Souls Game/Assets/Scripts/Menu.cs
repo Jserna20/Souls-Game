@@ -12,7 +12,6 @@ public class Menu : MonoBehaviour
     public GameObject shieldHaloPF;
     public GameObject statsHaloPF;
     public GameObject canvasPF;
-    public MovementInOW movingPlayer;
 
 
     [Header("Set Dynamically")]
@@ -37,7 +36,7 @@ public class Menu : MonoBehaviour
     public bool onWeaponsB;
     public bool onShieldsB;
     public bool onStatsB;
-    public bool inMenuMode;
+    public static bool inMenuMode;
     public int layerCursor;
 
 
@@ -53,7 +52,6 @@ public class Menu : MonoBehaviour
         canvas = Instantiate(canvasPF) as GameObject;
 
         inMenuMode = false;
-        movingPlayer.SetMovingMode(true);
         mapHalo.SetActive(false);
         actionHalo.SetActive(false);
         itemsHalo.SetActive(false);
@@ -160,15 +158,13 @@ public class Menu : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Z))
         {
             inMenuMode = true;
-            movingPlayer.SetMovingMode(false);
         } 
         
         if(Input.GetKeyDown(KeyCode.X))
-            {
-                inMenuMode = false;
-                movingPlayer.SetMovingMode(true);
-                ResetButtonQueue();
-            }
+        {
+            inMenuMode = false;
+            ResetButtonQueue();
+        }
 
 
     }
