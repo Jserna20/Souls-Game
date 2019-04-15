@@ -5,8 +5,10 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour 
 {
     public CharacterController2D controller;
+    public Animator animator;
 
     public float runSpeed = 40f;
+    public bool idle = true;
 
     float horizontalMove = 0f;
     float verticalMove = 0f;
@@ -16,6 +18,15 @@ public class PlayerMovement : MonoBehaviour
     {
         horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
         verticalMove = Input.GetAxisRaw("Vertical") * runSpeed;
+
+        if((horizontalMove == 0f) && (verticalMove == 0f))
+        {
+            idle = true;
+        }
+
+        animator.SetBool("IsIdle", idle);
+        animator.SetFloat("HorSpeed", Mathf.Abs(horizontalMove));
+        animator.SetFloat("VerSpeed", verticalMove);
 
 	}
 

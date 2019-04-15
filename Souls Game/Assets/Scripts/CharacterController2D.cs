@@ -55,6 +55,9 @@ public class CharacterController2D : MonoBehaviour
         // And then smoothing it out and applying it to the character
         m_Rigidbody2D.velocity = Vector3.SmoothDamp(m_Rigidbody2D.velocity, targetVelocity, ref m_Velocity, m_MovementSmoothing);
 
+        //May not need this
+        /*
+         * 
         // If the input is moving the player right and the player is facing left...
         if (move > 0 && !m_FacingRight)
         {
@@ -67,6 +70,18 @@ public class CharacterController2D : MonoBehaviour
             // ... flip the player.
             FlipVertical();
         }
+
+        private void FlipVertical()
+    {
+        // Switch the way the player is labelled as facing.
+        m_FacingDown = !m_FacingDown;
+
+        // Multiply the player's y local scale by -1.
+        Vector3 theScale = transform.localScale;
+        theScale.y *= -1;
+        transform.localScale = theScale;
+    }
+         */
 
     }
 
@@ -82,14 +97,4 @@ public class CharacterController2D : MonoBehaviour
         transform.localScale = theScale;
     }
 
-    private void FlipVertical()
-    {
-        // Switch the way the player is labelled as facing.
-        m_FacingDown = !m_FacingDown;
-
-        // Multiply the player's y local scale by -1.
-        Vector3 theScale = transform.localScale;
-        theScale.y *= -1;
-        transform.localScale = theScale;
-    }
 }
