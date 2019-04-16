@@ -30,7 +30,7 @@ public class Menu : MonoBehaviour
     public GameObject weaponsButton;
     public GameObject shieldsButton;
     public GameObject statsButton;
-    public bool inBattle;
+    public static bool inBattle;
     public bool onMapB;
     public bool onActionB;
     public bool onItemsB;
