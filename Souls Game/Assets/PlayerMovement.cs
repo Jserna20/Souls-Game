@@ -8,7 +8,7 @@ public class PlayerMovement : MonoBehaviour
     public CharacterController2D controller;
     public Animator animator;
     public int scene;
-    public float transDelay = 2f;
+    public float transDelay = 0.5f;
     public float runSpeed = 40f;
 
     float horizontalMove = 0f;
@@ -52,12 +52,12 @@ public class PlayerMovement : MonoBehaviour
             controller.MoveVertical(verticalMove * Time.fixedDeltaTime);
 	}
 
-    void OnTriggerEnter(Collider other)
+    void OnTriggerEnter2D(Collider2D other)
     {
         
         if (other.gameObject.CompareTag("BattleTrigger"))
         {
-            DelayedBattle(transDelay);
+            BeginBattle();
         }
         /*randomNum = Random.Range(0, 11);
         if(randomNum == numForBattle)
