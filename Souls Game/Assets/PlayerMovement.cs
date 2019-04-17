@@ -38,6 +38,11 @@ public class PlayerMovement : MonoBehaviour
             verticalMove = 0;
         }
 
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            BeginBattle();
+        }
+
 	}
 
 	private void FixedUpdate()

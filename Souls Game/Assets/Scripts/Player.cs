@@ -26,29 +26,25 @@ public class Player : MonoBehaviour
     public string playerName;
     public float turndamage;
     public int numToDetermineStatBuff;
-    public int exp;
-    public int maxEXP;
-    public int lvl;
+    public int numToDetermineAction;
+    public char actionChar;
+    public string nameOfAction;
 
-    
 
-	// Use this for initialization
-	/*void Awake ()
+    // Use this for initialization
+    /*void Awake ()
     {
         SetStats();
-	}*/
-	
+    }*/
+
     public void SetStats()
     {
-        lvl = 1;
-        maxHP = 10;
+        maxHP = 20;
         hp = maxHP;
         attkBase = 2;
         defBase = 2;
         magicAttkBase = 2;
         magicDefBase = 2;
-        exp = 0;
-        maxEXP = 10;
         attk = attkBase;
         def = defBase;
         magicAttk = magicAttkBase;
@@ -60,48 +56,54 @@ public class Player : MonoBehaviour
         choosing = false;
     }
 
-    public void RestoreHP()
+    public void PickAnAction()
     {
-        hp = maxHP;
+        numToDetermineAction = Random.Range(0, 4);
+        switch (numToDetermineAction)
+        {
+            case 0:
+                actionChar = 'j';
+                break;
+            case 1:
+                actionChar = 'i';
+                break;
+            case 2:
+                actionChar = 'k';
+                break;
+            case 3:
+                actionChar = 'l';
+                break;
+        }
+
+        choosing = true;
     }
 
-    public void RestoreStats()
+    public string SetNameBasedOnChar(char enemyLetter)
     {
-        attk = attkBase;
-        def = defBase;
-        magicAttk = magicAttkBase;
-        magicDef = magicDefBase;
+
+        switch (enemyLetter)
+        {
+            case 'j':
+                nameOfAction = leftName;
+                break;
+            case 'i':
+                nameOfAction = upName;
+                break;
+            case 'k':
+                nameOfAction = downName;
+                break;
+            case 'l':
+                nameOfAction = rightName;
+                break;
+        }
+
+        return nameOfAction;
     }
 
-    public void LevelUp()
+    public char GetActionChar()
     {
-        exp = 0;
-        maxEXP += 10;
-        attkBase++;
-        defBase++;
-        magicAttkBase++;
-        magicDefBase++;
-        maxHP += 5;
-        lvl++;
-        RestoreStats();
-
+        return actionChar;
     }
-
-    public int GetLvl()
-    {
-        return lvl;
-    }
-
-    public int GetMaxEXP()
-    {
-        return maxEXP;
-    }
-
-    public int GetExp()
-    {
-        return exp;
-    }
-
 
     public void SetHP(float newHP)
     {
@@ -256,7 +258,7 @@ public class Player : MonoBehaviour
 
     public void SetNameBasedOnTurn()
     {
-        if(GetAttacker())
+        if (GetAttacker())
         {
             SetUpName("Magic Attk");
             SetLeftName("Basic Attk");
@@ -285,18 +287,18 @@ public class Player : MonoBehaviour
 
     public void SetTurnDamage(float formOfAttack, float formOfDefense)
     {
-        if(formOfDefense == -2)
+        if (formOfDefense == -2)
         {
-            
+
             formOfAttack = formOfAttack * 2f; //This doubles the attack
             formOfDefense = 0;
             turndamage = formOfAttack - formOfDefense;
-            if(turndamage < 0)
+            if (turndamage < 0)
             {
                 turndamage = 0;
             }
         }
-        else if(formOfDefense == -1)
+        else if (formOfDefense == -1)
         {
             formOfAttack = formOfAttack * 1.5f;
             formOfDefense = 0;
@@ -366,25 +368,5 @@ public class Player : MonoBehaviour
     public int GetNumToDetermineStatBuff()
     {
         return numToDetermineStatBuff;
-    }
-
-    public float GetAttkBase()
-    {
-        return attkBase;
-    }
-
-    public float GetDefBase()
-    {
-        return defBase;
-    }
-
-    public float GetMagicAttkBase()
-    {
-        return magicAttkBase;
-    }
-
-    public float GetMagicDefBase()
-    {
-        return magicDefBase;
     }
 }

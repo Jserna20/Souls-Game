@@ -226,57 +226,23 @@ public class BattleSystem : MonoBehaviour
                 letter1 = 'd';
             }
 
-            if (Input.GetKeyDown(KeyCode.UpArrow))
+            if (!Fighter2.GetChoosing())
             {
-                Fighter2.SetChoosing(true);
-                actionWords2 = Fighter2.GetUpName();
-                letter2 = 'i';
+                Fighter2.PickAnAction();
+                letter2 = Fighter2.GetActionChar();
+                actionWords2 = Fighter2.SetNameBasedOnChar(Fighter2.GetActionChar());
             }
-            else if (Input.GetKeyDown(KeyCode.LeftArrow))
-            {
-                Fighter2.SetChoosing(true);
-                actionWords2 = Fighter2.GetLeftName();
-                letter2 = 'j';
-            }
-            else if (Input.GetKeyDown(KeyCode.DownArrow))
-            {
-                Fighter2.SetChoosing(true);
-                actionWords2 = Fighter2.GetDownName();
-                letter2 = 'k';
-            }
-            else if (Input.GetKeyDown(KeyCode.RightArrow))
-            {
-                Fighter2.SetChoosing(true);
-                actionWords2 = Fighter2.GetRightName();
-                letter2 = 'l';
-            }
+
         }
         else if (Fighter2.GetAttacker())
         {
-            if (Input.GetKeyDown(KeyCode.UpArrow))
+            if (!Fighter2.GetChoosing())
             {
-                Fighter2.SetChoosing(true);
-                actionWords2 = Fighter2.GetUpName();
-                letter2 = 'i';
+                Fighter2.PickAnAction();
+                letter2 = Fighter2.GetActionChar();
+                actionWords2 = Fighter2.SetNameBasedOnChar(Fighter2.GetActionChar());
             }
-            else if (Input.GetKeyDown(KeyCode.LeftArrow))
-            {
-                Fighter2.SetChoosing(true);
-                actionWords2 = Fighter2.GetLeftName();
-                letter2 = 'j';
-            }
-            else if (Input.GetKeyDown(KeyCode.DownArrow))
-            {
-                Fighter2.SetChoosing(true);
-                actionWords2 = Fighter2.GetDownName();
-                letter2 = 'k';
-            }
-            else if (Input.GetKeyDown(KeyCode.RightArrow))
-            {
-                Fighter2.SetChoosing(true);
-                actionWords2 = Fighter2.GetRightName();
-                letter2 = 'l';
-            }
+
 
             if (Input.GetKeyDown(KeyCode.W))
             {
