@@ -108,6 +108,11 @@ public class BattleSystem : MonoBehaviour
         ManagerClass.Manager.UnloadScene(scene);
         }
 
+        if (!source.isPlaying && PlayerStats.InBattle)
+        {
+            source.PlayOneShot(battleTheme, 2f);
+        }
+
         if (PlayerStats.Alive && Fighter2.GetAlive())
         {
             if (!(PlayerStats.Choosing && Fighter2.GetChoosing()))
@@ -136,6 +141,7 @@ public class BattleSystem : MonoBehaviour
             Destroy(fighterGO2);
             print(results + results2 + theWinner);
             BattleResults.NewTurnText(results + results2 + theWinner);
+            PlayerStats.InBattle = false;
             Fighter2.SetAlive(false);
             PlayerStats.EXP += 5;
             if(PlayerStats.EXP >= PlayerStats.MaxEXP)
@@ -145,7 +151,6 @@ public class BattleSystem : MonoBehaviour
             source.Stop();
             source.PlayOneShot(winJingle, 3f);
             PlayerStats.RestoreStats();
-            PlayerStats.InBattle = false;
             PlayerPrefManager.PrefManager.Save();
             DelayedOWReturn(endDelay);
 
@@ -156,6 +161,7 @@ public class BattleSystem : MonoBehaviour
             source.Stop();
             print(results + results2 + theWinner);
             BattleResults.NewTurnText(results + results2 + theWinner);
+            PlayerStats.InBattle = false;
             PlayerStats.Alive = false;
         }
         else if (results2.Equals("Battle Continues"))
