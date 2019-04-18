@@ -455,9 +455,9 @@ MonoBehaviour:
   playerName: 
   turndamage: 0
   numToDetermineStatBuff: 0
-  exp: 0
-  maxEXP: 0
-  lvl: 0
+  numToDetermineAction: 0
+  actionChar: 0
+  nameOfAction: 
 --- !u!4 &176024262
 Transform:
   m_ObjectHideFlags: 0
@@ -723,11 +723,13 @@ MonoBehaviour:
   loaded: 0
   endDelay: 2
   scene: 1
+  battleTheme: {fileID: 8300000, guid: 8dc884ed6083441c2ac6d34ad1ff7b3e, type: 3}
   attkSound: {fileID: 8300000, guid: 9a144e462cc82471b9869f9757806d3f, type: 3}
   magAttkSound: {fileID: 8300000, guid: 881558f3d8671487eb2c9f679bee100b, type: 3}
   defSound: {fileID: 8300000, guid: d4208b8ab85454ae696dd5ede651e1e3, type: 3}
   magDefSound: {fileID: 8300000, guid: 4d3ec66687b2b451ebaa3066eb9a8b1d, type: 3}
   buffSound: {fileID: 8300000, guid: d14e3aed77d3a4b5a9237836cee1b334, type: 3}
+  winJingle: {fileID: 8300000, guid: 516f7ae7b36dc406ca5d10984e3ed1a8, type: 3}
   actionWords1: 
   actionWords2: 
   letter1: 0

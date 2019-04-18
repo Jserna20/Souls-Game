@@ -16,11 +16,13 @@ public class BattleSystem : MonoBehaviour
     public bool loaded;
     public float endDelay = 2f;
     public int scene = 1;
+    public AudioClip battleTheme;
     public AudioClip attkSound;
     public AudioClip magAttkSound;
     public AudioClip defSound;
     public AudioClip magDefSound;
     public AudioClip buffSound;
+    public AudioClip winJingle;
     private AudioSource source;
     private float lowRange = .75f;
     private float highRange = 1f;
@@ -81,6 +83,7 @@ public class BattleSystem : MonoBehaviour
         Fighter2.IsAttacking(false);
         PlayerStats.SetNameBasedOnTurn();
         Fighter2.SetNameBasedOnTurn();
+        source.PlayOneShot(battleTheme, 2f);
         /*PlayerStats.SetAlive(true);
         Fighter2.SetAlive(true);
         PlayerStats.SetInBattle(true);
@@ -139,6 +142,8 @@ public class BattleSystem : MonoBehaviour
             {
                 PlayerStats.LevelUp();
             }
+            source.Stop();
+            source.PlayOneShot(winJingle, 3f);
             PlayerStats.RestoreStats();
             PlayerStats.InBattle = false;
             PlayerPrefManager.PrefManager.Save();
@@ -148,6 +153,7 @@ public class BattleSystem : MonoBehaviour
         else if (results2.Equals("P1 was deafeated. "))
         {
             Destroy(fighterGO1);
+            source.Stop();
             print(results + results2 + theWinner);
             BattleResults.NewTurnText(results + results2 + theWinner);
             PlayerStats.Alive = false;

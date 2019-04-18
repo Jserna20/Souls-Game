@@ -57,13 +57,12 @@ public class PlayerMovement : MonoBehaviour
         
         if (other.gameObject.CompareTag("BattleTrigger"))
         {
-            BeginBattle();
+            randomNum = Random.Range(0, 11);
+            if (randomNum == numForBattle)
+            {
+                BeginBattle();
+            }
         }
-        /*randomNum = Random.Range(0, 11);
-        if(randomNum == numForBattle)
-        {
-           
-        }*/
     }
 
     void DelayedBattle(float delay)
