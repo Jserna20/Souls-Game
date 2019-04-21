@@ -17,6 +17,14 @@ public class PlayerMovement : MonoBehaviour
     public int numForBattle = 5;
     bool loaded = false;
 
+	private void Awake()
+	{
+        if(PlayerStats.PlayerPos != Vector3.zero)
+        {
+            transform.position = PlayerStats.PlayerPos;
+        }
+	}
+
 	// Update is called once per frame
 	void Update () 
     {
@@ -42,6 +50,8 @@ public class PlayerMovement : MonoBehaviour
         {
             BeginBattle();
         }
+
+        PlayerStats.PlayerPos = transform.position;
 
 	}
 

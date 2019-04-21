@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 public class BattleSystem : MonoBehaviour
 {
     [Header("Set in Inspector")]
-    public GameObject p1Prefab;
     public GameObject p2Prefab;
     //public Player PlayerStats;
     public Player Fighter2;
@@ -51,7 +50,7 @@ public class BattleSystem : MonoBehaviour
     {
         source = GetComponent<AudioSource>();
         print("Battle Start!");
-        fighterGO1 = Instantiate(p1Prefab) as GameObject;
+        fighterGO1 = GameObject.Find("PlayerInBattle");
         fighterGO2 = Instantiate(p2Prefab) as GameObject;
         //alive = true;
         /*if (PlayerPrefs.HasKey("HP"))

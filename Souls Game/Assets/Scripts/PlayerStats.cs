@@ -29,6 +29,8 @@ public static class PlayerStats
     private static int exp;
     private static int maxEXP;
     private static int lvl;
+    private static Vector3 playerPos;
+    private static Vector3 camPos;
 
     public static void SetStats()
     {
@@ -69,7 +71,13 @@ public static class PlayerStats
         maxHP += 5;
         lvl++;
         RestoreStats();
+        RestoreHP();
 
+    }
+
+    public static void RestoreHP()
+    {
+        hp = maxHP;
     }
 
     public static void SetNameBasedOnTurn()
@@ -90,6 +98,31 @@ public static class PlayerStats
         }
 
     }
+
+    public static Vector3 PlayerPos
+    {
+        get
+        {
+            return playerPos;
+        }
+        set
+        {
+            playerPos = value;
+        }
+    }
+
+    public static Vector3 CamPos
+    {
+        get
+        {
+            return camPos;
+        }
+        set
+        {
+            camPos = value;
+        }
+    }
+
 
     public static float HP
     {
