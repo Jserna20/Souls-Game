@@ -723,7 +723,7 @@ MonoBehaviour:
   loaded: 0
   endDelay: 2
   scene: 1
-  battleTheme: {fileID: 8300000, guid: 8dc884ed6083441c2ac6d34ad1ff7b3e, type: 3}
+  battleTheme: {fileID: 8300000, guid: 91b22fb6e35e945c3b80045f8a95bbe7, type: 3}
   attkSound: {fileID: 8300000, guid: 9a144e462cc82471b9869f9757806d3f, type: 3}
   magAttkSound: {fileID: 8300000, guid: 881558f3d8671487eb2c9f679bee100b, type: 3}
   defSound: {fileID: 8300000, guid: d4208b8ab85454ae696dd5ede651e1e3, type: 3}
@@ -748,7 +748,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0.6698113, b: 0.24669595, a: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0

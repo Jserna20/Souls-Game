@@ -108,10 +108,10 @@ public class BattleSystem : MonoBehaviour
         ManagerClass.Manager.UnloadScene(scene);
         }
 
-        if (!source.isPlaying && PlayerStats.InBattle)
+        /*if (!source.isPlaying && PlayerStats.InBattle)
         {
             source.PlayOneShot(battleTheme, 2f);
-        }
+        }*/
 
         if (PlayerStats.Alive && Fighter2.GetAlive())
         {

@@ -66,13 +66,13 @@
     <Compile Include="Assets\Scripts\Displays\DownAction.cs" />
     <Compile Include="Assets\Scripts\Displays\HPDisplay.cs" />
     <Compile Include="Assets\Scripts\Displays\LeftAction.cs" />
+    <Compile Include="Assets\Scripts\Displays\LevelAndExp.cs" />
     <Compile Include="Assets\Scripts\Displays\Results.cs" />
     <Compile Include="Assets\Scripts\Displays\RightAction.cs" />
     <Compile Include="Assets\Scripts\Displays\StatsDisplay.cs" />
     <Compile Include="Assets\Scripts\Displays\UpAction.cs" />
     <Compile Include="Assets\Scripts\Enemy.cs" />
     <Compile Include="Assets\Scripts\HelpMenu.cs" />
-    <Compile Include="Assets\Scripts\LevelAndExp.cs" />
     <Compile Include="Assets\Scripts\ManagerClass.cs" />
     <Compile Include="Assets\Scripts\Menu.cs" />
     <Compile Include="Assets\Scripts\MovingCam.cs" />
