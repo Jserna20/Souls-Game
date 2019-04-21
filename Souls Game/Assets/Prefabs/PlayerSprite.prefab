@@ -247,7 +247,7 @@ MonoBehaviour:
   animator: {fileID: 95488959407686514}
   scene: 2
   transDelay: 2
-  runSpeed: 20
+  runSpeed: 10
   owTheme: {fileID: 8300000, guid: 8f51f3772af8043f6bebc6e2e00c51d9, type: 3}
   randomNum: 0
   numForBattle: 5
