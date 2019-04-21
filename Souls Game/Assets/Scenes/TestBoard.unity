@@ -113,103 +113,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &2173309
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 894142140}
-    m_Modifications:
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -0.6422868
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -0.71754247
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 1492076189073578, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_Name
-      value: BattleWheat (4)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-  m_IsPrefabParent: 0
---- !u!4 &5332474 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
-    type: 2}
-  m_PrefabInternal: {fileID: 457731277}
---- !u!1001 &6964243
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 672617780}
-    m_Modifications:
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -1.1022868
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -0.71754247
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_RootOrder
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1492076189073578, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_Name
-      value: BattleWheat (5)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &16888866
 GameObject:
   m_ObjectHideFlags: 0
@@ -304,52 +207,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!1001 &35622956
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 894142140}
-    m_Modifications:
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -1.1022868
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -0.71754247
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_RootOrder
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1492076189073578, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_Name
-      value: BattleWheat (5)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1001 &35960971
 Prefab:
   m_ObjectHideFlags: 0
@@ -397,108 +254,11 @@ Transform:
   m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
     type: 2}
   m_PrefabInternal: {fileID: 780202948}
---- !u!4 &50574689 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
-    type: 2}
-  m_PrefabInternal: {fileID: 1713738317}
 --- !u!4 &54446420 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
     type: 2}
   m_PrefabInternal: {fileID: 1610359731}
---- !u!1001 &59879553
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 774805949}
-    m_Modifications:
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -1.1022868
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -0.71754247
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_RootOrder
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1492076189073578, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_Name
-      value: BattleWheat (5)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-  m_IsPrefabParent: 0
---- !u!1001 &62406375
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1077652238}
-    m_Modifications:
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0.2777133
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -0.71754247
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1492076189073578, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_Name
-      value: BattleWheat (2)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1001 &68201011
 Prefab:
   m_ObjectHideFlags: 0
@@ -545,63 +305,12 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
   m_IsPrefabParent: 0
---- !u!4 &69736668 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
-    type: 2}
-  m_PrefabInternal: {fileID: 308118677}
 --- !u!1001 &76112597
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 1403187021}
-    m_Modifications:
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -1.1022868
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -0.71754247
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_RootOrder
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1492076189073578, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_Name
-      value: BattleWheat (5)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-  m_IsPrefabParent: 0
---- !u!1001 &81111095
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1077652238}
     m_Modifications:
     - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
       propertyPath: m_LocalPosition.x
@@ -786,52 +495,6 @@ Prefab:
     - target: {fileID: 1492076189073578, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
       propertyPath: m_Name
       value: BattleWheat (5)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-  m_IsPrefabParent: 0
---- !u!1001 &130490188
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1077652238}
-    m_Modifications:
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -0.17228651
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -0.71754247
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1492076189073578, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_Name
-      value: BattleWheat (3)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
@@ -1050,11 +713,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
   m_IsPrefabParent: 0
---- !u!4 &200882056 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
-    type: 2}
-  m_PrefabInternal: {fileID: 1600233992}
 --- !u!1001 &207512433
 Prefab:
   m_ObjectHideFlags: 0
@@ -1152,48 +810,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
   m_IsPrefabParent: 0
---- !u!1001 &220547321
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1964808286}
-    m_Modifications:
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 1.1477134
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -0.71754247
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1001 &224914973
 Prefab:
   m_ObjectHideFlags: 0
@@ -1240,11 +856,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
   m_IsPrefabParent: 0
---- !u!4 &258753898 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
-    type: 2}
-  m_PrefabInternal: {fileID: 1850389623}
 --- !u!1001 &271359300
 Prefab:
   m_ObjectHideFlags: 0
@@ -1291,16 +902,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
   m_IsPrefabParent: 0
---- !u!4 &281669909 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
-    type: 2}
-  m_PrefabInternal: {fileID: 1109522139}
---- !u!4 &282431287 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
-    type: 2}
-  m_PrefabInternal: {fileID: 388188878}
 --- !u!1001 &301324631
 Prefab:
   m_ObjectHideFlags: 0
@@ -1339,52 +940,6 @@ Prefab:
     - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
       propertyPath: m_RootOrder
       value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-  m_IsPrefabParent: 0
---- !u!1001 &301814397
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1964808286}
-    m_Modifications:
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -0.17228651
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -0.71754247
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1492076189073578, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_Name
-      value: BattleWheat (3)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
@@ -1435,98 +990,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
   m_IsPrefabParent: 0
---- !u!1001 &308118677
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 461217647}
-    m_Modifications:
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0.2777133
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -0.71754247
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1492076189073578, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_Name
-      value: BattleWheat (2)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-  m_IsPrefabParent: 0
---- !u!1001 &312212991
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1465659978}
-    m_Modifications:
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0.2777133
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -0.71754247
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1492076189073578, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_Name
-      value: BattleWheat (2)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1001 &322197107
 Prefab:
   m_ObjectHideFlags: 0
@@ -1573,11 +1036,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
   m_IsPrefabParent: 0
---- !u!4 &329212703 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
-    type: 2}
-  m_PrefabInternal: {fileID: 1765372769}
 --- !u!1001 &331441662
 Prefab:
   m_ObjectHideFlags: 0
@@ -1624,11 +1082,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
   m_IsPrefabParent: 0
---- !u!4 &332418139 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
-    type: 2}
-  m_PrefabInternal: {fileID: 1648069084}
 --- !u!1001 &355506986
 Prefab:
   m_ObjectHideFlags: 0
@@ -1758,69 +1211,13 @@ Transform:
   - {fileID: 2103325786}
   - {fileID: 1610923587}
   m_Father: {fileID: 479652994}
-  m_RootOrder: 4
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &377835665 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
-    type: 2}
-  m_PrefabInternal: {fileID: 312212991}
---- !u!4 &383503228 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
-    type: 2}
-  m_PrefabInternal: {fileID: 35622956}
 --- !u!4 &388184689 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
     type: 2}
   m_PrefabInternal: {fileID: 1882017556}
---- !u!1001 &388188878
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 997344532}
-    m_Modifications:
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -1.1022868
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -0.71754247
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_RootOrder
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1492076189073578, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_Name
-      value: BattleWheat (5)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-  m_IsPrefabParent: 0
 --- !u!4 &417777661 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
@@ -1918,62 +1315,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
   m_IsPrefabParent: 0
---- !u!4 &422698840 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
-    type: 2}
-  m_PrefabInternal: {fileID: 1291029958}
 --- !u!4 &428076032 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
     type: 2}
   m_PrefabInternal: {fileID: 647684418}
---- !u!1001 &435501648
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 501911224}
-    m_Modifications:
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -0.6422868
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -0.71754247
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 1492076189073578, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_Name
-      value: BattleWheat (4)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1001 &441228308
 Prefab:
   m_ObjectHideFlags: 0
@@ -2025,183 +1371,6 @@ Transform:
   m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
     type: 2}
   m_PrefabInternal: {fileID: 719725439}
---- !u!1001 &457731277
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 2131327488}
-    m_Modifications:
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -0.6422868
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -0.71754247
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 1492076189073578, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_Name
-      value: BattleWheat (4)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-  m_IsPrefabParent: 0
---- !u!1 &461217646
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 461217647}
-  m_Layer: 0
-  m_Name: Wheat Column (9)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &461217647
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 461217646}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.0799997, y: 0.0022864342, z: 0.018999577}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1501220554}
-  - {fileID: 932872347}
-  - {fileID: 69736668}
-  - {fileID: 200882056}
-  - {fileID: 632911591}
-  - {fileID: 1812717902}
-  m_Father: {fileID: 479652994}
-  m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &467485664 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
-    type: 2}
-  m_PrefabInternal: {fileID: 497500193}
---- !u!1001 &470421091
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1945535471}
-    m_Modifications:
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -1.1022868
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -0.71754247
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_RootOrder
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1492076189073578, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_Name
-      value: BattleWheat (5)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-  m_IsPrefabParent: 0
---- !u!1001 &476468874
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1964808286}
-    m_Modifications:
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0.73771334
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -0.71754247
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1492076189073578, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_Name
-      value: BattleWheat (1)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-  m_IsPrefabParent: 0
 --- !u!4 &478391182 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
@@ -2233,113 +1402,21 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 760180826}
-  - {fileID: 672617780}
   - {fileID: 1803428574}
-  - {fileID: 774805949}
   - {fileID: 375948136}
-  - {fileID: 1471161927}
   - {fileID: 1403187021}
-  - {fileID: 1465659978}
   - {fileID: 897815840}
-  - {fileID: 461217647}
   - {fileID: 1209596100}
-  - {fileID: 1077652238}
   - {fileID: 959863925}
-  - {fileID: 501911224}
   - {fileID: 720333322}
-  - {fileID: 1964808286}
   - {fileID: 1663884434}
-  - {fileID: 2131327488}
   - {fileID: 1769494206}
-  - {fileID: 997344532}
   - {fileID: 1828559410}
-  - {fileID: 1945535471}
   - {fileID: 1237348609}
-  - {fileID: 894142140}
   - {fileID: 573383105}
   - {fileID: 1859606971}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &497500193
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1964808286}
-    m_Modifications:
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -1.1022868
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -0.71754247
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_RootOrder
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1492076189073578, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_Name
-      value: BattleWheat (5)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-  m_IsPrefabParent: 0
---- !u!1 &501911223
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 501911224}
-  m_Layer: 0
-  m_Name: Wheat Column (13)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &501911224
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 501911223}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.9099996, y: 0.0022864342, z: 0.018999577}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 982163542}
-  - {fileID: 761239098}
-  - {fileID: 2057244313}
-  - {fileID: 728860382}
-  - {fileID: 1842303399}
-  - {fileID: 1469055203}
-  m_Father: {fileID: 479652994}
-  m_RootOrder: 13
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &502795321
 Prefab:
@@ -2536,52 +1613,6 @@ Transform:
   m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
     type: 2}
   m_PrefabInternal: {fileID: 1991286170}
---- !u!1001 &551225481
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 461217647}
-    m_Modifications:
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -0.6422868
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -0.71754247
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 1492076189073578, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_Name
-      value: BattleWheat (4)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1001 &552990553
 Prefab:
   m_ObjectHideFlags: 0
@@ -2796,7 +1827,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 573383104}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.0800004, y: 0.0022864342, z: 0.018999577}
+  m_LocalPosition: {x: -2.94, y: 0.0022864342, z: 0.018999577}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 919180295}
@@ -2806,13 +1837,8 @@ Transform:
   - {fileID: 178473767}
   - {fileID: 1198137287}
   m_Father: {fileID: 479652994}
-  m_RootOrder: 24
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &592384884 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
-    type: 2}
-  m_PrefabInternal: {fileID: 1427411070}
 --- !u!4 &596720289 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
@@ -2823,11 +1849,6 @@ Transform:
   m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
     type: 2}
   m_PrefabInternal: {fileID: 653495477}
---- !u!4 &632911591 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
-    type: 2}
-  m_PrefabInternal: {fileID: 551225481}
 --- !u!1001 &644633803
 Prefab:
   m_ObjectHideFlags: 0
@@ -3028,50 +2049,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &672617779
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 672617780}
-  m_Layer: 0
-  m_Name: Wheat Column (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &672617780
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 672617779}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.2099996, y: 0.0022864342, z: 0.018999577}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 329212703}
-  - {fileID: 891154798}
-  - {fileID: 1799086952}
-  - {fileID: 1909022538}
-  - {fileID: 1000579313}
-  - {fileID: 2068101003}
-  m_Father: {fileID: 479652994}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &684334935 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
-    type: 2}
-  m_PrefabInternal: {fileID: 2173309}
---- !u!4 &694333324 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
-    type: 2}
-  m_PrefabInternal: {fileID: 301814397}
 --- !u!1001 &698129685
 Prefab:
   m_ObjectHideFlags: 0
@@ -3160,103 +2137,6 @@ Prefab:
     - target: {fileID: 1492076189073578, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
       propertyPath: m_Name
       value: BattleWheat (2)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-  m_IsPrefabParent: 0
---- !u!4 &699517648 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
-    type: 2}
-  m_PrefabInternal: {fileID: 997218154}
---- !u!1001 &705018551
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1077652238}
-    m_Modifications:
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0.73771334
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -0.71754247
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1492076189073578, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_Name
-      value: BattleWheat (1)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-  m_IsPrefabParent: 0
---- !u!1001 &705753596
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1945535471}
-    m_Modifications:
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0.73771334
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -0.71754247
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1492076189073578, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_Name
-      value: BattleWheat (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
@@ -3354,7 +2234,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2a644dfc370d4a4b880593362283091, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerInWorld: {fileID: 1308162540}
 --- !u!1001 &719725439
 Prefab:
   m_ObjectHideFlags: 0
@@ -3433,64 +2312,8 @@ Transform:
   - {fileID: 388184689}
   - {fileID: 542452923}
   m_Father: {fileID: 479652994}
-  m_RootOrder: 14
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &728860382 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
-    type: 2}
-  m_PrefabInternal: {fileID: 1098985231}
---- !u!1001 &729211921
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1465659978}
-    m_Modifications:
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -0.6422868
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -0.71754247
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 1492076189073578, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_Name
-      value: BattleWheat (4)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-  m_IsPrefabParent: 0
---- !u!4 &741291619 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
-    type: 2}
-  m_PrefabInternal: {fileID: 996650895}
 --- !u!1 &743721324
 GameObject:
   m_ObjectHideFlags: 0
@@ -3533,7 +2356,7 @@ Transform:
   - {fileID: 1694872403}
   - {fileID: 1756557620}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &743721327
 BoxCollider2D:
@@ -3624,21 +2447,11 @@ Transform:
   m_Father: {fileID: 479652994}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &761239098 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
-    type: 2}
-  m_PrefabInternal: {fileID: 1804760019}
 --- !u!4 &761765595 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
     type: 2}
   m_PrefabInternal: {fileID: 1590793629}
---- !u!4 &768209290 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
-    type: 2}
-  m_PrefabInternal: {fileID: 1122089192}
 --- !u!1001 &772184067
 Prefab:
   m_ObjectHideFlags: 0
@@ -3681,86 +2494,6 @@ Prefab:
     - target: {fileID: 1492076189073578, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
       propertyPath: m_Name
       value: BattleWheat (2)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-  m_IsPrefabParent: 0
---- !u!1 &774805948
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 774805949}
-  m_Layer: 0
-  m_Name: Wheat Column (3)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &774805949
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 774805948}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.7, y: 0.0022864342, z: 0.018999577}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 768209290}
-  - {fileID: 1467727030}
-  - {fileID: 281669909}
-  - {fileID: 1114120582}
-  - {fileID: 1236697037}
-  - {fileID: 1310796419}
-  m_Father: {fileID: 479652994}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &776617524
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1471161927}
-    m_Modifications:
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -0.6422868
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -0.71754247
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 1492076189073578, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_Name
-      value: BattleWheat (4)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
@@ -3816,103 +2549,11 @@ Transform:
   m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
     type: 2}
   m_PrefabInternal: {fileID: 271359300}
---- !u!1001 &797595844
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1471161927}
-    m_Modifications:
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -1.1022868
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -0.71754247
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_RootOrder
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1492076189073578, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_Name
-      value: BattleWheat (5)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-  m_IsPrefabParent: 0
 --- !u!4 &813100247 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
     type: 2}
   m_PrefabInternal: {fileID: 1801990678}
---- !u!1001 &817412858
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 997344532}
-    m_Modifications:
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0.2777133
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -0.71754247
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1492076189073578, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_Name
-      value: BattleWheat (2)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-  m_IsPrefabParent: 0
 --- !u!4 &824224835 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
@@ -3956,52 +2597,6 @@ Prefab:
     - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
       propertyPath: m_RootOrder
       value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-  m_IsPrefabParent: 0
---- !u!1001 &848558724
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 894142140}
-    m_Modifications:
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0.73771334
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -0.71754247
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1492076189073578, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_Name
-      value: BattleWheat (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
@@ -4057,198 +2652,11 @@ Transform:
   m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
     type: 2}
   m_PrefabInternal: {fileID: 161513262}
---- !u!1001 &865320215
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 672617780}
-    m_Modifications:
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0.73771334
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -0.71754247
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1492076189073578, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_Name
-      value: BattleWheat (1)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-  m_IsPrefabParent: 0
---- !u!1001 &889428366
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 461217647}
-    m_Modifications:
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -1.1022868
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -0.71754247
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_RootOrder
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1492076189073578, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_Name
-      value: BattleWheat (5)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-  m_IsPrefabParent: 0
 --- !u!4 &890367641 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
     type: 2}
   m_PrefabInternal: {fileID: 196764379}
---- !u!4 &891154798 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
-    type: 2}
-  m_PrefabInternal: {fileID: 865320215}
---- !u!1001 &892878140
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1945535471}
-    m_Modifications:
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -0.17228651
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -0.71754247
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1492076189073578, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_Name
-      value: BattleWheat (3)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-  m_IsPrefabParent: 0
---- !u!4 &893012527 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
-    type: 2}
-  m_PrefabInternal: {fileID: 1687324568}
---- !u!1 &894142139
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 894142140}
-  m_Layer: 0
-  m_Name: Wheat Column (23)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &894142140
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 894142139}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.7300005, y: 0.0022864342, z: 0.018999577}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 699517648}
-  - {fileID: 1366904602}
-  - {fileID: 422698840}
-  - {fileID: 1390004206}
-  - {fileID: 684334935}
-  - {fileID: 383503228}
-  m_Father: {fileID: 479652994}
-  m_RootOrder: 23
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &896747167 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
-    type: 2}
-  m_PrefabInternal: {fileID: 1739597936}
 --- !u!1 &897815839
 GameObject:
   m_ObjectHideFlags: 0
@@ -4281,7 +2689,7 @@ Transform:
   - {fileID: 1009411899}
   - {fileID: 1599578651}
   m_Father: {fileID: 479652994}
-  m_RootOrder: 8
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &899951341
 Prefab:
@@ -4329,16 +2737,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
   m_IsPrefabParent: 0
---- !u!4 &902833387 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
-    type: 2}
-  m_PrefabInternal: {fileID: 1533233385}
---- !u!4 &907751570 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
-    type: 2}
-  m_PrefabInternal: {fileID: 1637190649}
 --- !u!4 &907986750 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
@@ -4349,67 +2747,11 @@ Transform:
   m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
     type: 2}
   m_PrefabInternal: {fileID: 1599854138}
---- !u!4 &932872347 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
-    type: 2}
-  m_PrefabInternal: {fileID: 993767609}
 --- !u!4 &941171278 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
     type: 2}
   m_PrefabInternal: {fileID: 1211334561}
---- !u!4 &944098895 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
-    type: 2}
-  m_PrefabInternal: {fileID: 81111095}
---- !u!1001 &944617971
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1471161927}
-    m_Modifications:
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0.73771334
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -0.71754247
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1492076189073578, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_Name
-      value: BattleWheat (1)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-  m_IsPrefabParent: 0
 --- !u!4 &949486114 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
@@ -4461,11 +2803,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
   m_IsPrefabParent: 0
---- !u!4 &956023610 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
-    type: 2}
-  m_PrefabInternal: {fileID: 1732608374}
 --- !u!4 &957202175 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
@@ -4503,7 +2840,7 @@ Transform:
   - {fileID: 1320950748}
   - {fileID: 520333405}
   m_Father: {fileID: 479652994}
-  m_RootOrder: 12
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &960334756
 Prefab:
@@ -4544,207 +2881,19 @@ Prefab:
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
-    - target: {fileID: 61481754819810136, guid: c93980265a03445e782432dc0bf32f89,
-        type: 2}
-      propertyPath: m_Size.y
-      value: 0.24
-      objectReference: {fileID: 0}
-    - target: {fileID: 61481754819810136, guid: c93980265a03445e782432dc0bf32f89,
-        type: 2}
-      propertyPath: m_Offset.y
-      value: -0.12
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c93980265a03445e782432dc0bf32f89, type: 2}
   m_IsPrefabParent: 0
---- !u!4 &963486569 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
-    type: 2}
-  m_PrefabInternal: {fileID: 1955505268}
 --- !u!4 &979969962 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
     type: 2}
   m_PrefabInternal: {fileID: 2099041665}
---- !u!4 &982163542 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
-    type: 2}
-  m_PrefabInternal: {fileID: 1527112523}
---- !u!1001 &993767609
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 461217647}
-    m_Modifications:
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0.73771334
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -0.71754247
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1492076189073578, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_Name
-      value: BattleWheat (1)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-  m_IsPrefabParent: 0
---- !u!1001 &996650895
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1964808286}
-    m_Modifications:
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0.2777133
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -0.71754247
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1492076189073578, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_Name
-      value: BattleWheat (2)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-  m_IsPrefabParent: 0
 --- !u!4 &997176049 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
     type: 2}
   m_PrefabInternal: {fileID: 301324631}
---- !u!1001 &997218154
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 894142140}
-    m_Modifications:
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 1.1477134
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -0.71754247
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-  m_IsPrefabParent: 0
---- !u!1 &997344531
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 997344532}
-  m_Layer: 0
-  m_Name: Wheat Column (19)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &997344532
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 997344531}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.2700003, y: 0.0022864342, z: 0.018999577}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 2065737914}
-  - {fileID: 1076575618}
-  - {fileID: 2084286736}
-  - {fileID: 2090303679}
-  - {fileID: 1515990417}
-  - {fileID: 282431287}
-  m_Father: {fileID: 479652994}
-  m_RootOrder: 19
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &997411531
 GameObject:
   m_ObjectHideFlags: 0
@@ -4807,11 +2956,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &1000579313 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
-    type: 2}
-  m_PrefabInternal: {fileID: 1890932924}
 --- !u!4 &1007086206 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
@@ -4832,48 +2976,6 @@ Transform:
   m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
     type: 2}
   m_PrefabInternal: {fileID: 1878570000}
---- !u!1001 &1013232067
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 2131327488}
-    m_Modifications:
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 1.1477134
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -0.71754247
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-  m_IsPrefabParent: 0
 --- !u!4 &1015864712 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
@@ -4884,52 +2986,6 @@ Transform:
   m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
     type: 2}
   m_PrefabInternal: {fileID: 1825103618}
---- !u!1001 &1036051225
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 997344532}
-    m_Modifications:
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0.73771334
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -0.71754247
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1492076189073578, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_Name
-      value: BattleWheat (1)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-  m_IsPrefabParent: 0
 --- !u!4 &1037223513 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
@@ -5027,16 +3083,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
   m_IsPrefabParent: 0
---- !u!4 &1065816339 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
-    type: 2}
-  m_PrefabInternal: {fileID: 1678841355}
---- !u!4 &1066297318 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
-    type: 2}
-  m_PrefabInternal: {fileID: 1013232067}
 --- !u!4 &1069773062 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
@@ -5151,45 +3197,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4128950593dcc46238cb2d3c17fe8a3d, type: 2}
   m_IsPrefabParent: 0
---- !u!4 &1076575618 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
-    type: 2}
-  m_PrefabInternal: {fileID: 1036051225}
---- !u!1 &1077652237
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1077652238}
-  m_Layer: 0
-  m_Name: Wheat Column (11)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1077652238
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1077652237}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.5099995, y: 0.0022864342, z: 0.018999577}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 902833387}
-  - {fileID: 1851750106}
-  - {fileID: 2021584935}
-  - {fileID: 1931528139}
-  - {fileID: 592384884}
-  - {fileID: 944098895}
-  m_Father: {fileID: 479652994}
-  m_RootOrder: 11
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1078410657 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
@@ -5200,145 +3207,6 @@ Transform:
   m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
     type: 2}
   m_PrefabInternal: {fileID: 2090949229}
---- !u!1001 &1098985231
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 501911224}
-    m_Modifications:
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -0.17228651
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -0.71754247
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1492076189073578, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_Name
-      value: BattleWheat (3)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-  m_IsPrefabParent: 0
---- !u!1001 &1109522139
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 774805949}
-    m_Modifications:
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0.2777133
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -0.71754247
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1492076189073578, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_Name
-      value: BattleWheat (2)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-  m_IsPrefabParent: 0
---- !u!4 &1114120582 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
-    type: 2}
-  m_PrefabInternal: {fileID: 1446781543}
---- !u!1001 &1122089192
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 774805949}
-    m_Modifications:
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 1.1477134
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -0.71754247
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1001 &1128503265
 Prefab:
   m_ObjectHideFlags: 0
@@ -5381,94 +3249,6 @@ Prefab:
     - target: {fileID: 1492076189073578, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
       propertyPath: m_Name
       value: BattleWheat (1)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-  m_IsPrefabParent: 0
---- !u!1001 &1130027913
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 501911224}
-    m_Modifications:
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -1.1022868
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -0.71754247
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_RootOrder
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1492076189073578, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_Name
-      value: BattleWheat (5)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-  m_IsPrefabParent: 0
---- !u!1001 &1130129431
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 461217647}
-    m_Modifications:
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 1.1477134
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -0.71754247
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_RootOrder
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
@@ -5549,206 +3329,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1147870426
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 2131327488}
-    m_Modifications:
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -0.17228651
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -0.71754247
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1492076189073578, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_Name
-      value: BattleWheat (3)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-  m_IsPrefabParent: 0
 --- !u!4 &1155040533 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
     type: 2}
   m_PrefabInternal: {fileID: 698131165}
---- !u!1001 &1174177264
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1471161927}
-    m_Modifications:
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0.2777133
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -0.71754247
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1492076189073578, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_Name
-      value: BattleWheat (2)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-  m_IsPrefabParent: 0
---- !u!4 &1175650371 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
-    type: 2}
-  m_PrefabInternal: {fileID: 1200196432}
 --- !u!4 &1179629546 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
     type: 2}
   m_PrefabInternal: {fileID: 1056568457}
---- !u!1001 &1193529523
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 997344532}
-    m_Modifications:
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -0.17228651
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -0.71754247
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1492076189073578, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_Name
-      value: BattleWheat (3)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-  m_IsPrefabParent: 0
 --- !u!4 &1198137287 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
     type: 2}
   m_PrefabInternal: {fileID: 533869194}
---- !u!1001 &1200196432
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1471161927}
-    m_Modifications:
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 1.1477134
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -0.71754247
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1001 &1200686891
 Prefab:
   m_ObjectHideFlags: 0
@@ -5827,7 +3422,7 @@ Transform:
   - {fileID: 1513607779}
   - {fileID: 1330351341}
   m_Father: {fileID: 479652994}
-  m_RootOrder: 10
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1209836520
 Prefab:
@@ -6051,26 +3646,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
   m_IsPrefabParent: 0
---- !u!4 &1228830727 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
-    type: 2}
-  m_PrefabInternal: {fileID: 220547321}
 --- !u!4 &1233193126 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
     type: 2}
   m_PrefabInternal: {fileID: 1835230205}
---- !u!4 &1233229090 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
-    type: 2}
-  m_PrefabInternal: {fileID: 892878140}
---- !u!4 &1236697037 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
-    type: 2}
-  m_PrefabInternal: {fileID: 2087602046}
 --- !u!1 &1237348608
 GameObject:
   m_ObjectHideFlags: 0
@@ -6103,54 +3683,8 @@ Transform:
   - {fileID: 957202175}
   - {fileID: 571943971}
   m_Father: {fileID: 479652994}
-  m_RootOrder: 22
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1240783589
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 672617780}
-    m_Modifications:
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -0.17228651
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -0.71754247
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1492076189073578, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_Name
-      value: BattleWheat (3)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &1240874155
 GameObject:
   m_ObjectHideFlags: 0
@@ -6267,52 +3801,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
   m_IsPrefabParent: 0
---- !u!1001 &1278890918
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 774805949}
-    m_Modifications:
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0.73771334
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -0.71754247
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1492076189073578, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_Name
-      value: BattleWheat (1)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-  m_IsPrefabParent: 0
 --- !u!4 &1280901079 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
@@ -6364,123 +3852,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
   m_IsPrefabParent: 0
---- !u!1001 &1291029958
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 894142140}
-    m_Modifications:
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0.2777133
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -0.71754247
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1492076189073578, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_Name
-      value: BattleWheat (2)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-  m_IsPrefabParent: 0
---- !u!1001 &1293449305
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 894142140}
-    m_Modifications:
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -0.17228651
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -0.71754247
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1492076189073578, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_Name
-      value: BattleWheat (3)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-  m_IsPrefabParent: 0
---- !u!1 &1308162540 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1593343590109866, guid: c93980265a03445e782432dc0bf32f89,
-    type: 2}
-  m_PrefabInternal: {fileID: 960334756}
---- !u!70 &1308162548
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1308162540}
-  m_Enabled: 0
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.1}
-  m_Size: {x: 0.25, y: 0.3}
-  m_Direction: 0
---- !u!4 &1310796419 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
-    type: 2}
-  m_PrefabInternal: {fileID: 59879553}
 --- !u!4 &1320950748 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
@@ -6496,11 +3867,6 @@ Transform:
   m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
     type: 2}
   m_PrefabInternal: {fileID: 1128503265}
---- !u!4 &1340718550 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
-    type: 2}
-  m_PrefabInternal: {fileID: 797595844}
 --- !u!1001 &1344089275
 Prefab:
   m_ObjectHideFlags: 0
@@ -6547,26 +3913,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
   m_IsPrefabParent: 0
---- !u!4 &1347729105 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
-    type: 2}
-  m_PrefabInternal: {fileID: 1749319832}
---- !u!4 &1352651697 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
-    type: 2}
-  m_PrefabInternal: {fileID: 705753596}
---- !u!4 &1366904602 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
-    type: 2}
-  m_PrefabInternal: {fileID: 848558724}
---- !u!4 &1390004206 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
-    type: 2}
-  m_PrefabInternal: {fileID: 1293449305}
 --- !u!1 &1403187020
 GameObject:
   m_ObjectHideFlags: 0
@@ -6599,193 +3945,13 @@ Transform:
   - {fileID: 1069773062}
   - {fileID: 1801578979}
   m_Father: {fileID: 479652994}
-  m_RootOrder: 6
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1414939784 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
     type: 2}
   m_PrefabInternal: {fileID: 1487252049}
---- !u!1001 &1427411070
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1077652238}
-    m_Modifications:
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -0.6422868
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -0.71754247
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 1492076189073578, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_Name
-      value: BattleWheat (4)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-  m_IsPrefabParent: 0
---- !u!4 &1439240667 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
-    type: 2}
-  m_PrefabInternal: {fileID: 944617971}
---- !u!1001 &1446781543
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 774805949}
-    m_Modifications:
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -0.17228651
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -0.71754247
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1492076189073578, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_Name
-      value: BattleWheat (3)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-  m_IsPrefabParent: 0
---- !u!1 &1465659977
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1465659978}
-  m_Layer: 0
-  m_Name: Wheat Column (7)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1465659978
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1465659977}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.6199996, y: 0.0022864342, z: 0.018999577}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1347729105}
-  - {fileID: 963486569}
-  - {fileID: 377835665}
-  - {fileID: 1065816339}
-  - {fileID: 2122508872}
-  - {fileID: 896747167}
-  m_Father: {fileID: 479652994}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &1467727030 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
-    type: 2}
-  m_PrefabInternal: {fileID: 1278890918}
---- !u!4 &1469055203 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
-    type: 2}
-  m_PrefabInternal: {fileID: 1130027913}
---- !u!1 &1471161926
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1471161927}
-  m_Layer: 0
-  m_Name: Wheat Column (5)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1471161927
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1471161926}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.1599998, y: 0.0022864342, z: 0.018999577}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1175650371}
-  - {fileID: 1439240667}
-  - {fileID: 1472989668}
-  - {fileID: 332418139}
-  - {fileID: 1637763828}
-  - {fileID: 1340718550}
-  m_Father: {fileID: 479652994}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &1472989668 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
-    type: 2}
-  m_PrefabInternal: {fileID: 1174177264}
 --- !u!1001 &1479562953
 Prefab:
   m_ObjectHideFlags: 0
@@ -6832,11 +3998,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
   m_IsPrefabParent: 0
---- !u!4 &1485839193 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
-    type: 2}
-  m_PrefabInternal: {fileID: 1598060811}
 --- !u!1001 &1487252049
 Prefab:
   m_ObjectHideFlags: 0
@@ -6883,68 +4044,16 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
   m_IsPrefabParent: 0
---- !u!4 &1501220554 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
-    type: 2}
-  m_PrefabInternal: {fileID: 1130129431}
 --- !u!4 &1513607779 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
     type: 2}
   m_PrefabInternal: {fileID: 644633803}
---- !u!4 &1515990417 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
-    type: 2}
-  m_PrefabInternal: {fileID: 1846804582}
 --- !u!4 &1525811923 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
     type: 2}
   m_PrefabInternal: {fileID: 1288612563}
---- !u!1001 &1527112523
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 501911224}
-    m_Modifications:
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 1.1477134
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -0.71754247
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1001 &1528898580
 Prefab:
   m_ObjectHideFlags: 0
@@ -6991,53 +4100,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
   m_IsPrefabParent: 0
---- !u!1001 &1533233385
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1077652238}
-    m_Modifications:
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 1.1477134
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -0.71754247
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-  m_IsPrefabParent: 0
---- !u!4 &1570593668 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
-    type: 2}
-  m_PrefabInternal: {fileID: 476468874}
 --- !u!1001 &1590793629
 Prefab:
   m_ObjectHideFlags: 0
@@ -7080,52 +4142,6 @@ Prefab:
     - target: {fileID: 1492076189073578, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
       propertyPath: m_Name
       value: BattleWheat (3)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-  m_IsPrefabParent: 0
---- !u!1001 &1598060811
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 2131327488}
-    m_Modifications:
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0.2777133
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -0.71754247
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1492076189073578, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_Name
-      value: BattleWheat (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
@@ -7173,52 +4189,6 @@ Prefab:
     - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
       propertyPath: m_RootOrder
       value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-  m_IsPrefabParent: 0
---- !u!1001 &1600233992
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 461217647}
-    m_Modifications:
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -0.17228651
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -0.71754247
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1492076189073578, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_Name
-      value: BattleWheat (3)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
@@ -7371,52 +4341,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
   m_IsPrefabParent: 0
---- !u!1001 &1628125177
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 672617780}
-    m_Modifications:
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0.2777133
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -0.71754247
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1492076189073578, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_Name
-      value: BattleWheat (2)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &1631937168
 GameObject:
   m_ObjectHideFlags: 0
@@ -7510,58 +4434,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   YourHP: {fileID: 0}
---- !u!1001 &1637190649
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1945535471}
-    m_Modifications:
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 1.1477134
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -0.71754247
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-  m_IsPrefabParent: 0
---- !u!4 &1637763828 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
-    type: 2}
-  m_PrefabInternal: {fileID: 776617524}
---- !u!4 &1645135674 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
-    type: 2}
-  m_PrefabInternal: {fileID: 1865404336}
 --- !u!1001 &1647049279
 Prefab:
   m_ObjectHideFlags: 0
@@ -7608,52 +4480,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
   m_IsPrefabParent: 0
---- !u!1001 &1648069084
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1471161927}
-    m_Modifications:
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -0.17228651
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -0.71754247
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1492076189073578, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_Name
-      value: BattleWheat (3)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &1663884433
 GameObject:
   m_ObjectHideFlags: 0
@@ -7686,100 +4512,8 @@ Transform:
   - {fileID: 1083683435}
   - {fileID: 656140190}
   m_Father: {fileID: 479652994}
-  m_RootOrder: 16
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1678841355
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1465659978}
-    m_Modifications:
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -0.17228651
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -0.71754247
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1492076189073578, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_Name
-      value: BattleWheat (3)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-  m_IsPrefabParent: 0
---- !u!1001 &1687324568
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 2131327488}
-    m_Modifications:
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0.73771334
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -0.71754247
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1492076189073578, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_Name
-      value: BattleWheat (1)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1001 &1692471734
 Prefab:
   m_ObjectHideFlags: 0
@@ -80965,192 +77699,12 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
   m_IsPrefabParent: 0
---- !u!1001 &1713738317
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1945535471}
-    m_Modifications:
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0.2777133
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -0.71754247
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1492076189073578, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_Name
-      value: BattleWheat (2)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-  m_IsPrefabParent: 0
---- !u!1001 &1732608374
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1945535471}
-    m_Modifications:
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -0.6422868
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -0.71754247
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 1492076189073578, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_Name
-      value: BattleWheat (4)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-  m_IsPrefabParent: 0
---- !u!1001 &1739597936
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1465659978}
-    m_Modifications:
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -1.1022868
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -0.71754247
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_RootOrder
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1492076189073578, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_Name
-      value: BattleWheat (5)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1001 &1747225212
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 760180826}
-    m_Modifications:
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 1.1477134
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -0.71754247
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-  m_IsPrefabParent: 0
---- !u!1001 &1749319832
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1465659978}
     m_Modifications:
     - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
       propertyPath: m_LocalPosition.x
@@ -82742,53 +79296,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!4 &1757896986 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
-    type: 2}
-  m_PrefabInternal: {fileID: 470421091}
---- !u!1001 &1765372769
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 672617780}
-    m_Modifications:
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 1.1477134
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -0.71754247
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1001 &1769155457
 Prefab:
   m_ObjectHideFlags: 0
@@ -82867,7 +79374,7 @@ Transform:
   - {fileID: 54446420}
   - {fileID: 450898108}
   m_Father: {fileID: 479652994}
-  m_RootOrder: 18
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1779917035
 Prefab:
@@ -82925,11 +79432,6 @@ Transform:
   m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
     type: 2}
   m_PrefabInternal: {fileID: 1064883914}
---- !u!4 &1799086952 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
-    type: 2}
-  m_PrefabInternal: {fileID: 1628125177}
 --- !u!4 &1801578979 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
@@ -83013,59 +79515,8 @@ Transform:
   - {fileID: 2074347708}
   - {fileID: 1899011133}
   m_Father: {fileID: 479652994}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1804760019
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 501911224}
-    m_Modifications:
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0.73771334
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -0.71754247
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1492076189073578, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_Name
-      value: BattleWheat (1)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-  m_IsPrefabParent: 0
---- !u!4 &1812717902 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
-    type: 2}
-  m_PrefabInternal: {fileID: 889428366}
 --- !u!4 &1815583612 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
@@ -83145,7 +79596,7 @@ Transform:
   - {fileID: 1139592207}
   - {fileID: 1832943686}
   m_Father: {fileID: 479652994}
-  m_RootOrder: 20
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1831137430 stripped
 Transform:
@@ -83199,108 +79650,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
   m_IsPrefabParent: 0
---- !u!4 &1842303399 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
-    type: 2}
-  m_PrefabInternal: {fileID: 435501648}
---- !u!1001 &1846804582
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 997344532}
-    m_Modifications:
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -0.6422868
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -0.71754247
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 1492076189073578, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_Name
-      value: BattleWheat (4)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-  m_IsPrefabParent: 0
---- !u!1001 &1850389623
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 2131327488}
-    m_Modifications:
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -1.1022868
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -0.71754247
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_RootOrder
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1492076189073578, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_Name
-      value: BattleWheat (5)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-  m_IsPrefabParent: 0
---- !u!4 &1851750106 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
-    type: 2}
-  m_PrefabInternal: {fileID: 705018551}
 --- !u!4 &1853115067 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
@@ -83338,54 +79687,8 @@ Transform:
   - {fileID: 373888270}
   - {fileID: 1280901079}
   m_Father: {fileID: 479652994}
-  m_RootOrder: 25
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1865404336
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1964808286}
-    m_Modifications:
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -0.6422868
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -0.71754247
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 1492076189073578, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_Name
-      value: BattleWheat (4)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1001 &1878570000
 Prefab:
   m_ObjectHideFlags: 0
@@ -83438,52 +79741,6 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 720333322}
-    m_Modifications:
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -0.6422868
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -0.71754247
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 1492076189073578, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_Name
-      value: BattleWheat (4)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-  m_IsPrefabParent: 0
---- !u!1001 &1890932924
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 672617780}
     m_Modifications:
     - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
       propertyPath: m_LocalPosition.x
@@ -83622,11 +79879,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
   m_IsPrefabParent: 0
---- !u!4 &1909022538 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
-    type: 2}
-  m_PrefabInternal: {fileID: 1240783589}
 --- !u!1001 &1929335087
 Prefab:
   m_ObjectHideFlags: 0
@@ -83678,172 +79930,6 @@ Transform:
   m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
     type: 2}
   m_PrefabInternal: {fileID: 1616814701}
---- !u!4 &1931528139 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
-    type: 2}
-  m_PrefabInternal: {fileID: 130490188}
---- !u!4 &1937143350 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
-    type: 2}
-  m_PrefabInternal: {fileID: 1147870426}
---- !u!1001 &1939461111
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 997344532}
-    m_Modifications:
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 1.1477134
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -0.71754247
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-  m_IsPrefabParent: 0
---- !u!1 &1945535470
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1945535471}
-  m_Layer: 0
-  m_Name: Wheat Column (21)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1945535471
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1945535470}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.9700004, y: 0.0022864342, z: 0.018999577}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 907751570}
-  - {fileID: 1352651697}
-  - {fileID: 50574689}
-  - {fileID: 1233229090}
-  - {fileID: 956023610}
-  - {fileID: 1757896986}
-  m_Father: {fileID: 479652994}
-  m_RootOrder: 21
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1955505268
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1465659978}
-    m_Modifications:
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0.73771334
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -0.71754247
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1492076189073578, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_Name
-      value: BattleWheat (1)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-  m_IsPrefabParent: 0
---- !u!1 &1964808285
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1964808286}
-  m_Layer: 0
-  m_Name: Wheat Column (15)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1964808286
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1964808285}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.24999964, y: 0.0022864342, z: 0.018999577}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1228830727}
-  - {fileID: 1570593668}
-  - {fileID: 741291619}
-  - {fileID: 694333324}
-  - {fileID: 1645135674}
-  - {fileID: 467485664}
-  m_Father: {fileID: 479652994}
-  m_RootOrder: 15
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1970902473
 Prefab:
   m_ObjectHideFlags: 0
@@ -83946,11 +80032,6 @@ Transform:
   m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
     type: 2}
   m_PrefabInternal: {fileID: 1903253676}
---- !u!4 &2021584935 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
-    type: 2}
-  m_PrefabInternal: {fileID: 62406375}
 --- !u!1001 &2034405140
 Prefab:
   m_ObjectHideFlags: 0
@@ -84048,82 +80129,11 @@ Transform:
   m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
     type: 2}
   m_PrefabInternal: {fileID: 331441662}
---- !u!4 &2057244313 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
-    type: 2}
-  m_PrefabInternal: {fileID: 2114021641}
---- !u!4 &2065737914 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
-    type: 2}
-  m_PrefabInternal: {fileID: 1939461111}
---- !u!4 &2068101003 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
-    type: 2}
-  m_PrefabInternal: {fileID: 6964243}
 --- !u!4 &2074347708 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
     type: 2}
   m_PrefabInternal: {fileID: 950215315}
---- !u!4 &2084286736 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
-    type: 2}
-  m_PrefabInternal: {fileID: 817412858}
---- !u!1001 &2087602046
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 774805949}
-    m_Modifications:
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -0.6422868
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -0.71754247
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 1492076189073578, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_Name
-      value: BattleWheat (4)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-  m_IsPrefabParent: 0
---- !u!4 &2090303679 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
-    type: 2}
-  m_PrefabInternal: {fileID: 1193529523}
 --- !u!1001 &2090949229
 Prefab:
   m_ObjectHideFlags: 0
@@ -84269,88 +80279,3 @@ Transform:
   m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
     type: 2}
   m_PrefabInternal: {fileID: 1479562953}
---- !u!1001 &2114021641
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 501911224}
-    m_Modifications:
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0.2777133
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -0.71754247
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1492076189073578, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-      propertyPath: m_Name
-      value: BattleWheat (2)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 1ef007d26812f4d7a813378930ad1918, type: 2}
-  m_IsPrefabParent: 0
---- !u!4 &2122508872 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4576262859591378, guid: 1ef007d26812f4d7a813378930ad1918,
-    type: 2}
-  m_PrefabInternal: {fileID: 729211921}
---- !u!1 &2131327487
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 2131327488}
-  m_Layer: 0
-  m_Name: Wheat Column (17)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2131327488
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2131327487}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.5100004, y: 0.0022864342, z: 0.018999577}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1066297318}
-  - {fileID: 893012527}
-  - {fileID: 1485839193}
-  - {fileID: 1937143350}
-  - {fileID: 5332474}
-  - {fileID: 258753898}
-  m_Father: {fileID: 479652994}
-  m_RootOrder: 17
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

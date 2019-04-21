@@ -82,7 +82,7 @@ public class BattleSystem : MonoBehaviour
         Fighter2.IsAttacking(false);
         PlayerStats.SetNameBasedOnTurn();
         Fighter2.SetNameBasedOnTurn();
-        source.PlayOneShot(battleTheme, 2f);
+        source.PlayOneShot(battleTheme, 0.5f);
         /*PlayerStats.SetAlive(true);
         Fighter2.SetAlive(true);
         PlayerStats.SetInBattle(true);
@@ -107,10 +107,10 @@ public class BattleSystem : MonoBehaviour
         ManagerClass.Manager.UnloadScene(scene);
         }
 
-        /*if (!source.isPlaying && PlayerStats.InBattle)
+        if (!source.isPlaying && PlayerStats.InBattle)
         {
-            source.PlayOneShot(battleTheme, 2f);
-        }*/
+            source.PlayOneShot(battleTheme, 0.5f);
+        }
 
         if (PlayerStats.Alive && Fighter2.GetAlive())
         {
@@ -289,7 +289,7 @@ public class BattleSystem : MonoBehaviour
             if (actionWords1.Equals("Magic Attk"))
             {
                 
-                source.PlayOneShot(magAttkSound);
+                source.PlayOneShot(magAttkSound, 3f);
 
                 switch (letter2)
                 {
@@ -297,6 +297,7 @@ public class BattleSystem : MonoBehaviour
                         results = "P1 used Magic Attk. P2 shielded it. ";
                         PlayerStats.SetTurnDamage(PlayerStats.MagicAttk, Fighter2.GetMagicDef());
                         Fighter2.TakeDamage(PlayerStats.GetTurnDamage());
+                        source.PlayOneShot(magDefSound, 3f);
                         if (Fighter2.GetHP() <= 0)
                         {
                             results2 = "P2 was deafeated. ";
@@ -325,6 +326,7 @@ public class BattleSystem : MonoBehaviour
 
                     case 'k':
                         results = "P2 used Random Buff, but was still hit by P1's Magic Attk. ";
+                        source.PlayOneShot(buffSound, 3f);
                         Fighter2.SetARandomStatBuff(1);
                         PlayerStats.SetTurnDamage(PlayerStats.MagicAttk, -1);
                         Fighter2.TakeDamage(PlayerStats.GetTurnDamage());
@@ -379,6 +381,7 @@ public class BattleSystem : MonoBehaviour
 
                     case 'j':
                         results = "P1 used Basic Attk. P2 guarded it. ";
+                        source.PlayOneShot(defSound, 3f);
                         PlayerStats.SetTurnDamage(PlayerStats.Attk, Fighter2.GetDef());
                         Fighter2.TakeDamage(PlayerStats.GetTurnDamage());
                         if (Fighter2.GetHP() <= 0)
@@ -394,6 +397,7 @@ public class BattleSystem : MonoBehaviour
 
                     case 'k':
                         results = "P2 used Random Buff, but was still hit. ";
+                        source.PlayOneShot(buffSound, 3f);
                         Fighter2.SetARandomStatBuff(1);
                         PlayerStats.SetTurnDamage(PlayerStats.Attk, -1);
                         Fighter2.TakeDamage(PlayerStats.GetTurnDamage());
@@ -445,6 +449,7 @@ public class BattleSystem : MonoBehaviour
 
                     case 'k':
                         results = "P1 used Random Buff, P2 also used Random Buff ";
+                        source.PlayOneShot(buffSound, 3f);
                         PlayerStats.SetARandomStatBuff(1);
                         Fighter2.SetARandomStatBuff(1);
                         results2 = "Battle Continues";
@@ -530,11 +535,13 @@ public class BattleSystem : MonoBehaviour
         {
             if (actionWords2.Equals("Magic Attk"))
             {
+                source.PlayOneShot(magAttkSound, 3f);
                 switch (letter1)
                 {
                     
                     case 'w':
                         results = "P2 used Magic Attk. P1 shielded it. ";
+                        source.PlayOneShot(magDefSound, 3f);
                         Fighter2.SetTurnDamage(Fighter2.GetMagicAttk(), Fighter2.GetMagicDef());
                         PlayerStats.TakeDamage(Fighter2.GetTurnDamage());
                         if (PlayerStats.HP <= 0)
@@ -565,13 +572,14 @@ public class BattleSystem : MonoBehaviour
 
                     case 's':
                         results = "P1 used Random Buff, but was still hit by P2's Magic Attk. ";
+                        source.PlayOneShot(buffSound, 3f);
                         PlayerStats.SetARandomStatBuff(1);
                         Fighter2.SetTurnDamage(Fighter2.GetAttk(), -1);
                         PlayerStats.TakeDamage(Fighter2.GetTurnDamage());
                         if (PlayerStats.HP <= 0)
                         {
-                            results2 = "P2 was deafeated. ";
-                            theWinner = "P1 wins";
+                            results2 = "P1 was deafeated. ";
+                            theWinner = "P2 wins";
                         }
                         else
                         {
@@ -585,8 +593,8 @@ public class BattleSystem : MonoBehaviour
                         PlayerStats.TakeDamage(Fighter2.GetTurnDamage());
                         if (PlayerStats.HP <= 0)
                         {
-                            results2 = "P2 was deafeated. ";
-                            theWinner = "P1 wins";
+                            results2 = "P1 was deafeated. ";
+                            theWinner = "P2 wins";
                         }
                         else
                         {
@@ -617,6 +625,7 @@ public class BattleSystem : MonoBehaviour
 
                     case 'a':
                         results = "P2 used Basic Attk. P1 guarded it. ";
+                        source.PlayOneShot(defSound, 3f);
                         Fighter2.SetTurnDamage(Fighter2.GetAttk(), PlayerStats.Def);
                         PlayerStats.TakeDamage(Fighter2.GetTurnDamage());
                         if (PlayerStats.HP <= 0)
@@ -632,6 +641,7 @@ public class BattleSystem : MonoBehaviour
 
                     case 's':
                         results = "P1 used Random Buff, but was still hit. ";
+                        source.PlayOneShot(buffSound, 3f);
                         PlayerStats.SetARandomStatBuff(1);
                         Fighter2.SetTurnDamage(Fighter2.GetAttk(), -1);
                         PlayerStats.TakeDamage(Fighter2.GetTurnDamage());
@@ -665,6 +675,8 @@ public class BattleSystem : MonoBehaviour
 
             if (actionWords2.Equals("Random Buff"))
             {
+                source.PlayOneShot(buffSound, 3f);
+
                 switch (letter1)
                 {
                     case 'w':
@@ -681,6 +693,7 @@ public class BattleSystem : MonoBehaviour
 
                     case 's':
                         results = "P2 used Random Buff, P1 also used Random Buff ";
+                        source.PlayOneShot(buffSound, 3f);
                         Fighter2.SetARandomStatBuff(1);
                         PlayerStats.SetARandomStatBuff(1);
                         results2 = "Battle Continues";
@@ -730,6 +743,7 @@ public class BattleSystem : MonoBehaviour
 
                     case 's':
                         results = "P2 used Combo Attack. P1 was hit by it. ";
+                        source.PlayOneShot(buffSound, 3f);
                         PlayerStats.SetARandomStatBuff(1);
                         Fighter2.SetTurnDamage((Fighter2.GetAttk() + Fighter2.GetMagicAttk()), -1);
                         PlayerStats.TakeDamage(Fighter2.GetTurnDamage());

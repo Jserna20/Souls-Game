@@ -629,7 +629,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec18bc512b8ad48d08974787204f3c25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  p1Prefab: {fileID: 1861863886187170, guid: f4b846ab3d3fe0a4b92e95ad808f85b9, type: 2}
   p2Prefab: {fileID: 1094403750047258, guid: 83c69f9d5b1a99745a91d57c56f6751b, type: 2}
   Fighter2: {fileID: 176024261}
   BattleCounter: {fileID: 1922280088}
@@ -638,7 +637,7 @@ MonoBehaviour:
   loaded: 0
   endDelay: 2
   scene: 1
-  battleTheme: {fileID: 8300000, guid: 91b22fb6e35e945c3b80045f8a95bbe7, type: 3}
+  battleTheme: {fileID: 8300000, guid: 33a498e6da6d24dd3a63c1efdcce8c8b, type: 3}
   attkSound: {fileID: 8300000, guid: 9a144e462cc82471b9869f9757806d3f, type: 3}
   magAttkSound: {fileID: 8300000, guid: 881558f3d8671487eb2c9f679bee100b, type: 3}
   defSound: {fileID: 8300000, guid: d4208b8ab85454ae696dd5ede651e1e3, type: 3}

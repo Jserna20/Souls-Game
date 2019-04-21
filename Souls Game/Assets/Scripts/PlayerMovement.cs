@@ -11,23 +11,34 @@ public class PlayerMovement : MonoBehaviour
     public float transDelay = 0.5f;
     public float runSpeed = 40f;
 
+    private AudioSource source;
+    public AudioClip owTheme;
+
     float horizontalMove = 0f;
     float verticalMove = 0f;
-    public int randomNum;
+    public int randomNum = 0;
     public int numForBattle = 5;
     bool loaded = false;
 
 	private void Awake()
 	{
+        source = GetComponent<AudioSource>();
+
         if(PlayerStats.PlayerPos != Vector3.zero)
         {
             transform.position = PlayerStats.PlayerPos;
         }
+
+        source.PlayOneShot(owTheme, 1f);
 	}
 
 	// Update is called once per frame
 	void Update () 
     {
+        if (!source.isPlaying && !PlayerStats.InBattle)
+        {
+            source.PlayOneShot(owTheme, 1f);
+        }
 
         if(!Menu.inMenuMode)
         {
@@ -64,10 +75,15 @@ public class PlayerMovement : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        
         if (other.gameObject.CompareTag("BattleTrigger"))
         {
-            randomNum = Random.Range(0, 11);
+            
+            if ((horizontalMove != 0f || verticalMove != 0f))
+            {
+                randomNum = Random.Range(0, 11);
+            }
+
+            
             if (randomNum == numForBattle)
             {
                 BeginBattle();
@@ -87,6 +103,7 @@ public class PlayerMovement : MonoBehaviour
         controller.MoveHorizontal(horizontalMove * Time.fixedDeltaTime);
         controller.MoveVertical(verticalMove * Time.fixedDeltaTime);
         PlayerStats.InBattle = true;
+        source.Stop();
         Menu.inBattle = true;
         SceneManager.LoadSceneAsync(scene, LoadSceneMode.Additive);
         loaded = true;
