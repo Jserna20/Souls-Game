@@ -80,6 +80,7 @@
     <Compile Include="Assets\Scripts\PlayerPrefManager.cs" />
     <Compile Include="Assets\Scripts\PlayerStats.cs" />
     <Compile Include="Assets\Scripts\PrefManager.cs" />
+    <Compile Include="Assets\Scripts\Rotator.cs" />
     <Compile Include="Assets\Scripts\SubMenu.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>/Users/jesusserna/Desktop/Souls-Game/Souls Game/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>

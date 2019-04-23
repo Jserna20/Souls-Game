@@ -89,6 +89,11 @@ public class PlayerMovement : MonoBehaviour
                 BeginBattle();
             }
         }
+
+        if(other.gameObject.CompareTag("ItemOrb"))
+        {
+            other.gameObject.SetActive(false);
+        }
     }
 
     void DelayedBattle(float delay)

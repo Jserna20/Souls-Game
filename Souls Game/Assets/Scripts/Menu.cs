@@ -31,8 +31,6 @@ public class Menu : MonoBehaviour
     public GameObject shieldsButton;
     public GameObject statsButton;
     public static bool inBattle;
-    public bool onMapB;
-    public bool onActionB;
     public bool onItemsB;
     public bool onWeaponsB;
     public bool onShieldsB;
@@ -44,8 +42,6 @@ public class Menu : MonoBehaviour
 	// Use this for initialization
 	void Awake () 
     {
-        mapHalo = GameObject.Find("MapHaloB");
-        actionHalo = GameObject.Find("ActionHaloB");
         itemsHalo = GameObject.Find("ItemsHaloB");
         weaponsHalo = GameObject.Find("WeaponsHaloB");
         shieldHalo = GameObject.Find("ShieldsHaloB");
@@ -53,8 +49,6 @@ public class Menu : MonoBehaviour
         canvas = GameObject.Find("Canvas");
 
         inMenuMode = false;
-        mapHalo.SetActive(false);
-        actionHalo.SetActive(false);
         itemsHalo.SetActive(false);
         weaponsHalo.SetActive(false);
         shieldHalo.SetActive(false);
@@ -80,52 +74,59 @@ public class Menu : MonoBehaviour
                         {
                             previousSelectedHalo.SetActive(false);
                         }
-
-                        mapHalo.SetActive(true);
+                        itemsHalo.SetActive(true);
+                        onItemsB = true;
+                        MakeItemsOnly();
+                        previousSelectedHalo = itemsHalo;
+                        break;
+                        /*mapHalo.SetActive(true);
                         onMapB = true;
                         MakeMapOnly();
                         previousSelectedHalo = mapHalo;
-                        break;
+                        break;*/
 
                     case 1:
-                        previousSelectedHalo.SetActive(false);
-                        actionHalo.SetActive(true);
-                        onActionB = true;
-                        MakeActionOnly();
-                        previousSelectedHalo = actionHalo;
-                        break;
-
-                    case 2:
-                        previousSelectedHalo.SetActive(false);
-                        itemsHalo.SetActive(true);
-                        onItemsB = true;
-                        MakeMapOnly();
-                        previousSelectedHalo = itemsHalo;
-                        break;
-
-                    case 3:
                         previousSelectedHalo.SetActive(false);
                         weaponsHalo.SetActive(true);
                         onWeaponsB = true;
                         MakeWeaponsOnly();
                         previousSelectedHalo = weaponsHalo;
                         break;
+                        /*previousSelectedHalo.SetActive(false);
+                        actionHalo.SetActive(true);
+                        onActionB = true;
+                        MakeActionOnly();
+                        previousSelectedHalo = actionHalo;
+                        break;*/
 
-                    case 4:
+                    case 2:
                         previousSelectedHalo.SetActive(false);
                         shieldHalo.SetActive(true);
                         onShieldsB = true;
                         MakeShieldsOnly();
                         previousSelectedHalo = shieldHalo;
                         break;
+                        /*previousSelectedHalo.SetActive(false);
+                        itemsHalo.SetActive(true);
+                        onItemsB = true;
+                        MakeMapOnly();
+                        previousSelectedHalo = itemsHalo;
+                        break;*/
 
-                    case 5:
+                    case 3:
                         previousSelectedHalo.SetActive(false);
                         statsHalo.SetActive(true);
                         onStatsB = true;
                         MakeStatsOnly();
                         previousSelectedHalo = statsHalo;
                         break;
+                        /*
+                        previousSelectedHalo.SetActive(false);
+                        weaponsHalo.SetActive(true);
+                        onWeaponsB = true;
+                        MakeWeaponsOnly();
+                        previousSelectedHalo = weaponsHalo;
+                        break;*/
                 }
             }
 
@@ -137,9 +138,9 @@ public class Menu : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.DownArrow))
         {
             layerCursor++;
-            if(layerCursor > 5 )
+            if(layerCursor > 3 )
             {
-                layerCursor = 5;
+                layerCursor = 3;
             }
         }
 
@@ -176,10 +177,6 @@ public class Menu : MonoBehaviour
     }
     public void ResetButtonQueue()
     {
-        onMapB = false;
-        onActionB = false;
-        onItemsB = false;
-        onWeaponsB = false;
         onShieldsB = false;
         onStatsB = false;
         mapHalo.SetActive(false);
@@ -192,28 +189,9 @@ public class Menu : MonoBehaviour
 
     }
 
-    public void MakeMapOnly()
-    {
-            onActionB = false;
-            onItemsB = false;
-            onWeaponsB = false;
-            onShieldsB = false;
-            onStatsB = false;
-    }
-
-    public void MakeActionOnly()
-    {
-        onMapB = false;
-        onItemsB = false;
-        onWeaponsB = false;
-        onShieldsB = false;
-        onStatsB = false;
-    }
 
     public void MakeItemsOnly()
     {
-        onMapB = false;
-        onActionB = false;
         onWeaponsB = false;
         onShieldsB = false;
         onStatsB = false;
@@ -221,8 +199,6 @@ public class Menu : MonoBehaviour
 
     public void MakeWeaponsOnly()
     {
-        onMapB = false;
-        onActionB = false;
         onItemsB = false;
         onShieldsB = false;
         onStatsB = false;
@@ -230,8 +206,6 @@ public class Menu : MonoBehaviour
 
     public void MakeShieldsOnly()
     {
-        onMapB = false;
-        onActionB = false;
         onItemsB = false;
         onWeaponsB = false;
         onStatsB = false;
@@ -239,8 +213,6 @@ public class Menu : MonoBehaviour
 
     public void MakeStatsOnly()
     {
-        onMapB = false;
-        onActionB = false;
         onItemsB = false;
         onWeaponsB = false;
         onShieldsB = false;
