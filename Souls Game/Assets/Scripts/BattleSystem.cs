@@ -48,6 +48,12 @@ public class BattleSystem : MonoBehaviour
     // Use this for initialization
     void Awake()
     {
+        if (!unloaded)
+        {
+            unloaded = true;
+
+            ManagerClass.Manager.UnloadScene(scene);
+        }
         source = GetComponent<AudioSource>();
         print("Battle Start!");
         fighterGO1 = GameObject.Find("PlayerInBattle");
@@ -100,12 +106,6 @@ public class BattleSystem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(!unloaded)
-        {
-            unloaded = true;
-
-        ManagerClass.Manager.UnloadScene(scene);
-        }
 
         if (!source.isPlaying && PlayerStats.InBattle)
         {
@@ -785,8 +785,8 @@ public class BattleSystem : MonoBehaviour
 
     public void BackToOW()
     {
-        SceneManager.LoadSceneAsync(scene, LoadSceneMode.Additive);
-        ManagerClass.Manager.UnloadScene(scene + 1);
+        SceneManager.LoadSceneAsync(1, LoadSceneMode.Additive);
+        ManagerClass.Manager.UnloadScene(2);
 
     }
 

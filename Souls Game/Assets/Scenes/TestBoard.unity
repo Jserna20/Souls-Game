@@ -3854,18 +3854,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e05d543ee89f54784ac0ba11b6fa5aa0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numClouds: 10
-  cloudPrefab: {fileID: 1549954102910550, guid: 138c6c6e364fa4ed2840209a25b4beef,
+  numitemOrbs: 10
+  itemOrbPrefab: {fileID: 1549954102910550, guid: 138c6c6e364fa4ed2840209a25b4beef,
     type: 2}
-  cloudPosMin: {x: -50, y: -5, z: 10}
-  cloudPosMax: {x: 150, y: 100, z: 10}
-  cPos: {x: 0, y: 0, z: 0}
-  cloudScaleMin: 1
-  cloudScaleMax: 3
-  cloudSpeedMult: 0.5
+  ioPos: {x: 0, y: 0, z: 0}
+  itemOrbScaleMin: 1
+  itemOrbScaleMax: 1
+  itemOrbSpeedMult: 0
   spawner: 0
-  cloud: {fileID: 0}
-  cloudInstances: []
+  itemOrb: {fileID: 0}
+  itemOrbInstances: []
 --- !u!1001 &707039724
 Prefab:
   m_ObjectHideFlags: 0

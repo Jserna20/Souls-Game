@@ -5,35 +5,33 @@ using UnityEngine;
 public class OrbSpawner : MonoBehaviour {
 
     [Header("Set in Inspector")]
-    public int numClouds = 10;
-    public GameObject cloudPrefab;
-    public Vector3 cloudPosMin = new Vector3(-2, -3, 0);
-    public Vector3 cloudPosMax = new Vector3(6, -2, 0);
-    public Vector3 cPos;
-    public float cloudScaleMin = 1;
-    public float cloudScaleMax = 1;
-    public float cloudSpeedMult = 0f;
+    public int numitemOrbs = 10;
+    public GameObject itemOrbPrefab;
+    public Vector3 ioPos;
+    public float itemOrbScaleMin = 1;
+    public float itemOrbScaleMax = 1;
+    public float itemOrbSpeedMult = 0f;
     public int spawner;
-    public GameObject cloud;
-    public GameObject[] cloudInstances;
+    public GameObject itemOrb;
+    public GameObject[] itemOrbInstances;
 
     void Awake()
     {
-        cloudInstances = new GameObject[numClouds];
+        itemOrbInstances = new GameObject[numitemOrbs];
         GameObject anchor = GameObject.Find("ItemOrbAnchor");
-        for (spawner = 0; spawner < numClouds; spawner++)
+        for (spawner = 0; spawner < numitemOrbs; spawner++)
         {
-            cloud = Instantiate<GameObject>(cloudPrefab);
+            itemOrb = Instantiate<GameObject>(itemOrbPrefab);
 
-            cPos = Vector3.zero;
-            cPos.x = Random.Range(-2f, 6f);
-            cPos.y = Random.Range(-3f, -1f);
+            ioPos = Vector3.zero;
+            ioPos.x = Random.Range(-2f, 6f);
+            ioPos.y = Random.Range(-3f, -1f);
 
             SpawnLocation();
 
-            cloud.transform.position = cPos;
-            cloud.transform.SetParent(anchor.transform);
-            cloudInstances[spawner] = cloud;
+            itemOrb.transform.position = ioPos;
+            itemOrb.transform.SetParent(anchor.transform);
+            itemOrbInstances[spawner] = itemOrb;
         }
     }
 
@@ -43,34 +41,17 @@ public class OrbSpawner : MonoBehaviour {
 
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        /*
-        foreach (GameObject cloud in cloudInstances)
-        {
-            float scaleVal = cloud.transform.localScale.x;
-            Vector3 cPos = cloud.transform.position;
-            cPos.x = cPos.x + (scaleVal * Time.deltaTime * cloudSpeedMult);
-            if (cPos.x <= cloudPosMin.x)
-            {
-                cPos.x = cloudPosMax.x;
-            }
-            cloud.transform.position = cPos;
-        }*/
-    }
-
     void SpawnLocation()
     {
         if (spawner != 0)
         {
-            if (cPos == cloudInstances[spawner - 1].transform.position)
+            if (ioPos == itemOrbInstances[spawner - 1].transform.position)
             {
-                cPos.x = Random.Range(cloudPosMin.x, cloudPosMax.x);
-                cPos.y = Random.Range(cloudPosMin.y, cloudPosMax.y);
+                ioPos.x = Random.Range(-2f, 6f);
+                ioPos.y = Random.Range(-3f, -1f);
             }
 
-            if(cPos == cloudInstances[spawner - 1].transform.position)
+            if(ioPos == itemOrbInstances[spawner - 1].transform.position)
             {
                 SpawnLocation();
             }
