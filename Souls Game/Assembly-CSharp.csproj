@@ -75,6 +75,7 @@
     <Compile Include="Assets\Scripts\ManagerClass.cs" />
     <Compile Include="Assets\Scripts\Menu.cs" />
     <Compile Include="Assets\Scripts\MovingCam.cs" />
+    <Compile Include="Assets\Scripts\OrbSpawner.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\PlayerPrefManager.cs" />

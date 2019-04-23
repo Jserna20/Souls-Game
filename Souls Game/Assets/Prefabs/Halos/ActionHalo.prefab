@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 224163173831045620}
   - component: {fileID: 122251556506437316}
   m_Layer: 5
-  m_Name: ActionHalo
+  m_Name: TempName2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -8,6 +8,7 @@ TagManager:
   - Human
   - Enemy
   - BattleTrigger
+  - ItemOrb
   layers:
   - Default
   - TransparentFX
