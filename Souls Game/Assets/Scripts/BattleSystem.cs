@@ -23,6 +23,7 @@ public class BattleSystem : MonoBehaviour
     public AudioClip buffSound;
     public AudioClip winJingle;
     private AudioSource source;
+    private Animator battleAnimations;
     private float lowRange = .75f;
     private float highRange = 1f;
     private float volume;
@@ -34,10 +35,13 @@ public class BattleSystem : MonoBehaviour
     //public bool p1Chose;
     //public bool p2Chose;
     //public string magicAction;
+    public bool turnDelay;
     public string actionWords1; //fighter will what their moves are later on
     public string actionWords2;
-    public char letter1;
-    public char letter2;
+    public static char letter1 = 'x';
+    public static char letter2 = 'x';
+    public bool choosingFrame = false;
+    public bool newTurn = false;
     public string results;
     public string results2;
     public string theWinner;
@@ -57,6 +61,7 @@ public class BattleSystem : MonoBehaviour
         source = GetComponent<AudioSource>();
         print("Battle Start!");
         fighterGO1 = GameObject.Find("PlayerInBattle");
+        battleAnimations = fighterGO1.GetComponent<Animator>();
         fighterGO2 = Instantiate(p2Prefab) as GameObject;
         //alive = true;
         /*if (PlayerPrefs.HasKey("HP"))
@@ -112,20 +117,34 @@ public class BattleSystem : MonoBehaviour
             source.PlayOneShot(battleTheme, 0.5f);
         }
 
-        if (PlayerStats.Alive && Fighter2.GetAlive())
+        if(letter1 == 'x' && !turnDelay)
         {
-            if (!(PlayerStats.Choosing && Fighter2.GetChoosing()))
+            GoToIdle();
+        }
+
+        if ((PlayerStats.Alive && Fighter2.GetAlive()) && !turnDelay)
+        {
+            if ((!(PlayerStats.Choosing && Fighter2.GetChoosing()) && !turnDelay))
             {
                 ChoosingActions();
+
+                //AnimateTurn();
             }
-            if (PlayerStats.Choosing && Fighter2.GetChoosing())
+
+            if ((PlayerStats.Choosing && Fighter2.GetChoosing() && !turnDelay))
             {
+                //Invoke("CalcingResults", 2f);
                 CalcingResults();
+                //Invoke("TurnResults", 2f);
+                choosingFrame = !choosingFrame;
                 TurnResults();
+                //Invoke("PickAnimation", 1f);
+
             }
         }
 
     }
+
 
     private void LateUpdate()
     {
@@ -137,9 +156,13 @@ public class BattleSystem : MonoBehaviour
 
         if (results2.Equals("P2 was deafeated. "))
         {
+            PickAnimation();
+            turnDelay = true;
+            StartCoroutine(WaitForAnimation());
             Destroy(fighterGO2);
             print(results + results2 + theWinner);
             BattleResults.NewTurnText(results + results2 + theWinner);
+            PlayerStats.Choosing = false;
             PlayerStats.InBattle = false;
             Fighter2.SetAlive(false);
             PlayerStats.EXP += 5;
@@ -156,6 +179,9 @@ public class BattleSystem : MonoBehaviour
         }
         else if (results2.Equals("P1 was deafeated. "))
         {
+            PickAnimation();
+            turnDelay = true;
+            StartCoroutine(WaitForAnimation());
             Destroy(fighterGO1);
             source.Stop();
             print(results + results2 + theWinner);
@@ -165,6 +191,9 @@ public class BattleSystem : MonoBehaviour
         }
         else if (results2.Equals("Battle Continues"))
         {
+            PickAnimation();
+            turnDelay = true;
+            StartCoroutine(WaitForAnimation());
             print(results + results2);
             BattleResults.NewTurnText(results + results2);
             BattleCounter.IncreaseTurn();
@@ -190,6 +219,8 @@ public class BattleSystem : MonoBehaviour
 
             PlayerStats.Choosing = false;
             Fighter2.SetChoosing(false);
+
+
             PlayerStats.SetNameBasedOnTurn();
             Fighter2.SetNameBasedOnTurn();
         }
@@ -206,6 +237,12 @@ public class BattleSystem : MonoBehaviour
             PlayerStats.Choosing = false;
             Fighter2.SetChoosing(false);
         }
+    }
+
+    public IEnumerator WaitForAnimation()
+    {
+        yield return new WaitForSeconds(1f);
+        turnDelay = false;
     }
 
     public void ChoosingActions()
@@ -788,6 +825,63 @@ public class BattleSystem : MonoBehaviour
         SceneManager.LoadSceneAsync(1, LoadSceneMode.Additive);
         ManagerClass.Manager.UnloadScene(2);
 
+    }
+
+    void PickAnimation()
+    {
+        if (PlayerStats.IsAttacker)
+        {
+            switch (BattleSystem.letter1)
+            {
+                case 'w':
+                    battleAnimations.SetBool("MagAttk", true);
+                    break;
+                case 's':
+                    battleAnimations.SetBool("RandomBuff", true);
+                    break;
+                case 'd':
+                    battleAnimations.SetBool("ComboAttk", true);
+                    break;
+                case 'x':
+
+                    break;
+            }
+        }
+        else
+        {
+            switch (BattleSystem.letter1)
+            {
+                case 'w':
+                    battleAnimations.SetBool("MagDef", true);
+                    break;
+                case 's':
+                    battleAnimations.SetBool("RandomBuff", true);
+                    break;
+                case 'd':
+                    if (BattleSystem.letter2 == 'l')
+                    {
+                        battleAnimations.SetBool("CounterS", true);
+                    }
+                    else
+                    {
+                        battleAnimations.SetBool("CounterF", true);
+                    }
+                    break;
+                case 'x':
+                    GoToIdle();
+                    break;
+            }
+        }
+    }
+
+    void GoToIdle()
+    {
+        battleAnimations.SetBool("MagAttk", false);
+        battleAnimations.SetBool("RandomBuff", false);
+        battleAnimations.SetBool("ComboAttk", false);
+        battleAnimations.SetBool("MagDef", false);
+        battleAnimations.SetBool("CounterS", false);
+        battleAnimations.SetBool("CounterF", false);
     }
 
 }

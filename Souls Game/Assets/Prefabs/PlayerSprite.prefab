@@ -41,7 +41,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1593343590109866}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 1, y: 0, z: 0}
   m_LocalScale: {x: 1.6666666, y: 1.6666666, z: 0.33333334}
   m_Children: []
   m_Father: {fileID: 0}
@@ -248,7 +248,7 @@ MonoBehaviour:
   scene: 2
   transDelay: 2
   runSpeed: 10
-  owTheme: {fileID: 8300000, guid: 8f51f3772af8043f6bebc6e2e00c51d9, type: 3}
+  owTheme: {fileID: 8300000, guid: 2cbfe8b67dfd64251ac18b65f6156bd5, type: 3}
   randomNum: 0
   numForBattle: 5
 --- !u!212 &212901376024268068
