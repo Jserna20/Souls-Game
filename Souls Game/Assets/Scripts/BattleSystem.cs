@@ -842,8 +842,10 @@ public class BattleSystem : MonoBehaviour
                 case 'd':
                     battleAnimations.SetBool("ComboAttk", true);
                     break;
+                case 'a':
+                    battleAnimations.SetBool("Attk", true);
+                    break;
                 case 'x':
-
                     break;
             }
         }
@@ -867,8 +869,10 @@ public class BattleSystem : MonoBehaviour
                         battleAnimations.SetBool("CounterF", true);
                     }
                     break;
+                case 'a':
+                    battleAnimations.SetBool("Def", true);
+                    break;
                 case 'x':
-                    GoToIdle();
                     break;
             }
         }
@@ -882,6 +886,8 @@ public class BattleSystem : MonoBehaviour
         battleAnimations.SetBool("MagDef", false);
         battleAnimations.SetBool("CounterS", false);
         battleAnimations.SetBool("CounterF", false);
+        battleAnimations.SetBool("Attk", false);
+        battleAnimations.SetBool("Def", false);
     }
 
 }
