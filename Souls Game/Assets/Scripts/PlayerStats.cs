@@ -63,7 +63,6 @@ public static class PlayerStats
     public static void LevelUp()
     {
         exp = 0;
-        maxEXP += 10;
         attkBase++;
         defBase++;
         magicAttkBase++;

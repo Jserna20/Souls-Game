@@ -59,12 +59,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Prefabs\CollectMe.cs" />
     <Compile Include="Assets\Scripts\B_PlayerAnimator.cs" />
     <Compile Include="Assets\Scripts\BattleSystem.cs" />
+    <Compile Include="Assets\Scripts\BossBattle.cs" />
     <Compile Include="Assets\Scripts\CharacterController2D.cs" />
     <Compile Include="Assets\Scripts\Displays\BattleTurns.cs" />
     <Compile Include="Assets\Scripts\Displays\DownAction.cs" />
     <Compile Include="Assets\Scripts\Displays\HPDisplay.cs" />
+    <Compile Include="Assets\Scripts\Displays\ItemNotification.cs" />
     <Compile Include="Assets\Scripts\Displays\LeftAction.cs" />
     <Compile Include="Assets\Scripts\Displays\LevelAndExp.cs" />
     <Compile Include="Assets\Scripts\Displays\Results.cs" />
@@ -73,6 +76,8 @@
     <Compile Include="Assets\Scripts\Displays\UpAction.cs" />
     <Compile Include="Assets\Scripts\Enemy.cs" />
     <Compile Include="Assets\Scripts\HelpMenu.cs" />
+    <Compile Include="Assets\Scripts\Item.cs" />
+    <Compile Include="Assets\Scripts\ItemsInWorld.cs" />
     <Compile Include="Assets\Scripts\ManagerClass.cs" />
     <Compile Include="Assets\Scripts\Menu.cs" />
     <Compile Include="Assets\Scripts\MovingCam.cs" />

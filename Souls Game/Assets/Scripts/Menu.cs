@@ -30,13 +30,32 @@ public class Menu : MonoBehaviour
     public GameObject weaponsButton;
     public GameObject shieldsButton;
     public GameObject statsButton;
+    public GameObject slot0;
+    public GameObject slot1;
+    public GameObject slot2;
+    public GameObject slot3;
+    public GameObject slot4;
+    public GameObject slot0Halo;
+    public GameObject slot1Halo;
+    public GameObject slot2Halo;
+    public GameObject slot3Halo;
+    public GameObject slot4Halo;
+    public GameObject statsBar;
     public static bool inBattle;
     public bool onItemsB;
     public bool onWeaponsB;
     public bool onShieldsB;
     public bool onStatsB;
+    public bool onslot0;
+    public bool onslot1;
+    public bool onslot2;
+    public bool onslot3;
+    public bool onslot4;
+    public bool viewingStats;
     public static bool inMenuMode;
+    public static bool inSubMode;
     public int layerCursor;
+    public int subLayerCursor;
 
 
 	// Use this for initialization
@@ -46,15 +65,40 @@ public class Menu : MonoBehaviour
         weaponsHalo = GameObject.Find("WeaponsHaloB");
         shieldHalo = GameObject.Find("ShieldsHaloB");
         statsHalo = GameObject.Find("StatsHaloB");
+        slot0 = GameObject.Find("Slot0");
+        slot1 = GameObject.Find("Slot1");
+        slot2 = GameObject.Find("Slot2");
+        slot3 = GameObject.Find("Slot3");
+        slot4 = GameObject.Find("Slot4");
+        slot0Halo = GameObject.Find("Slot0Halo");
+        slot1Halo = GameObject.Find("Slot1Halo");
+        slot2Halo = GameObject.Find("Slot2Halo");
+        slot3Halo = GameObject.Find("Slot3Halo");
+        slot4Halo = GameObject.Find("Slot4Halo");
+        statsBar = GameObject.Find("StatsBar");
+
         canvas = GameObject.Find("Canvas");
 
         inMenuMode = false;
+        inSubMode = false;
         itemsHalo.SetActive(false);
         weaponsHalo.SetActive(false);
         shieldHalo.SetActive(false);
         statsHalo.SetActive(false);
         canvas.SetActive(false);
+        slot0.SetActive(false);
+        slot1.SetActive(false);
+        slot2.SetActive(false);
+        slot3.SetActive(false);
+        slot4.SetActive(false);
+        slot0Halo.SetActive(false);
+        slot1Halo.SetActive(false);
+        slot2Halo.SetActive(false);
+        slot3Halo.SetActive(false);
+        slot4Halo.SetActive(false);
+        statsBar.SetActive(false);
         layerCursor = 0;
+        subLayerCursor = 0;
 	}
 	
 	// Update is called once per frame
@@ -67,31 +111,33 @@ public class Menu : MonoBehaviour
             {
                 canvas.SetActive(true);
                 CheckForInput();
-                switch (layerCursor)
+                if(!inSubMode)
                 {
-                    case 0:
-                        if (previousSelectedHalo != null)
-                        {
-                            previousSelectedHalo.SetActive(false);
-                        }
-                        itemsHalo.SetActive(true);
-                        onItemsB = true;
-                        MakeItemsOnly();
-                        previousSelectedHalo = itemsHalo;
-                        break;
+                    switch (layerCursor)
+                    {
+                        case 0:
+                            if (previousSelectedHalo != null)
+                            {
+                                previousSelectedHalo.SetActive(false);
+                            }
+                            itemsHalo.SetActive(true);
+                            onItemsB = true;
+                            MakeItemsOnly();
+                            previousSelectedHalo = itemsHalo;
+                            break;
                         /*mapHalo.SetActive(true);
                         onMapB = true;
                         MakeMapOnly();
                         previousSelectedHalo = mapHalo;
                         break;*/
 
-                    case 1:
-                        previousSelectedHalo.SetActive(false);
-                        weaponsHalo.SetActive(true);
-                        onWeaponsB = true;
-                        MakeWeaponsOnly();
-                        previousSelectedHalo = weaponsHalo;
-                        break;
+                        case 1:
+                            previousSelectedHalo.SetActive(false);
+                            weaponsHalo.SetActive(true);
+                            onWeaponsB = true;
+                            MakeWeaponsOnly();
+                            previousSelectedHalo = weaponsHalo;
+                            break;
                         /*previousSelectedHalo.SetActive(false);
                         actionHalo.SetActive(true);
                         onActionB = true;
@@ -99,13 +145,13 @@ public class Menu : MonoBehaviour
                         previousSelectedHalo = actionHalo;
                         break;*/
 
-                    case 2:
-                        previousSelectedHalo.SetActive(false);
-                        shieldHalo.SetActive(true);
-                        onShieldsB = true;
-                        MakeShieldsOnly();
-                        previousSelectedHalo = shieldHalo;
-                        break;
+                        case 2:
+                            previousSelectedHalo.SetActive(false);
+                            shieldHalo.SetActive(true);
+                            onShieldsB = true;
+                            MakeShieldsOnly();
+                            previousSelectedHalo = shieldHalo;
+                            break;
                         /*previousSelectedHalo.SetActive(false);
                         itemsHalo.SetActive(true);
                         onItemsB = true;
@@ -113,21 +159,91 @@ public class Menu : MonoBehaviour
                         previousSelectedHalo = itemsHalo;
                         break;*/
 
-                    case 3:
-                        previousSelectedHalo.SetActive(false);
-                        statsHalo.SetActive(true);
-                        onStatsB = true;
-                        MakeStatsOnly();
-                        previousSelectedHalo = statsHalo;
-                        break;
-                        /*
-                        previousSelectedHalo.SetActive(false);
-                        weaponsHalo.SetActive(true);
-                        onWeaponsB = true;
-                        MakeWeaponsOnly();
-                        previousSelectedHalo = weaponsHalo;
-                        break;*/
+                        case 3:
+                            previousSelectedHalo.SetActive(false);
+                            statsHalo.SetActive(true);
+                            onStatsB = true;
+                            MakeStatsOnly();
+                            previousSelectedHalo = statsHalo;
+                            break;
+                            /*
+                            previousSelectedHalo.SetActive(false);
+                            weaponsHalo.SetActive(true);
+                            onWeaponsB = true;
+                            MakeWeaponsOnly();
+                            previousSelectedHalo = weaponsHalo;
+                            break;*/
+                    }
                 }
+
+                if(inSubMode)
+                {
+                    ResetButtonQueue();
+                    SeeAllSubItems();
+                    switch (subLayerCursor)
+                    {
+                        case 0:
+                            if (previousSelectedHalo != null)
+                            {
+                                previousSelectedHalo.SetActive(false);
+                            }
+                            slot0Halo.SetActive(true);
+                            onslot0 = true;
+                            MakeSlot0Only();
+                            previousSelectedHalo = slot0Halo;
+                            break;
+                        /*mapHalo.SetActive(true);
+                        onMapB = true;
+                        MakeMapOnly();
+                        previousSelectedHalo = mapHalo;
+                        break;*/
+
+                        case 1:
+                            previousSelectedHalo.SetActive(false);
+                            slot1Halo.SetActive(true);
+                            onslot1 = true;
+                            MakeSlot1Only();
+                            previousSelectedHalo = slot1Halo;
+                            break;
+                        /*previousSelectedHalo.SetActive(false);
+                        actionHalo.SetActive(true);
+                        onActionB = true;
+                        MakeActionOnly();
+                        previousSelectedHalo = actionHalo;
+                        break;*/
+
+                        case 2:
+                            previousSelectedHalo.SetActive(false);
+                            slot2Halo.SetActive(true);
+                            onslot2 = true;
+                            MakeSlot2Only();
+                            previousSelectedHalo = slot2Halo;
+                            break;
+                        /*previousSelectedHalo.SetActive(false);
+                        itemsHalo.SetActive(true);
+                        onItemsB = true;
+                        MakeMapOnly();
+                        previousSelectedHalo = itemsHalo;
+                        break;*/
+
+                        case 3:
+                            previousSelectedHalo.SetActive(false);
+                            slot3Halo.SetActive(true);
+                            onslot3 = true;
+                            MakeSlot3Only();
+                            previousSelectedHalo = slot3Halo;
+                            break;
+                           
+                        case 4:
+                            previousSelectedHalo.SetActive(false);
+                            slot4Halo.SetActive(true);
+                            onslot4 = true;
+                            MakeSlot4Only();
+                            previousSelectedHalo = slot4Halo;
+                            break;
+                    }
+                }
+
             }
 
         }
@@ -135,24 +251,70 @@ public class Menu : MonoBehaviour
 
     public void CheckForInput()
     {
-        if(Input.GetKeyDown(KeyCode.DownArrow))
+        if(!inSubMode)
         {
-            layerCursor++;
-            if(layerCursor > 3 )
+            if (Input.GetKeyDown(KeyCode.DownArrow))
             {
-                layerCursor = 3;
+                layerCursor++;
+                if (layerCursor > 3)
+                {
+                    layerCursor = 3;
+                }
+            }
+
+            if (Input.GetKeyDown(KeyCode.UpArrow))
+            {
+                layerCursor--;
+                if (layerCursor < 0)
+                {
+                    layerCursor = 0;
+                }
+            }
+
+            if((Input.GetKeyDown(KeyCode.W)) && onStatsB)
+            {
+                statsBar.SetActive(true);
+                viewingStats = true;
+            }
+
+            if(viewingStats && (Input.GetKeyDown(KeyCode.E)))
+            {
+                statsBar.SetActive(false);
+                viewingStats = false;
+            }
+
+            if (Input.GetKeyDown(KeyCode.S) && onItemsB)
+            {
+                inSubMode = true;
             }
         }
 
-        if(Input.GetKeyDown(KeyCode.UpArrow))
+        if(inSubMode)
         {
-            layerCursor--;
-            if(layerCursor < 0)
+            if (Input.GetKeyDown(KeyCode.DownArrow))
             {
-                layerCursor = 0;
+                subLayerCursor++;
+                if (subLayerCursor > 4)
+                {
+                    subLayerCursor = 4;
+                }
+            }
+
+            if (Input.GetKeyDown(KeyCode.UpArrow))
+            {
+                subLayerCursor--;
+                if (subLayerCursor < 0)
+                {
+                    subLayerCursor = 0;
+                }
+            }
+
+            if(Input.GetKeyDown(KeyCode.D))
+            {
+                HideAllSubItems();
+                inSubMode = false;
             }
         }
-
     }
 
     public void SwitchingModes()
@@ -165,30 +327,85 @@ public class Menu : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.X))
         {
             inMenuMode = false;
+            canvas.SetActive(false);
             ResetButtonQueue();
         }
+    }
+    public void SeeAllSubItems()
+    {
+        slot0.SetActive(true);
+        slot1.SetActive(true);
+        slot2.SetActive(true);
+        slot3.SetActive(true);
+        slot4.SetActive(true);
+    }
 
-
+    public void HideAllSubItems()
+    {
+        slot0.SetActive(false);
+        slot1.SetActive(false);
+        slot2.SetActive(false);
+        slot3.SetActive(false);
+        slot4.SetActive(false);
     }
 
     public bool GetModeInOW()
     {
         return inMenuMode;
     }
+
+
     public void ResetButtonQueue()
     {
         onShieldsB = false;
         onStatsB = false;
-        mapHalo.SetActive(false);
-        actionHalo.SetActive(false);
+        onItemsB = false;
+        onWeaponsB = false;
         itemsHalo.SetActive(false);
         weaponsHalo.SetActive(false);
         shieldHalo.SetActive(false);
         statsHalo.SetActive(false);
-        canvas.SetActive(false);
-
     }
 
+    public void MakeSlot0Only()
+    {
+        onslot1 = false;
+        onslot2 = false;
+        onslot3 = false;
+        onslot4 = false;
+    }
+
+    public void MakeSlot1Only()
+    {
+        onslot0 = false;
+        onslot2 = false;
+        onslot3 = false;
+        onslot4 = false;
+    }
+
+    public void MakeSlot2Only()
+    {
+        onslot1 = false;
+        onslot0 = false;
+        onslot3 = false;
+        onslot4 = false;
+    }
+
+    public void MakeSlot3Only()
+    {
+        onslot1 = false;
+        onslot2 = false;
+        onslot0 = false;
+        onslot4 = false;
+    }
+
+    public void MakeSlot4Only()
+    {
+        onslot1 = false;
+        onslot2 = false;
+        onslot3 = false;
+        onslot0 = false;
+    }
 
     public void MakeItemsOnly()
     {

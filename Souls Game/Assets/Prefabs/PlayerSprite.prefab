@@ -249,8 +249,24 @@ MonoBehaviour:
   transDelay: 2
   runSpeed: 10
   owTheme: {fileID: 8300000, guid: 2cbfe8b67dfd64251ac18b65f6156bd5, type: 3}
+  itemInOrb:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   randomNum: 0
   numForBattle: 5
+  name1: Adamn Apple
+  name2: Milk
+  name3: Cloak
+  name4: Tome of Offense
+  name5: Tome of Defense
+  description1: Heals 2 HP.
+  description2: Temporarily increases Attack by 1.
+  description3: Temporarily increases Defense by 1.
+  description4: Temporarily increases Magic Attk by 1.
+  description5: Temporarily increases Magic Def by 1.
 --- !u!212 &212901376024268068
 SpriteRenderer:
   m_ObjectHideFlags: 1
