@@ -48,6 +48,13 @@ public class PlayerMovement : MonoBehaviour
             transform.position = PlayerStats.PlayerPos;
         }
 
+        if(!PlayerStats.Alive)
+        {
+            PlayerStats.Alive = true;
+            PlayerStats.InBattle = false;
+            PlayerStats.RestoreHP();
+            PlayerStats.RestoreStats();
+        }
         source.PlayOneShot(owTheme, 1f);
 	}
 

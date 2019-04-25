@@ -200,8 +200,31 @@ public class BattleSystem : MonoBehaviour
             source.Stop();
             print(results + results2 + theWinner);
             BattleResults.NewTurnText(results + results2 + theWinner);
+            actionWords1 = "";
+            actionWords2 = "";
+            results = "";
+            results2 = "";
+            letter1 = 'x';
+            letter2 = 'x';
+            //p1Chose = false;
+            //p2Chose = false;
+            if (PlayerStats.IsAttacker)
+            {
+                PlayerStats.IsAttacker = false;
+                Fighter2.IsAttacking(true);
+            }
+            else if (Fighter2.GetAttacker())
+            {
+                Fighter2.IsAttacking(false);
+                PlayerStats.IsAttacker = true;
+            }
+            PlayerStats.Choosing = false;
+            Fighter2.SetChoosing(false);
             PlayerStats.InBattle = false;
             PlayerStats.Alive = false;
+            Destroy(fighterGO2);
+            SceneManager.LoadSceneAsync(3, LoadSceneMode.Additive);
+            ManagerClass.Manager.UnloadScene(2);
         }
         else if (results2.Equals("Battle Continues"))
         {
