@@ -167,15 +167,8 @@ public class PlayerMovement : MonoBehaviour
 
         if(other.gameObject.CompareTag("BossTrigger"))
         {
-            horizontalMove = 0;
-            verticalMove = 0;
-            controller.MoveHorizontal(horizontalMove * Time.fixedDeltaTime);
-            controller.MoveVertical(verticalMove * Time.fixedDeltaTime);
-            PlayerStats.InBattle = true;
-            source.Stop();
-            Menu.inBattle = true;
-            SceneManager.LoadSceneAsync(3, LoadSceneMode.Additive);
-            loaded = true;
+            PlayerStats.InBossBattle = true;
+            BeginBattle();
         }
 
     }

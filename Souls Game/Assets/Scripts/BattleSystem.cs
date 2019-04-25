@@ -16,6 +16,7 @@ public class BattleSystem : MonoBehaviour
     public float endDelay = 2f;
     public int scene = 1;
     public AudioClip battleTheme;
+    public AudioClip bossTheme;
     public AudioClip attkSound;
     public AudioClip magAttkSound;
     public AudioClip defSound;
@@ -93,6 +94,19 @@ public class BattleSystem : MonoBehaviour
         Fighter2.IsAttacking(false);
         PlayerStats.SetNameBasedOnTurn();
         Fighter2.SetNameBasedOnTurn();
+
+        if(PlayerStats.InBossBattle)
+        {
+            Fighter2.BuffAttk(10);
+            Fighter2.BuffDef(10);
+            Fighter2.BuffMagicAttk(10);
+            Fighter2.BuffMagicDef(10);
+
+            fighterGO2.GetComponent<SpriteRenderer>().color = new Color(1, 0, 0);
+
+            battleTheme = bossTheme;
+        }
+
         source.PlayOneShot(battleTheme, 0.5f);
         /*PlayerStats.SetAlive(true);
         Fighter2.SetAlive(true);

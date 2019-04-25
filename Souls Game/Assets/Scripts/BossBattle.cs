@@ -64,9 +64,10 @@ public class BossBattle : MonoBehaviour
         }
         source = GetComponent<AudioSource>();
         print("Battle Start!");
-        fighterGO1 = GameObject.Find("PlayerInBattle");
+        fighterGO1 = GameObject.Find("BossPlayerInBattle");
         battleAnimations = fighterGO1.GetComponent<Animator>();
         fighterGO2 = Instantiate(p2Prefab) as GameObject;
+        fighterGO2.GetComponent<SpriteRenderer>().color = new Color(1, 0, 0);
         //alive = true;
         /*if (PlayerPrefs.HasKey("HP"))
         {

@@ -29,6 +29,7 @@ public static class PlayerStats
     private static int exp;
     private static int maxEXP;
     private static int lvl;
+    private static bool inBossBattle;
     private static Vector3 playerPos;
     private static Vector3 camPos;
 
@@ -264,6 +265,18 @@ public static class PlayerStats
         set
         {
             inBattle = value;
+        }
+    }
+
+    public static bool InBossBattle
+    {
+        get
+        {
+            return inBossBattle;
+        }
+        set
+        {
+            inBossBattle = value;
         }
     }
 

@@ -75,6 +75,7 @@
     <Compile Include="Assets\Scripts\Displays\StatsDisplay.cs" />
     <Compile Include="Assets\Scripts\Displays\UpAction.cs" />
     <Compile Include="Assets\Scripts\Enemy.cs" />
+    <Compile Include="Assets\Scripts\GameOver.cs" />
     <Compile Include="Assets\Scripts\HelpMenu.cs" />
     <Compile Include="Assets\Scripts\Item.cs" />
     <Compile Include="Assets\Scripts\ItemsInWorld.cs" />
