@@ -341,6 +341,66 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114777194372765242, guid: 2f1828aaa77584d718620c6143b4c9d6,
+        type: 2}
+      propertyPath: YourAction
+      value: 
+      objectReference: {fileID: 2012586137}
+    - target: {fileID: 114783226670534714, guid: 2f1828aaa77584d718620c6143b4c9d6,
+        type: 2}
+      propertyPath: YourAction
+      value: 
+      objectReference: {fileID: 2012586137}
+    - target: {fileID: 114068945232297786, guid: 2f1828aaa77584d718620c6143b4c9d6,
+        type: 2}
+      propertyPath: YourAction
+      value: 
+      objectReference: {fileID: 2012586137}
+    - target: {fileID: 114315874535110088, guid: 2f1828aaa77584d718620c6143b4c9d6,
+        type: 2}
+      propertyPath: YourAction
+      value: 
+      objectReference: {fileID: 2012586137}
+    - target: {fileID: 114893056723460558, guid: 2f1828aaa77584d718620c6143b4c9d6,
+        type: 2}
+      propertyPath: YourAction
+      value: 
+      objectReference: {fileID: 2012586137}
+    - target: {fileID: 114712377700373168, guid: 2f1828aaa77584d718620c6143b4c9d6,
+        type: 2}
+      propertyPath: YourAction
+      value: 
+      objectReference: {fileID: 2012586137}
+    - target: {fileID: 114732384274684678, guid: 2f1828aaa77584d718620c6143b4c9d6,
+        type: 2}
+      propertyPath: YourAction
+      value: 
+      objectReference: {fileID: 2012586137}
+    - target: {fileID: 114558111319162850, guid: 2f1828aaa77584d718620c6143b4c9d6,
+        type: 2}
+      propertyPath: YourAction
+      value: 
+      objectReference: {fileID: 2012586137}
+    - target: {fileID: 114174345201304654, guid: 2f1828aaa77584d718620c6143b4c9d6,
+        type: 2}
+      propertyPath: YourHP
+      value: 
+      objectReference: {fileID: 2012586137}
+    - target: {fileID: 114335186304216606, guid: 2f1828aaa77584d718620c6143b4c9d6,
+        type: 2}
+      propertyPath: YourHP
+      value: 
+      objectReference: {fileID: 2012586137}
+    - target: {fileID: 114157412911636496, guid: 2f1828aaa77584d718620c6143b4c9d6,
+        type: 2}
+      propertyPath: YourStats
+      value: 
+      objectReference: {fileID: 2012586137}
+    - target: {fileID: 114175419421163514, guid: 2f1828aaa77584d718620c6143b4c9d6,
+        type: 2}
+      propertyPath: YourStats
+      value: 
+      objectReference: {fileID: 2012586137}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2f1828aaa77584d718620c6143b4c9d6, type: 2}
   m_IsPrefabParent: 0

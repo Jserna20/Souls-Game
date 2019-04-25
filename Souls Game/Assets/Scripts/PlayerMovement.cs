@@ -164,6 +164,20 @@ public class PlayerMovement : MonoBehaviour
             //nameOfItemCollected = itemNames[whatItem];
             ItemNotification.notifyMe = true;
         }
+
+        if(other.gameObject.CompareTag("BossTrigger"))
+        {
+            horizontalMove = 0;
+            verticalMove = 0;
+            controller.MoveHorizontal(horizontalMove * Time.fixedDeltaTime);
+            controller.MoveVertical(verticalMove * Time.fixedDeltaTime);
+            PlayerStats.InBattle = true;
+            source.Stop();
+            Menu.inBattle = true;
+            SceneManager.LoadSceneAsync(3, LoadSceneMode.Additive);
+            loaded = true;
+        }
+
     }
 
     void DelayedBattle(float delay)
@@ -180,7 +194,7 @@ public class PlayerMovement : MonoBehaviour
         PlayerStats.InBattle = true;
         source.Stop();
         Menu.inBattle = true;
-        SceneManager.LoadSceneAsync(scene, LoadSceneMode.Additive);
+        SceneManager.LoadSceneAsync(2, LoadSceneMode.Additive);
         loaded = true;
     }
 }

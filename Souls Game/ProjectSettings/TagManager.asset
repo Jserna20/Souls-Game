@@ -9,6 +9,7 @@ TagManager:
   - Enemy
   - BattleTrigger
   - ItemOrb
+  - BossTrigger
   layers:
   - Default
   - TransparentFX
