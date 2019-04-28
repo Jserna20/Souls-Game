@@ -7,6 +7,6 @@ public class TitleScreen : MonoBehaviour {
 
 	public void LoadGame()
     {
-        SceneManager.LoadScene(6);
+        SceneManager.LoadScene(7);
     }
 }

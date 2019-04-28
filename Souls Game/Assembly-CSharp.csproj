@@ -64,8 +64,10 @@
     <Compile Include="Assets\Scripts\BattleSystem.cs" />
     <Compile Include="Assets\Scripts\BossBattle.cs" />
     <Compile Include="Assets\Scripts\CharacterController2D.cs" />
+    <Compile Include="Assets\Scripts\CreditsToMenu.cs" />
     <Compile Include="Assets\Scripts\Displays\BattleTurns.cs" />
     <Compile Include="Assets\Scripts\Displays\DownAction.cs" />
+    <Compile Include="Assets\Scripts\Displays\ExplainForStep.cs" />
     <Compile Include="Assets\Scripts\Displays\HPDisplay.cs" />
     <Compile Include="Assets\Scripts\Displays\ItemNotification.cs" />
     <Compile Include="Assets\Scripts\Displays\LeftAction.cs" />
@@ -91,6 +93,7 @@
     <Compile Include="Assets\Scripts\Rotator.cs" />
     <Compile Include="Assets\Scripts\SubMenu.cs" />
     <Compile Include="Assets\Scripts\TitleScreen.cs" />
+    <Compile Include="Assets\Scripts\TutorialButtons.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>/Users/jesusserna/Desktop/Souls-Game/Souls Game/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
