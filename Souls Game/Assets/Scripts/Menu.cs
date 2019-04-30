@@ -325,7 +325,7 @@ public class Menu : MonoBehaviour
         {
             inMenuMode = true;
         }
-        else if ((Input.GetKeyDown(KeyCode.Z) || Input.GetKeyDown(KeyCode.X)) && inMenuMode)
+        else if ((Input.GetKeyDown(KeyCode.Z) || (Input.GetKeyDown(KeyCode.X) && !inSubMode)) && inMenuMode)
         {
             inMenuMode = false;
             canvas.SetActive(false);

@@ -44,7 +44,7 @@ public class ItemNotification : MonoBehaviour
 
     public IEnumerator LetMeRead()
     {
-        yield return new WaitForSeconds(.1f);
+        yield return new WaitForSeconds(.3f);
         notifyMe = false;
         delay = false;
     }
