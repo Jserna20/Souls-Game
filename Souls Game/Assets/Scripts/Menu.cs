@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Menu : MonoBehaviour 
+public class Menu : MonoBehaviour
 {
     //[Header("Set In Inspector")]
     //public GameObject canvasPF;
@@ -58,8 +58,8 @@ public class Menu : MonoBehaviour
     public int subLayerCursor;
 
 
-	// Use this for initialization
-	void Awake () 
+    // Use this for initialization
+    void Awake()
     {
         itemsHalo = GameObject.Find("ItemsHaloB");
         weaponsHalo = GameObject.Find("WeaponsHaloB");
@@ -99,19 +99,20 @@ public class Menu : MonoBehaviour
         statsBar.SetActive(false);
         layerCursor = 0;
         subLayerCursor = 0;
-	}
-	
-	// Update is called once per frame
-	void Update () 
+    }
+
+    // Update is called once per frame
+    void Update()
     {
-        if(!inBattle)
+        if (!inBattle)
         {
             SwitchingModes();
+            //LTrigger();
             if (inMenuMode)
             {
                 canvas.SetActive(true);
                 CheckForInput();
-                if(!inSubMode)
+                if (!inSubMode)
                 {
                     switch (layerCursor)
                     {
@@ -176,7 +177,7 @@ public class Menu : MonoBehaviour
                     }
                 }
 
-                if(inSubMode)
+                if (inSubMode)
                 {
                     ResetButtonQueue();
                     SeeAllSubItems();
@@ -233,7 +234,7 @@ public class Menu : MonoBehaviour
                             MakeSlot3Only();
                             previousSelectedHalo = slot3Halo;
                             break;
-                           
+
                         case 4:
                             previousSelectedHalo.SetActive(false);
                             slot4Halo.SetActive(true);
@@ -247,11 +248,11 @@ public class Menu : MonoBehaviour
             }
 
         }
-	}
+    }
 
     public void CheckForInput()
     {
-        if(!inSubMode)
+        if (!inSubMode)
         {
             if (Input.GetKeyDown(KeyCode.DownArrow))
             {
@@ -271,25 +272,25 @@ public class Menu : MonoBehaviour
                 }
             }
 
-            if((Input.GetKeyDown(KeyCode.W)) && onStatsB)
+            if ((Input.GetKeyDown(KeyCode.A)) && onStatsB)
             {
                 statsBar.SetActive(true);
                 viewingStats = true;
             }
+            else if (Input.GetKeyDown(KeyCode.A) && onItemsB)
+            {
+                inSubMode = true;
+            }
 
-            if(viewingStats && (Input.GetKeyDown(KeyCode.E)))
+            if (viewingStats && (Input.GetKeyDown(KeyCode.X)))
             {
                 statsBar.SetActive(false);
                 viewingStats = false;
             }
 
-            if (Input.GetKeyDown(KeyCode.S) && onItemsB)
-            {
-                inSubMode = true;
-            }
         }
 
-        if(inSubMode)
+        if (inSubMode)
         {
             if (Input.GetKeyDown(KeyCode.DownArrow))
             {
@@ -309,7 +310,7 @@ public class Menu : MonoBehaviour
                 }
             }
 
-            if(Input.GetKeyDown(KeyCode.D))
+            if (Input.GetKeyDown(KeyCode.X))
             {
                 HideAllSubItems();
                 inSubMode = false;
@@ -317,20 +318,23 @@ public class Menu : MonoBehaviour
         }
     }
 
+
     public void SwitchingModes()
     {
-        if (Input.GetKeyDown(KeyCode.Z))
+        if (Input.GetKeyDown(KeyCode.Z) && !inMenuMode)
         {
             inMenuMode = true;
-        } 
-        
-        if(Input.GetKeyDown(KeyCode.X))
+        }
+        else if ((Input.GetKeyDown(KeyCode.Z) || Input.GetKeyDown(KeyCode.X)) && inMenuMode)
         {
             inMenuMode = false;
             canvas.SetActive(false);
             ResetButtonQueue();
         }
+
     }
+
+
     public void SeeAllSubItems()
     {
         slot0.SetActive(true);
