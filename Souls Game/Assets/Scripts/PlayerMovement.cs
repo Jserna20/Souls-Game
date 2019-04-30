@@ -21,18 +21,6 @@ public class PlayerMovement : MonoBehaviour
     public int whatItem;
     bool loaded = false;
 
-    public string name1 = "Adam Apple";
-    public string name2 = "Milk";
-    public string name3 = "Cloak";
-    public string name4 = "Tome of Offense";
-    public string name5 = "Tome of Defense";
-
-    public string description1 = "Heals 2 HP.";
-    public string description2 = "Temporarily increases Attack by 1.";
-    public string description3 = "Temporarily increases Defense by 1.";
-    public string description4 = "Temporarily increases Magic Attk by 1.";
-    public string description5 = "Temporarily increases Magic Def by 1.";
-
     public string[] itemNames = new string[5];
     public string[] itemDescriptions = new string[5];
 
@@ -106,24 +94,24 @@ public class PlayerMovement : MonoBehaviour
             switch (i)
             {
                 case 0:
-                    itemNames[i] = name1;
-                    itemDescriptions[i] = description1; 
+                    itemNames[i] = PlayerStats.Name0;
+                    itemDescriptions[i] = PlayerStats.Description0; 
                     break;
                 case 1:
-                    itemNames[i] = name1;
-                    itemDescriptions[i] = description1; 
+                    itemNames[i] = PlayerStats.Name1;
+                    itemDescriptions[i] = PlayerStats.Description1; 
                     break;
                 case 2:
-                    itemNames[i] = name1;
-                    itemDescriptions[i] = description1; 
+                    itemNames[i] = PlayerStats.Name2;
+                    itemDescriptions[i] = PlayerStats.Description2; 
                     break;
                 case 3:
-                    itemNames[i] = name1;
-                    itemDescriptions[i] = description1; 
+                    itemNames[i] = PlayerStats.Name3;
+                    itemDescriptions[i] = PlayerStats.Description3; 
                     break;
                 case 4:
-                    itemNames[i] = name1;
-                    itemDescriptions[i] = description1;
+                    itemNames[i] = PlayerStats.Name4;
+                    itemDescriptions[i] = PlayerStats.Description4;
                     break;
             }
         }
@@ -153,19 +141,24 @@ public class PlayerMovement : MonoBehaviour
             switch (whatItem)
             {
                 case 0:
-                    nameOfItemCollected = name1;
+                    nameOfItemCollected = PlayerStats.Name0;
+                    PlayerStats.Slot0Counter++;
                     break;
                 case 1:
-                    nameOfItemCollected = name2;
+                    nameOfItemCollected = PlayerStats.Name1;
+                    PlayerStats.Slot1Counter++;
                     break;
                 case 2:
-                    nameOfItemCollected = name3;
+                    nameOfItemCollected = PlayerStats.Name2;
+                    PlayerStats.Slot2Counter++;
                     break;
                 case 3:
-                    nameOfItemCollected = name4;
+                    nameOfItemCollected = PlayerStats.Name3;
+                    PlayerStats.Slot3Counter++;
                     break;
                 case 4:
-                    nameOfItemCollected = name5;
+                    nameOfItemCollected = PlayerStats.Name4;
+                    PlayerStats.Slot4Counter++;
                     break;
             }
             //nameOfItemCollected = itemNames[whatItem];

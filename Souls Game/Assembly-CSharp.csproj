@@ -75,6 +75,11 @@
     <Compile Include="Assets\Scripts\Displays\Results.cs" />
     <Compile Include="Assets\Scripts\Displays\RightAction.cs" />
     <Compile Include="Assets\Scripts\Displays\StatsDisplay.cs" />
+    <Compile Include="Assets\Scripts\Displays\Sub0.cs" />
+    <Compile Include="Assets\Scripts\Displays\Sub1.cs" />
+    <Compile Include="Assets\Scripts\Displays\Sub2.cs" />
+    <Compile Include="Assets\Scripts\Displays\Sub3.cs" />
+    <Compile Include="Assets\Scripts\Displays\Sub4.cs" />
     <Compile Include="Assets\Scripts\Displays\UpAction.cs" />
     <Compile Include="Assets\Scripts\Enemy.cs" />
     <Compile Include="Assets\Scripts\GameOver.cs" />

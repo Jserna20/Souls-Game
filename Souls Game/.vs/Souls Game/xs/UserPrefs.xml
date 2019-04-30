@@ -1,10 +1,10 @@
 ﻿<Properties StartupConfiguration="{873CDC47-ED37-532E-1D2C-4033D830FDCA}|">
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Displays/StatsDisplay.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Displays/Sub0.cs">
     <Files>
-      <File FileName="Assets/Scripts/PlayerStats.cs" Line="460" Column="38" />
+      <File FileName="Assets/Scripts/PlayerStats.cs" Line="225" Column="6" />
       <File FileName="Assets/Scripts/CharacterController2D.cs" Line="4" Column="14" />
-      <File FileName="Assets/Scripts/Menu.cs" Line="280" Column="59" />
+      <File FileName="Assets/Scripts/Menu.cs" Line="328" Column="77" />
       <File FileName="Assets/Scripts/Enemy.cs" Line="237" Column="20" />
       <File FileName="Assets/Scripts/Player.cs" Line="353" Column="17" />
       <File FileName="Assets/Scripts/MovingCam.cs" Line="20" Column="10" />
@@ -12,14 +12,19 @@
       <File FileName="Assets/Scripts/OrbSpawner.cs" Line="14" Column="24" />
       <File FileName="Assets/Scripts/BattleSystem.cs" Line="222" Column="41" />
       <File FileName="Assets/Scripts/Displays/LevelAndExp.cs" Line="16" Column="1" />
-      <File FileName="Assets/Scripts/Displays/ItemNotification.cs" Line="40" Column="54" />
-      <File FileName="Assets/Scripts/PlayerMovement.cs" Line="56" Column="40" />
+      <File FileName="Assets/Scripts/Displays/ItemNotification.cs" Line="20" Column="18" />
+      <File FileName="Assets/Scripts/PlayerMovement.cs" Line="150" Column="27" />
       <File FileName="Assets/Scripts/GameOver.cs" Line="4" Column="1" />
       <File FileName="Assets/Scripts/TitleScreen.cs" Line="10" Column="33" />
       <File FileName="Assets/Scripts/TutorialButtons.cs" Line="37" Column="24" />
       <File FileName="Assets/Scripts/Displays/ExplainForStep.cs" Line="11" Column="49" />
       <File FileName="Assets/Scripts/CreditsToMenu.cs" Line="8" Column="27" />
       <File FileName="Assets/Scripts/Displays/StatsDisplay.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Displays/Sub1.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Displays/Sub0.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Displays/Sub2.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Displays/Sub3.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Displays/Sub4.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

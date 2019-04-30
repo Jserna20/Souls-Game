@@ -33,6 +33,24 @@ public static class PlayerStats
     private static Vector3 playerPos;
     private static Vector3 camPos;
 
+    private static int slot0Counter;
+    private static int slot1Counter;
+    private static int slot2Counter;
+    private static int slot3Counter;
+    private static int slot4Counter;
+
+    private static string name0 = "Adam Apple";
+    private static string name1 = "Milk";
+    private static string name2 = "Cloak";
+    private static string name3 = "Tome of Offense";
+    private static string name4 = "Tome of Defense";
+
+    private static string description0 = "Heals 2 HP.";
+    private static string description1 = "Temporarily increases Attack by 1.";
+    private static string description2 = "Temporarily increases Defense by 1.";
+    private static string description3 = "Temporarily increases Magic Attk by 1.";
+    private static string description4 = "Temporarily increases Magic Def by 1.";
+
     public static void SetStats()
     {
         lvl = 1;
@@ -72,8 +90,188 @@ public static class PlayerStats
         lvl++;
         RestoreStats();
         RestoreHP();
-
     }
+
+    public static string Name0
+    {
+        get
+        {
+            return name0;
+        }
+        set
+        {
+            name0 = value;
+        }
+    }
+
+    public static string Name1
+    {
+        get
+        {
+            return name1;
+        }
+        set
+        {
+            name1 = value;
+        }
+    }
+
+    public static string Name2
+    {
+        get
+        {
+            return name2;
+        }
+        set
+        {
+            name2 = value;
+        }
+    }
+
+    public static string Name3
+    {
+        get
+        {
+            return name3;
+        }
+        set
+        {
+            name3 = value;
+        }
+    }
+
+    public static string Name4
+    {
+        get
+        {
+            return name4;
+        }
+        set
+        {
+            name4 = value;
+        }
+    }
+
+    public static string Description0
+    {
+        get
+        {
+            return description0;
+        }
+        set
+        {
+            description0 = value;
+        }
+    }
+
+    public static string Description1
+    {
+        get
+        {
+            return description1;
+        }
+        set
+        {
+            description1 = value;
+        }
+    }
+
+    public static string Description2
+    {
+        get
+        {
+            return description2;
+        }
+        set
+        {
+            description2 = value;
+        }
+    }
+
+    public static string Description3
+    {
+        get
+        {
+            return description3;
+        }
+        set
+        {
+            description3 = value;
+        }
+    }
+
+    public static string Description4
+    {
+        get
+        {
+            return description4;
+        }
+        set
+        {
+            description4 = value;
+        }
+    }
+
+    public static int Slot0Counter
+    {
+        get
+        {
+            return slot0Counter;
+        }
+        set
+        {
+            slot0Counter = value;
+        }
+    }
+
+    public static int Slot1Counter
+    {
+        get
+        {
+            return slot1Counter;
+        }
+        set
+        {
+            slot1Counter = value;
+        }
+    }
+
+    public static int Slot2Counter
+    {
+        get
+        {
+            return slot2Counter;
+        }
+        set
+        {
+            slot2Counter = value;
+        }
+    }
+
+    public static int Slot3Counter
+    {
+        get
+        {
+            return slot3Counter;
+        }
+        set
+        {
+            slot3Counter = value;
+        }
+    }
+
+    public static int Slot4Counter
+    {
+        get
+        {
+            return slot4Counter;
+        }
+        set
+        {
+            slot4Counter = value;
+        }
+    }
+    
 
     public static void RestoreHP()
     {

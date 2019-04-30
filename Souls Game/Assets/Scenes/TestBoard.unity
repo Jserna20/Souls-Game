@@ -69603,10 +69603,6 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1735441738606644, guid: 4128950593dcc46238cb2d3c17fe8a3d, type: 2}
-      propertyPath: m_TagString
-      value: Human
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4128950593dcc46238cb2d3c17fe8a3d, type: 2}
   m_IsPrefabParent: 0
