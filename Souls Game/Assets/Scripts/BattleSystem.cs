@@ -97,17 +97,21 @@ public class BattleSystem : MonoBehaviour
 
         if(PlayerStats.InBossBattle)
         {
-            Fighter2.BuffAttk(10);
-            Fighter2.BuffDef(10);
-            Fighter2.BuffMagicAttk(10);
-            Fighter2.BuffMagicDef(10);
-
+            Fighter2.SetHP(16);
+            Fighter2.SetMaxHP(16);
+            Fighter2.BuffAttk(3);
+            Fighter2.BuffDef(3);
+            Fighter2.BuffMagicAttk(3);
+            Fighter2.BuffMagicDef(3);
             fighterGO2.GetComponent<SpriteRenderer>().color = new Color(1, 0, 0);
-
-            battleTheme = bossTheme;
+            source.PlayOneShot(bossTheme, 0.5f);
+        }
+        else
+        {
+            source.Stop();
+            source.PlayOneShot(battleTheme, 0.5f);
         }
 
-        source.PlayOneShot(battleTheme, 0.5f);
         /*PlayerStats.SetAlive(true);
         Fighter2.SetAlive(true);
         PlayerStats.SetInBattle(true);
