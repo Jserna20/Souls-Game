@@ -310,6 +310,48 @@ public class Menu : MonoBehaviour
                 }
             }
 
+            if(Input.GetKeyDown(KeyCode.A) && onslot0)
+            {
+                if(PlayerStats.Slot0Counter > 0)
+                {
+                    PlayerStats.Slot0Counter--;
+                    PlayerStats.HP += 2;
+                }
+            }
+            else if (Input.GetKeyDown(KeyCode.A) && onslot1)
+            {
+                if (PlayerStats.Slot1Counter > 0)
+                {
+                    PlayerStats.Slot1Counter--;
+                    PlayerStats.Attk += 1;
+                }
+            }
+            else if (Input.GetKeyDown(KeyCode.A) && onslot2)
+            {
+                if (PlayerStats.Slot2Counter > 0)
+                {
+                    PlayerStats.Slot2Counter--;
+                    PlayerStats.Def += 1;
+                }
+            }
+            else if (Input.GetKeyDown(KeyCode.A) && onslot3)
+            {
+                if (PlayerStats.Slot3Counter > 0)
+                {
+                    PlayerStats.Slot3Counter--;
+                    PlayerStats.MagicAttk += 1;
+                }
+            }
+            else if (Input.GetKeyDown(KeyCode.A) && onslot4)
+            {
+                if (PlayerStats.Slot4Counter > 0)
+                {
+                    PlayerStats.Slot4Counter--;
+                    PlayerStats.MagicDef += 1;
+                }
+            }
+
+
             if (Input.GetKeyDown(KeyCode.X))
             {
                 HideAllSubItems();
@@ -325,7 +367,7 @@ public class Menu : MonoBehaviour
         {
             inMenuMode = true;
         }
-        else if ((Input.GetKeyDown(KeyCode.Z) || (Input.GetKeyDown(KeyCode.X) && !inSubMode)) && inMenuMode)
+        else if ((Input.GetKeyDown(KeyCode.Z) || (Input.GetKeyDown(KeyCode.X) && !inSubMode && !viewingStats)) && inMenuMode)
         {
             inMenuMode = false;
             canvas.SetActive(false);
