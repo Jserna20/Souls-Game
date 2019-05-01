@@ -136,7 +136,7 @@ public class PlayerMovement : MonoBehaviour
 
         if(other.gameObject.CompareTag("ItemOrb"))
         {
-            whatItem = Random.Range(0, 4);
+            whatItem = Random.Range(0, 5);
             other.gameObject.SetActive(false);
             switch (whatItem)
             {

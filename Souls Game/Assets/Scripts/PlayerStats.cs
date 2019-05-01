@@ -67,6 +67,11 @@ public static class PlayerStats
         magicAttk = magicAttkBase;
         magicDef = magicDefBase;
         playerName = "Spector ";
+        slot0Counter = 0;
+        slot1Counter = 0;
+        slot2Counter = 0;
+        slot3Counter = 0;
+        slot4Counter = 0;
         alive = true;
         defeated = false;
     }

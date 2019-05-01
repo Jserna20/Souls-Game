@@ -193,6 +193,8 @@ public class BattleSystem : MonoBehaviour
             PlayerPrefManager.PrefManager.Save();
             if(PlayerStats.InBossBattle)
             {
+                PlayerStats.PlayerPos = Vector3.zero;
+                PlayerStats.CamPos = Vector3.zero;
                 SceneManager.LoadScene(8);
             }
             else
