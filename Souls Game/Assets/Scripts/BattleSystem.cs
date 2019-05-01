@@ -191,7 +191,14 @@ public class BattleSystem : MonoBehaviour
             source.PlayOneShot(winJingle, 3f);
             PlayerStats.RestoreStats();
             PlayerPrefManager.PrefManager.Save();
-            DelayedOWReturn(endDelay);
+            if(PlayerStats.InBossBattle)
+            {
+                SceneManager.LoadScene(8);
+            }
+            else
+            {
+                DelayedOWReturn(endDelay);  
+            }
 
         }
         else if (results2.Equals("P1 was deafeated. "))
