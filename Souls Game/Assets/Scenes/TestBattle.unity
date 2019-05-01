@@ -489,8 +489,8 @@ MonoBehaviour:
   loaded: 0
   endDelay: 2
   scene: 1
-  battleTheme: {fileID: 8300000, guid: 6d59bd92011e948c5aaffefc2b2ba6d5, type: 3}
-  bossTheme: {fileID: 8300000, guid: 84c66e355ef1a452f94c22cf968a5da2, type: 3}
+  battleTheme: {fileID: 8300000, guid: c279101f8c8054e9ab46fe405c4b1aed, type: 3}
+  bossTheme: {fileID: 8300000, guid: a9394732c2af0405392aa79a2a705167, type: 3}
   attkSound: {fileID: 8300000, guid: 9a144e462cc82471b9869f9757806d3f, type: 3}
   magAttkSound: {fileID: 8300000, guid: 881558f3d8671487eb2c9f679bee100b, type: 3}
   defSound: {fileID: 8300000, guid: d4208b8ab85454ae696dd5ede651e1e3, type: 3}

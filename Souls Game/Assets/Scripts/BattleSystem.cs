@@ -108,7 +108,6 @@ public class BattleSystem : MonoBehaviour
         }
         else
         {
-            source.Stop();
             source.PlayOneShot(battleTheme, 0.5f);
         }
 
