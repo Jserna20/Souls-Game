@@ -54,8 +54,8 @@ public class Menu : MonoBehaviour
     public bool viewingStats;
     public static bool inMenuMode;
     public static bool inSubMode;
-    public int layerCursor;
-    public int subLayerCursor;
+    public static int layerCursor;
+    public static int subLayerCursor;
 
 
     // Use this for initialization
