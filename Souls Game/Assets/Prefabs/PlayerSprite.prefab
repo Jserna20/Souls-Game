@@ -248,7 +248,7 @@ MonoBehaviour:
   scene: 2
   transDelay: 2
   runSpeed: 10
-  owTheme: {fileID: 8300000, guid: 7aaac00e38408490a9db933e25434471, type: 3}
+  owTheme: {fileID: 8300000, guid: 4a97ab042f2884647b98bbcdfaae4ab6, type: 3}
   randomNum: 0
   numForBattle: 5
   whatItem: 0

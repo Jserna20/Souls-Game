@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class TutorialButtons : MonoBehaviour {
 
     //change this variable depending on steps are made
-    public static int ALLTUTORIALSTEPS = 3;
+    public static int ALLTUTORIALSTEPS = 17;
     //are static so can be called and checked anywhere;
     public static int stepInTutorial = 1;
 
@@ -14,8 +14,7 @@ public class TutorialButtons : MonoBehaviour {
 	{
         if (stepInTutorial == ALLTUTORIALSTEPS)
         {
-            PlayerStats.SetStats();
-            SceneManager.LoadScene(6);
+            Invoke("StartGame", 2f);
         }
 	}
 
@@ -36,5 +35,12 @@ public class TutorialButtons : MonoBehaviour {
     public void SkipTutorial()
     {
         stepInTutorial = ALLTUTORIALSTEPS;
+    }
+
+    void StartGame()
+    {
+        PlayerStats.InBattle = false;
+        PlayerStats.InBossBattle = false;
+        SceneManager.LoadScene(6);
     }
 }

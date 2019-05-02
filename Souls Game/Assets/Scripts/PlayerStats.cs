@@ -72,6 +72,8 @@ public static class PlayerStats
         slot2Counter = 0;
         slot3Counter = 0;
         slot4Counter = 0;
+        PlayerPos = Vector3.zero;
+        camPos = Vector3.zero;
         alive = true;
         defeated = false;
     }
