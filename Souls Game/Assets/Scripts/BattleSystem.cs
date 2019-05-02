@@ -190,6 +190,7 @@ public class BattleSystem : MonoBehaviour
             source.Stop();
             source.PlayOneShot(winJingle, 3f);
             PlayerStats.RestoreStats();
+            PlayerStats.InBossBattle = false;
             PlayerPrefManager.PrefManager.Save();
             if(PlayerStats.InBossBattle)
             {
@@ -234,6 +235,7 @@ public class BattleSystem : MonoBehaviour
             Fighter2.SetChoosing(false);
             PlayerStats.InBattle = false;
             PlayerStats.Alive = false;
+            PlayerStats.InBossBattle = false;
             Destroy(fighterGO2);
             SceneManager.LoadSceneAsync(3, LoadSceneMode.Additive);
             ManagerClass.Manager.UnloadScene(2);

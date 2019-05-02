@@ -14,6 +14,7 @@ public class TutorialButtons : MonoBehaviour {
 	{
         if (stepInTutorial == ALLTUTORIALSTEPS)
         {
+            PlayerStats.SetStats();
             SceneManager.LoadScene(6);
         }
 	}
