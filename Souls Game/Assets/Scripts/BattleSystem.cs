@@ -190,13 +190,13 @@ public class BattleSystem : MonoBehaviour
             source.Stop();
             source.PlayOneShot(winJingle, 3f);
             PlayerStats.RestoreStats();
-            PlayerStats.InBossBattle = false;
             PlayerPrefManager.PrefManager.Save();
             if(PlayerStats.InBossBattle)
             {
+                PlayerStats.InBossBattle = false;
                 PlayerStats.PlayerPos = Vector3.zero;
                 PlayerStats.CamPos = Vector3.zero;
-                SceneManager.LoadScene(8);
+                Invoke("EndGame", 2);
             }
             else
             {
@@ -294,6 +294,11 @@ public class BattleSystem : MonoBehaviour
     {
         yield return new WaitForSeconds(1f);
         turnDelay = false;
+    }
+
+    public void EndGame()
+    {
+        SceneManager.LoadScene(8);
     }
 
     public void ChoosingActions()

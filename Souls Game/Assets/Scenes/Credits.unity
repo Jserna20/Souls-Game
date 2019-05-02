@@ -604,8 +604,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -97.4, y: -0.0000076294}
-  m_SizeDelta: {x: 253.6, y: 348.9}
+  m_AnchoredPosition: {x: 56.8, y: -0.0000076294}
+  m_SizeDelta: {x: 367.2, y: 348.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1213836633
 MonoBehaviour:
@@ -641,7 +641,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: "Lead Game Designer: \t\tJesus Serna\n\nLead Programmer: \t\t\tJesus Serna\n\nLead
     Artist: \t\t\t\t\t\tJesus Serna\n\nArtist: \t\t\t\t\t\t\t\tChad Pearson\n\nLead
-    Animator: \t\t\t\tJesus Serna\n\nLead Sound Designers: \tChad Pearson\n\t\t\t\t\t\t\t\t\t\tJesus
+    Animator: \t\t\t\t\tJesus Serna\n\nLead Sound Designers: \t\tChad Pearson\n\t\t\t\t\t\t\t\t\t\tJesus
     Serna\n\nPlayTester: \t\t\t\t\t\tChad Pearson\n\nQuality Assurance: \t\t\tChad
     Pearson\n\nMusic provided by Youtube and FreeSound.org"
 --- !u!222 &1213836634

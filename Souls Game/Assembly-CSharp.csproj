@@ -65,6 +65,7 @@
     <Compile Include="Assets\Scripts\BossBattle.cs" />
     <Compile Include="Assets\Scripts\CharacterController2D.cs" />
     <Compile Include="Assets\Scripts\CreditsToMenu.cs" />
+    <Compile Include="Assets\Scripts\Displays\AnotherSub.cs" />
     <Compile Include="Assets\Scripts\Displays\BattleTurns.cs" />
     <Compile Include="Assets\Scripts\Displays\DescriptionInMenu.cs" />
     <Compile Include="Assets\Scripts\Displays\DownAction.cs" />
